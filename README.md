@@ -1,4 +1,4 @@
-# MOCK v3 Final – Complete Reference & Replay Guide
+# MOCK v3 – Complete Reference & Replay Guide
 
 **Supra-Omega Resonance Theory (SORT) Numerical Environment**
 
@@ -6,7 +6,7 @@
 **Date:** 30 November 2025  
 **Seed:** 117666  
 **Status:** ✅ Validated and ready for Whitepaper v5 / HPC Run
-
+https://doi.org/10.5281/zenodo.17787754
 ---
 
 ## Overview
