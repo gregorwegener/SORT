@@ -1,0 +1,42 @@
+{
+  "calibration": {
+    "sigma0": 0.00190642767773082,
+    "H_bare": 67.40224894828012,
+    "delta_H_over_H0": 0.08000146801004517,
+    "iterations": 3,
+    "converged": true
+  },
+  "validation": {
+    "basic_tests": {
+      "epsilon_idemp": 0.0,
+      "epsilon_LB": 0.0,
+      "passed_idemp": true,
+      "passed_LB": true
+    },
+    "correction_tests": {
+      "phase_symmetry": {
+        "fast_test": {
+          "epsilon_phase_max": 9.716560911185923,
+          "epsilon_phase_mean": 0.2271341748431739,
+          "epsilon_phase_rms": 1.2169398622661771,
+          "passed": false,
+          "tolerance": 1e-10
+        },
+        "explicit_test": {
+          "epsilon_phase_max": 0.0,
+          "epsilon_phase_mean": 0.0,
+          "n_samples": 1000,
+          "passed": true,
+          "tolerance": 1e-10
+        },
+        "all_passed": false
+      },
+      "drift_consistency": {
+        "epsilon_drift": 1.4680100451636147e-06,
+        "passed": true
+      }
+    },
+    "all_passed": false,
+    "timestamp": "2025-11-29T14:41:00"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "shape": [
+    128,
+    128,
+    128
+  ],
+  "min": -1.7554167342883508e-18,
+  "max": 0.018150176569135777,
+  "mean": 3.8045578420252666e-05,
+  "std": 0.0004926389742627639,
+  "figures": {
+    "slice": "article0_fig1_kernel_slice.png",
+    "radial_profile": "article0_fig2_kernel_radial_profile.png",
+    "histogram": "article0_fig3_kernel_histogram.png"
+  }
+}

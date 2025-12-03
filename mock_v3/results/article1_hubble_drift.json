@@ -1,0 +1,16 @@
+{
+  "sigma0": 0.00190642767773082,
+  "delta_H_over_H0": 0.08000146801004517,
+  "delta_target": 0.08308605341246282,
+  "delta_residual": -0.0030845854024176556,
+  "H_CMB": 67.4,
+  "H_local_pred": 72.79209894387705,
+  "H_local_obs": 73.0,
+  "H_residual_vs_obs": -0.2079010561229495,
+  "definition": "delta_H = (H_local - H_CMB) / H_CMB, positive when H_local > H_CMB",
+  "figures": {
+    "hubble_values": "article1_fig1_hubble_values.png",
+    "eta_profile": "article1_fig2_eta_profile.png",
+    "drift_target": "article1_fig3_drift_target.png"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "sigma0": 0.00190642767773082,
+  "z_array": [
+    7.0,
+    10.0,
+    15.0,
+    20.0
+  ],
+  "sigma_comoving": [
+    1.0211303248845705,
+    0.7426402362796876,
+    0.5105651624422852,
+    0.3890020285274554
+  ],
+  "eta_BH": [
+    8e-07,
+    1e-06,
+    1e-06,
+    1e-06
+  ],
+  "M_seed_min": [
+    7954.069182123352,
+    7230.971983748503,
+    4971.293238827096,
+    3787.651991487311
+  ],
+  "M_seed_typical": [
+    47905665.156683266,
+    59882081.44585408,
+    59882081.44585408,
+    59882081.44585408
+  ],
+  "M_seed_max": [
+    143716995.4700498,
+    179646244.33756223,
+    179646244.33756226,
+    179646244.33756223
+  ],
+  "parameters": {
+    "eta_0": 1e-06,
+    "delta_proj": 0.3,
+    "note": "PATCH MOCKv3-final: Realistic parameter values for DCBH seeds"
+  },
+  "figures": {
+    "mseed_vs_z": "article3_fig1_mseed_vs_z.png",
+    "efficiency_vs_z": "article3_fig2_efficiency_vs_z.png",
+    "mass_histogram_z10": "article3_fig3_mass_histogram_z10.png"
+  }
+}
