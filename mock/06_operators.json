@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "n_operators": 22,
+    "light_balance": "11 positive, 11 negative with weight 1/11",
+    "note": "Operator content is defined algebraically in the whitepaper; this file is a structural descriptor for mock_v3."
+  },
+  "operators": [
+    {
+      "id": 1,
+      "label": "O_01",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 2,
+      "label": "O_02",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 3,
+      "label": "O_03",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 4,
+      "label": "O_04",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 5,
+      "label": "O_05",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 6,
+      "label": "O_06",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 7,
+      "label": "O_07",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 8,
+      "label": "O_08",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 9,
+      "label": "O_09",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 10,
+      "label": "O_10",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 11,
+      "label": "O_11",
+      "weight": 0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 12,
+      "label": "O_12",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 13,
+      "label": "O_13",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 14,
+      "label": "O_14",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 15,
+      "label": "O_15",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 16,
+      "label": "O_16",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 17,
+      "label": "O_17",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 18,
+      "label": "O_18",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 19,
+      "label": "O_19",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 20,
+      "label": "O_20",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 21,
+      "label": "O_21",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    },
+    {
+      "id": 22,
+      "label": "O_22",
+      "weight": -0.0909090909,
+      "role": "resonance_projector",
+      "layer": "H",
+      "description": "Placeholder descriptor \u2013 numerical action implemented in mockv3_engine.py"
+    }
+  ]
+}
