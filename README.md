@@ -6,6 +6,7 @@
 **Date:** 30 November 2025  
 **Seed:** 117666  
 **Status:** ✅ Validated and ready for Whitepaper v5 
+
 https://doi.org/10.5281/zenodo.17787754
 ---
 
