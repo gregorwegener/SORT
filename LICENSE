@@ -19,3 +19,21 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Additional Patent Notice
+
+This MIT License applies to the software code contained in this repository only.
+
+No license to any patent rights is granted, implied, or otherwise provided by this license,
+except as required under applicable law.
+
+This repository contains reference implementations, architectural mocks,
+and validation artifacts related to one or more pending patent applications.
+
+Patent rights covering underlying methods, systems, architectures,
+and computational principles are expressly reserved by the copyright holder.
+
+Commercial use of any patented methods, systems, or architectures
+may require a separate patent license.
