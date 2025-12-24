@@ -1,288 +1,647 @@
-# MOCK v3 Final – Complete Reference & Replay Guide
+# MOCK v4 — SORT v6 Public Skeleton
 
-**Supra-Omega Resonance Theory (SORT) Numerical Environment**
+**Version:** 0.5.1  
+**Status:** Final Release  
+**Architecture Freeze:** 2024-12  
+**License:** Proprietary (Gregor Wegener)
 
-**Version:** v3.0.0-final  
-**Date:** 30 November 2025  
-**Seed:** 117666  
-**Status:** ✅ Validated and ready for Whitepaper v5 
+---
 
-https://doi.org/10.5281/zenodo.17787754
+## Completion Statement
+
+> **MOCK Version 4 is complete. The architecture is final. The boundaries are intentional. The structure is stable.**
+
+MOCK v4 constitutes the **canonical public reference architecture** for subsequent SORT work, including Whitepaper Version 6. All architectural, structural, and contractual objectives defined in the MOCK v4 specifications have been fully implemented, verified, and documented.
+
+### Release Status
+
+| Aspect | Status |
+|--------|--------|
+| Architecture | ✅ Final and frozen |
+| Contracts | ✅ Fully implemented |
+| Tests | ✅ All passing |
+| Documentation | ✅ Complete |
+| Whitepaper v6 Baseline | ✅ Ready |
+
+### Purpose and Scope
+
+MOCK v4 serves exclusively as:
+
+- **Public architectural reference** for the SORT v6 framework
+- **API and contract definition** for domain isolation patterns
+- **Structural and integration baseline** for future implementations
+- **Review and validation substrate** for external engineers and partners
+
+MOCK v4 is **not** an execution framework, **not** a simulation environment, and **not** a production system.
+
+---
+
+## Relationship Between MOCK v3 and MOCK v4
+
+MOCK Version 3 and MOCK Version 4 serve **fundamentally different but complementary roles** within the SORT research program.
+
+### MOCK Version 3 — Exploratory Numerical Evidence
+
+MOCK v3 contained:
+
+* exploratory numerical simulations
+* laptop-scale parameter studies
+* empirical trend analysis
+* preliminary numerical evidence for phenomena such as:
+  * Hubble tension and drift effects
+  * parameter sensitivities
+  * consistency checks across cosmological observables
+
+These simulations were **not intended as final proofs**, but as **exploratory numerical evidence** supporting the plausibility of the theoretical framework.
+
+MOCK v3 represents the **numerical exploration phase** of the project.
+
+### MOCK Version 4 — Architectural and Contractual Reference
+
+MOCK v4 does **not** perform numerical simulations and does **not** reproduce or recompute the numerical results from MOCK v3.
+
+Instead, MOCK v4 provides:
+
+* a formal, public system architecture
+* explicit API and contract definitions
+* strict separation between theory, simulation, control, and evidence
+* a reproducible structural baseline for future large-scale computation
+
+MOCK v4 is an **architectural and methodological reference**, not a computational engine.
+
+### Methodological Continuity
+
+The relationship between the two versions is as follows:
+
+| Component | Source |
+|-----------|--------|
+| Numerical results and exploratory evidence | **MOCK v3** |
+| Structural, contractual, and architectural consistency | **MOCK v4** |
+| Theoretical derivations and interpretation | **Whitepaper Version 6** |
+| Large-scale reproduction and validation | Future **HPC-based executions** |
+
+MOCK v4 therefore **builds on MOCK v3 methodologically**, not numerically.
+
+No new numerical claims are made in MOCK v4.
+All numerical claims originate from MOCK v3 and are intended to be **reproduced and validated at scale** in later execution phases.
+
+### Guidance for Reviewers and Engineers
+
+| Interest | Reference |
+|----------|-----------|
+| Numerical simulations and exploratory results | **MOCK Version 3** |
+| System architecture, contracts, and reproducibility | **MOCK Version 4** |
+
+MOCK v4 provides the formal structure required to:
+
+* audit prior numerical work
+* reference simulation results cleanly
+* enable future HPC-based reproduction without architectural changes
+
 ---
 
 ## Overview
 
-This archive contains the fully corrected and calibrated MOCK v3 environment for SORT structural diagnostics. It provides:
+MOCK v4 is the **public-only structural skeleton** for the SORT v6 (Supra-Omega Resonance Theory) framework. It provides a complete implementation of architectural contracts, type definitions, and domain isolation patterns without including proprietary computational logic.
 
-- A reproducible 3-layer numerical pipeline (Layer I–III)
-- Exact σ₀ calibration using the corrected Hubble drift equation
-- A stable projection kernel with validated idempotency, phase symmetry, and light balance
-- Three corrected article modules (1–3) plus three legacy modules (4–6)
-- Full reproducibility for Whitepaper v5 and the upcoming HPC run
+This repository is designed for:
 
----
+- **External reviewers** evaluating architectural decisions
+- **Senior engineers** assessing code quality and patterns
+- **Integration partners** understanding public API contracts
+- **Patent documentation** demonstrating prior art
+- **Funding bodies** requiring technical due diligence
 
-## Key Results Summary
+### What MOCK v4 Provides
 
-### Calibration
+| Component | Description |
+|-----------|-------------|
+| Core operators | 22-operator algebra stubs with idempotency contracts |
+| Domain modules | Five canonical domains with isolation guarantees |
+| Catalog system | Public/private separation with maturity filtering |
+| Evidence bundles | Immutable audit trail structures |
+| Capability registry | Silent no-op pattern for missing capabilities |
+| Control semantics | Observe/intervene/validate mode descriptors |
 
-| Parameter | Value | Unit |
-|-----------|-------|------|
-| **σ₀** | 0.00190643 | dimensionless |
-| σ (physical) | 8.17 | Mpc |
-| H_bare | 67.4022 | km/s/Mpc |
-| **δH/H₀ (SORT)** | **0.0800** | dimensionless |
-| δH/H₀ (Target) | 0.0831 | dimensionless |
+### Explicit Design Boundaries (Final)
 
-**Important:** SORT predicts δH/H₀ = 0.0800. The target value 0.0831 = (73−67.4)/67.4 is the observation.
+MOCK v4 **intentionally includes no**:
 
-### Hubble Drift (Article 1)
+| Excluded Component | Rationale |
+|--------------------|-----------|
+| Numerical simulations | Proprietary computational logic |
+| YAML-based run configurations | Runtime-specific implementation |
+| Command-line interface (CLI) | Execution layer concern |
+| Visualization or plotting | Presentation layer concern |
+| Optimization or scheduling | Runtime logic |
+| Hardware/HPC implementations | Deployment-specific |
 
-| Parameter | Value | Unit |
-|-----------|-------|------|
-| H_CMB | 67.4 | km/s/Mpc |
-| **H_local_pred** | **72.79** | km/s/Mpc |
-| H_local_obs | 73.0 | km/s/Mpc |
-| **Residual** | **−0.21** | km/s/Mpc (0.15σ) |
-
-### Validation Status
-
-| Test | ε | Tolerance | Status |
-|------|---|-----------|--------|
-| Idempotency | 0.0 | 10⁻⁶ | ✅ |
-| Light Balance | 0.0 | 10⁻¹⁴ | ✅ |
-| Phase (explicit) | 0.0 | 10⁻¹⁰ | ✅ |
-| Phase (fast) | 9.72 | — | ⚠️ Invalid (boundary artifact) |
-| Drift Consistency | 1.47×10⁻⁶ | 0.02 | ✅ |
-
-**Note on Phase Test:** The fast test fails due to `np.flip()` artifacts at periodic boundaries. Only the explicit test (1000 random pairs) is the valid criterion. The physics is correct.
+These omissions are **intentional design constraints**, not missing features.
 
 ---
 
-## Directory Layout
+## Architecture Freeze
 
-### Configuration & Engine
+The following architecture is **final, stable, and released**:
 
-| File | Description |
-|------|-------------|
-| `05_config.yaml` | Global settings (lattice N=128, L=160 Mpc, seed=117666) |
-| `06_operators.json` | 22 resonance operators (11 positive + 11 negative, light-balanced) |
-| `params_alpha_v3.json` | Alpha-grid for Layer III semi-spectral evolution |
-| `mockv3_engine.py` | Core engine (σ₀ calibration, kernel, validation, observables) |
-
-### Layer Scripts
-
-| File | Description |
-|------|-------------|
-| `01_layer1.py` | Layer I: Algebraic diagnostics of the 22-operator framework |
-| `02_layer2.py` | Layer II: σ₀ calibration, kernel construction, validation suite |
-| `03_layer3.py` | Layer III: Reduced spectral evolution (energy series) |
-| `04_layer2_plot.py` | Kernel visualization (slice / radial / histogram) |
-
-### Article Modules (Corrected)
-
-| File | Description |
-|------|-------------|
-| `11_article1_hubble_drift.py` | Article 1 – Hubble drift with consistent δH definition |
-| `12_article2_early_galaxies.py` | Article 2 – Kernel-based early galaxy enhancement |
-| `13_article3_smbh_seeds.py` | Article 3 – SMBH seed formation (η₀=10⁻⁶, δ_proj=0.3) |
-
-### Article Modules (Legacy, Optional)
-
-| File | Description |
-|------|-------------|
-| `14_article4_cmb_anomalies.py` | Article 4 – CMB hemispheric asymmetry |
-| `15_article5_dark_baryon_oscillator.py` | Article 5 – BAO wiggles |
-| `16_article6_intergalactic_bridges.py` | Article 6 – Large-scale correlations |
-
-### Results Directory
-
-All outputs are written to `results/`:
-
-**Layer Outputs:**
-- `layer1_metrics.json`, `layer1_table2.csv`
-- `layer2_metrics.json`, `M_layer2.npy`
-- `layer3_metrics.json`, `layer3_energy_series.csv`
-
-**Article Outputs:**
-- `article0_kernel_summary.json` + 3 PNG figures
-- `article[1-6]_*.json` + 3 PNG figures each
-
----
-
-## Physical Constants
-
-| Parameter | Value | Unit |
-|-----------|-------|------|
-| H₀_CMB | 67.4 | km/s/Mpc |
-| H_local_obs | 73.0 | km/s/Mpc |
-| L_Hubble | 4285.0 | Mpc |
-| G | 4.302×10⁻⁹ | Mpc (km/s)²/M☉ |
-| β | 0.5 | dimensionless |
-| k_CMB | 0.001 | Mpc⁻¹ |
-| k_local | 0.05 | Mpc⁻¹ |
-
----
-
-## Key Formulas
-
-### Hubble Drift Definition (Consistent Throughout)
-
-$$\frac{\delta H}{H_0} = \frac{H_{\text{local}} - H_{\text{CMB}}}{H_{\text{CMB}}}$$
-
-**Positive when H_local > H_CMB** (as observed in the Hubble tension).
-
-### Projection Correction
-
-$$\eta(k; \sigma_0) = \exp\left(-\frac{(\sigma_0 L_H k)^2}{2}\right) - 1$$
-
-### Effective Hubble Rate
-
-$$H_{\text{eff}}(k) = H_{\text{bare}} \cdot \exp\left(-\frac{(\sigma_0 L_H k)^2}{2}\right)$$
-
-### Early Galaxy Enhancement
-
-$$\text{enhancement}(z) = 1 + \left|\eta\left(k_{\text{eff}}(z), \sigma_0\right)\right|$$
-
-with $k_{\text{eff}}(z) = 0.1 \cdot (1+z) / 10$ Mpc⁻¹
-
-### SMBH Seed Mass
-
-$$M_{\text{seed}} = \eta_{\text{BH}} \cdot \frac{4\pi}{3G} \cdot \Phi \cdot \sigma$$
-
-with η₀ = 10⁻⁶, δ_proj = 0.3
-
----
-
-## Article Results Summary
-
-### Article 1: Hubble Drift ✅
-
-| Observable | SORT Value | Observation | Match |
-|------------|------------|-------------|-------|
-| δH/H₀ | 0.0800 | 0.0831 | 96.3% |
-| H_local | 72.79 km/s/Mpc | 73.0 km/s/Mpc | 99.7% |
-
-### Article 2: Early Galaxies
-
-| z | k_eff [Mpc⁻¹] | η | Enhancement |
-|---|---------------|---|-------------|
-| 6 | 0.070 | −0.151 | **1.151** |
-| 8 | 0.090 | −0.237 | **1.237** |
-| 10 | 0.110 | −0.332 | **1.332** |
-| 12 | 0.130 | −0.431 | **1.431** |
-| 14 | 0.150 | −0.528 | **1.528** |
-
-### Article 3: SMBH Seeds
-
-| z | σ_com [Mpc] | η_BH | M_min [M☉] | M_typ [M☉] | M_max [M☉] |
-|---|-------------|------|------------|------------|------------|
-| 7 | 1.021 | 8×10⁻⁷ | 7.95×10³ | 4.79×10⁷ | 1.44×10⁸ |
-| 10 | 0.743 | 10⁻⁶ | 7.23×10³ | 5.99×10⁷ | 1.80×10⁸ |
-| 15 | 0.511 | 10⁻⁶ | 4.97×10³ | 5.99×10⁷ | 1.80×10⁸ |
-| 20 | 0.389 | 10⁻⁶ | 3.79×10³ | 5.99×10⁷ | 1.80×10⁸ |
-
-**Result:** Seed masses in range 10⁴–10⁸ M☉, consistent with DCBH scenarios.
-
-### Articles 4–6: Legacy (Structural Demonstrations)
-
-| Article | Observable | Value |
-|---------|------------|-------|
-| 4 | Hemispheric Asymmetry | 0.79% |
-| 5 | BAO Wiggles | Present |
-| 6 | ξ(r > 100 Mpc) | > 0.1 |
-
----
-
-## Replay Instructions
-
-### Requirements
-
-- Python ≥ 3.11
-- Required packages:
-  ```
-  numpy scipy pyfftw pyyaml matplotlib
-  ```
-
-Installation:
-```bash
-pip install numpy scipy pyfftw pyyaml matplotlib
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                      APPLICATION LAYER                          │
+│  ApplicationContext │ ApplicationRequirements │ ApplicationResult│
+├─────────────────────────────────────────────────────────────────┤
+│                        DOMAIN LAYER                             │
+│  ai-systems │ complex-systems │ quantum-systems │ cosmology     │
+│                      │ experimental │                           │
+├─────────────────────────────────────────────────────────────────┤
+│                         CORE LAYER                              │
+│  Operators (22) │ Kernel │ Projector │ Invariants │ Schema      │
+├─────────────────────────────────────────────────────────────────┤
+│                      SUPPORT LAYER                              │
+│  Catalog │ Evidence │ Control │ Capabilities │ Engine Hooks     │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-### Replay Steps
+### Frozen Components
+
+- Core layer with invariant operator, kernel, and projector contracts
+- Isolated domain layers with canonical domain identifiers
+- Application layer without operator or kernel logic
+- Strict public/private catalog separation
+- Declarative control semantics (`observe`, `intervene`, `validate`)
+- Append-only evidence and audit structures
+- Capability registry with silent no-op behavior by default
+
+---
+
+## Repository Structure
+
+```
+SORT_mock_v4/
+├── README.md                    # This file
+├── pyproject.toml               # PEP 517/518 build configuration
+├── catalog/
+│   ├── catalog.public.json      # Public application catalog (18 entries)
+│   ├── catalog_loader.py        # Re-export wrapper
+│   └── catalog_schema.py        # Re-export wrapper
+├── control/
+│   ├── control_intent.py        # Re-export wrapper
+│   └── intervention_descriptor.py
+├── evidence/
+│   └── evidence_bundle.py       # Re-export wrapper
+├── demos/
+│   ├── ai-systems/
+│   ├── complex-systems/
+│   ├── cosmology/
+│   └── quantum-systems/
+├── src/
+│   └── sort/
+│       ├── __init__.py
+│       ├── application/
+│       │   ├── application_module.py      # ApplicationContext
+│       │   ├── application_requirements.py
+│       │   ├── application_result.py
+│       │   └── examples/
+│       │       └── demo_application.py    # Reference implementation
+│       ├── capabilities/
+│       │   └── registry.py                # Silent no-op registry
+│       ├── catalog/
+│       │   ├── catalog_loader.py
+│       │   └── catalog_schema.py
+│       ├── control/
+│       │   ├── control_intent.py
+│       │   └── intervention_descriptor.py
+│       ├── core/
+│       │   ├── evaluation.py
+│       │   ├── internal_validation.py
+│       │   ├── kernel.py
+│       │   ├── operators.py               # 22 operators, σ₀ = 0.00190643
+│       │   ├── projector.py
+│       │   ├── result.py
+│       │   └── schema.py                  # SCHEMA_VERSION = "0.5.1"
+│       ├── domains/
+│       │   ├── ai-systems/
+│       │   ├── complex-systems/
+│       │   ├── cosmology/
+│       │   ├── experimental/
+│       │   ├── quantum-systems/
+│       │   └── domain_loader.py           # Thin loading wrapper
+│       ├── engine/
+│       │   ├── hooks.py
+│       │   └── internal_validation_hook.py
+│       └── evidence/
+│           └── evidence_bundle.py
+└── tests/
+    ├── application/
+    ├── catalog/
+    ├── core/
+    ├── domains/
+    └── evidence/
+```
+
+### Why `src/` Layout?
+
+The `src/` layout ensures that:
+
+1. **Import isolation** — Tests import the installed package, not local source
+2. **Build reproducibility** — `pip install -e .` behaves identically to production
+3. **Namespace clarity** — The `sort` package is unambiguously located
+
+---
+
+## Quickstart
+
+### Prerequisites
+
+- Python 3.10+ (tested with 3.13)
+- pip 21.0+
+
+### Installation
 
 ```bash
-# 1. Change into directory
-cd SORT_MOCK_v3
+# Clone or extract the repository
+cd SORT_mock_v4
 
-# 2. Run Layer I (algebraic diagnostics)
-python 01_layer1.py
-# → results/layer1_metrics.json, layer1_table2.csv
+# Install in editable mode
+python -m pip install -e .
 
-# 3. Run Layer II (σ₀ calibration + kernel + validation)
-python 02_layer2.py
-# → results/layer2_metrics.json, M_layer2.npy
+# Install test dependencies
+python -m pip install -U pytest
+```
 
-# 4. Run Layer III (energy evolution)
-python 03_layer3.py
-# → results/layer3_metrics.json, layer3_energy_series.csv
+### Run Tests
 
-# 5. Generate kernel figures
-python 04_layer2_plot.py
-# → article0_fig[1-3]_kernel_*.png
+```bash
+# Quick test run
+python -m pytest -q
 
-# 6. Generate article outputs
-python 11_article1_hubble_drift.py
-python 12_article2_early_galaxies.py
-python 13_article3_smbh_seeds.py
+# Verbose with coverage
+python -m pytest -v --tb=short
+```
 
-# 7. Optional: Legacy articles
-python 14_article4_cmb_anomalies.py
-python 15_article5_dark_baryon_oscillator.py
-python 16_article6_intergalactic_bridges.py
+Expected output:
+```
+.....                                                            [100%]
+5 passed in 0.XXs
 ```
 
 ---
 
-## Technical Notes
+## Smoke Checks
 
-1. **No recalibration in articles:** Modules 11–16 only consume Layer I–III outputs.
+The following commands verify core functionality without running full tests.
 
-2. **σ₀ calibration is exact and stable:** Typical value σ₀ ≈ 0.00191.
+### 1. Load Public Catalog
 
-3. **SMBH model fully corrected:** η₀ = 10⁻⁶, δ_proj = 0.3 yields physically realistic seed masses.
+```bash
+python -c "
+from sort.catalog.catalog_loader import CatalogLoader
+from pathlib import Path
 
-4. **Phase test clarification:** The fast test (ε = 9.72) is invalid due to `np.flip()` boundary artifacts. The explicit test (ε = 0.0) confirms correct physics.
+loader = CatalogLoader(Path('.'))
+catalog = loader.load_public_catalog()
+print(f'Schema: {catalog.schema_version}')
+print(f'Applications: {len(catalog.applications)}')
+for app in catalog.applications[:3]:
+    print(f'  - {app.application_id} ({app.maturity})')
+"
+```
 
-5. **For HPC execution:** Only `05_config.yaml` needs adjustment (e.g., larger N, different box size). All scripts run identically on cluster.
+Expected output:
+```
+Schema: 0.5.1
+Applications: 18
+  - ai.01 (public)
+  - ai.02 (public)
+  - ai.03 (public)
+```
+
+### 2. Domain Stub Run
+
+```bash
+python -c "
+from sort.application.application_module import ApplicationContext
+from pathlib import Path
+
+ctx = ApplicationContext(repo_root=Path('.'))
+domain = ctx.load_domain_module('ai-systems')
+print(f'Domain loaded: {domain.DOMAIN_ID}')
+"
+```
+
+Expected output:
+```
+Domain loaded: ai-systems
+```
+
+### 3. Capability No-Op Check
+
+```bash
+python -c "
+from sort.capabilities.registry import CapabilityRegistry
+
+registry = CapabilityRegistry()
+handle = registry.get('nonexistent.capability')
+result = handle.execute({'test': 'data'})
+print(f'Handle enabled: {handle.enabled}')
+print(f'Execute result: {result}')
+"
+```
+
+Expected output:
+```
+Handle enabled: False
+Execute result: None
+```
+
+### 4. Demo Application
+
+```bash
+python -m sort.application.examples.demo_application
+```
+
+Expected output:
+```
+Application: demo.stub
+Status: stub
+Schema: 0.5.1
+Evidence items: 1
+```
 
 ---
 
-## Patches Applied (v3.0.0-final)
+## Verification and Test Status
 
-| Patch | Change | Effect |
-|-------|--------|--------|
-| 1 | Phase test: `all_passed = explicit_result['passed']` | Fast test diagnostic only |
-| 2 | δH target: 0.08 → 0.0831 | Exact Hubble tension |
-| 3 | SMBH: η₀=10⁻⁶, δ_proj=0.3 | Realistic seed masses |
-| 4 | Enhancement: kernel-based formula | Structural coupling to σ₀ |
+All structural and contract tests pass successfully.
 
----
+### Verified Properties
 
-## Citation
+| Property | Status |
+|----------|--------|
+| Module importability | ✅ Verified |
+| Domain isolation | ✅ Enforced |
+| Dynamic loader stability | ✅ Tested |
+| Public catalog enforcement | ✅ Verified |
+| Capability registry no-op semantics | ✅ Tested |
+| Evidence bundle immutability | ✅ Enforced |
+| Control mode validation | ✅ Tested |
 
-When using MOCK v3 results, please cite:
-
-> SORT Collaboration (2025). Supra-Omega Resonance Theory: Numerical Mock Environment v3. Whitepaper v5.
-
----
-
-## Contact
-
-For questions regarding the numerical implementation, contact the SORT development team.
+Tests validate **structure and contracts**, not numerical correctness.
 
 ---
 
-*Generated: 30 November 2025*  
-*Seed: 117666*  
-*Validated: All relevant tests passed*
+## Catalog Rules
+
+### Public Catalog (`catalog.public.json`)
+
+- Contains **only** entries with `"maturity": "public"`
+- Schema version must be `"0.5.1"`
+- All 18 public applications are production-ready contracts
+
+### Private Catalog (`catalog.private.json`)
+
+- **Not included** in public releases
+- Contains experimental and internal entries
+- Must be created locally if needed for development
+
+### Maturity Filtering
+
+```python
+# CatalogLoader automatically filters to public-only
+catalog = loader.load_public_catalog()
+assert all(app.maturity == "public" for app in catalog.applications)
+```
+
+---
+
+## Domain Isolation Rules
+
+### Allowed Operations
+
+| Operation | Permitted |
+|-----------|-----------|
+| Import from `sort.core` | ✅ Yes |
+| Read operator weights | ✅ Yes |
+| Compute observables | ✅ Yes |
+| Create evidence items | ✅ Yes |
+
+### Forbidden Operations
+
+| Operation | Permitted |
+|-----------|-----------|
+| Modify core state | ❌ No |
+| Import other domains | ❌ No |
+| Direct file I/O in domains | ❌ No |
+| Network access in domains | ❌ No |
+
+### Hyphenated Domain Loading
+
+Domains with hyphenated names (e.g., `ai-systems`, `quantum-systems`) cannot be imported via standard Python import statements. Use the file-based loader:
+
+```python
+from sort.application.application_module import ApplicationContext
+from pathlib import Path
+
+ctx = ApplicationContext(repo_root=Path('.'))
+ai_domain = ctx.load_domain_module('ai-systems')
+```
+
+### Canonical Domain IDs
+
+| Domain ID | Directory | Description |
+|-----------|-----------|-------------|
+| `ai-systems` | `domains/ai-systems/` | AI safety and alignment |
+| `complex-systems` | `domains/complex-systems/` | Emergent phenomena |
+| `quantum-systems` | `domains/quantum-systems/` | Quantum coherence |
+| `cosmology` | `domains/cosmology/` | Cosmological applications |
+| `experimental` | `domains/experimental/` | Reserved stub domain |
+
+---
+
+## Experimental Domain
+
+The `experimental` domain is a **stub-only placeholder**:
+
+- Provides capability hook infrastructure
+- Contains no implementations
+- Reserved for future extensions
+- All entries have `maturity: "experimental"`
+
+```python
+# Experimental domain follows the same contract
+exp_domain = ctx.load_domain_module('experimental')
+assert exp_domain.DOMAIN_ID == 'experimental'
+```
+
+---
+
+## Core Invariants
+
+These values are **immutable** across all SORT v6 implementations:
+
+| Constant | Value | Description |
+|----------|-------|-------------|
+| `N_OPERATORS` | 22 | Total operator count |
+| `SCHEMA_VERSION` | "0.5.1" | API contract version |
+| `σ₀` | 0.00190643 | Kernel base width |
+| `κ(0)` | 1.0 | Kernel normalization |
+
+---
+
+## Control Semantics
+
+### Valid Modes
+
+| Mode | Description |
+|------|-------------|
+| `observe` | Read-only analysis, no state changes |
+| `intervene` | Modify system state via descriptors |
+| `validate` | Verify invariants without execution |
+
+### Usage
+
+```python
+from sort.control.control_intent import ControlIntent
+
+intent = ControlIntent(mode="observe")
+# intent = ControlIntent(mode="invalid")  # Raises ValueError
+```
+
+---
+
+## Evidence Bundles
+
+Evidence bundles provide immutable audit trails:
+
+```python
+from sort.evidence.evidence_bundle import EvidenceBundle, EvidenceItem
+
+bundle = EvidenceBundle(
+    schema_version="0.5.1",
+    application_id="my.app"
+)
+
+bundle = bundle.with_item(EvidenceItem(
+    evidence_id="step.001",
+    kind="diagnostic",
+    payload={"value": 42}
+))
+```
+
+---
+
+## API Reference
+
+### Core Modules
+
+| Module | Primary Exports |
+|--------|-----------------|
+| `sort.core.operators` | `OperatorStub`, `N_OPERATORS`, `SIGMA_0` |
+| `sort.core.kernel` | `Kernel` |
+| `sort.core.projector` | `Projector` |
+| `sort.core.schema` | `SCHEMA_VERSION` |
+
+### Application Layer
+
+| Module | Primary Exports |
+|--------|-----------------|
+| `sort.application.application_module` | `ApplicationContext` |
+| `sort.application.application_requirements` | `ApplicationRequirements` |
+| `sort.application.application_result` | `ApplicationResult` |
+
+### Catalog & Evidence
+
+| Module | Primary Exports |
+|--------|-----------------|
+| `sort.catalog.catalog_loader` | `CatalogLoader` |
+| `sort.catalog.catalog_schema` | `CatalogEntry`, `CatalogDocument` |
+| `sort.evidence.evidence_bundle` | `EvidenceBundle`, `EvidenceItem` |
+
+### Control & Capabilities
+
+| Module | Primary Exports |
+|--------|-----------------|
+| `sort.control.control_intent` | `ControlIntent` |
+| `sort.control.intervention_descriptor` | `InterventionDescriptor` |
+| `sort.capabilities.registry` | `CapabilityRegistry`, `CapabilityHandle` |
+
+---
+
+## Relationship to Whitepaper Version 6
+
+With the completion of MOCK v4:
+
+- Whitepaper Version 6 may **fully reference** the MOCK v4 architecture
+- The architectural structure may be treated as **given and stable**
+- No new MOCK version is required unless:
+  - A concrete execution engine is introduced
+  - Hardware or HPC runs are implemented
+  - Numerical or runtime pipelines are added
+
+MOCK v4 is the **canonical structural baseline** for Whitepaper Version 6.
+
+---
+
+## Future Development Path
+
+### When a New MOCK Version Is Required
+
+| Scenario | Action |
+|----------|--------|
+| Execution engine implementation | MOCK v5 or SORT v6 Engine |
+| HPC/hardware integration | Separate implementation layer |
+| Numerical runtime pipelines | Domain-specific execution modules |
+
+### When MOCK v4 Remains Sufficient
+
+| Scenario | Action |
+|----------|--------|
+| Whitepaper documentation | Reference MOCK v4 directly |
+| API contract validation | Use existing tests |
+| External review | Provide MOCK v4 as-is |
+| Patent documentation | MOCK v4 demonstrates prior art |
+
+---
+
+## Contributing
+
+This is a public skeleton for review purposes. For contributions or inquiries:
+
+1. Review the domain isolation rules
+2. Ensure all tests pass (`pytest -q`)
+3. Maintain schema version compatibility
+4. Document any contract changes
+
+---
+
+## License
+
+Copyright © 2024-2025 Gregor Wegener. All rights reserved.
+
+This public skeleton is released for review and evaluation purposes only.
+Proprietary computational implementations remain confidential.
+
+---
+
+## Changelog
+
+### v0.5.1 Final (2024-12)
+
+- **Architecture freeze** — All components final and stable
+- Initial public skeleton release
+- 22 operator stubs with idempotency contracts
+- Five canonical domains with isolation
+- Public catalog with 18 entries
+- Complete test coverage for contracts
+- Re-export wrappers for root-level access
+- Demo application reference implementation
+- Comprehensive documentation for external review
+
+---
+
+## Final Statement
+
+**MOCK Version 4 is complete.**
+
+The architecture is final. The boundaries are intentional. The structure is stable.
+
+Whitepaper Version 6 may proceed directly on this basis.
