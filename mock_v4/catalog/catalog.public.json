@@ -1,0 +1,241 @@
+{
+  "schema_version": "0.5.1",
+  "generated_at_utc": "2025-12-24T11:21:16Z",
+  "applications": [
+    {
+      "application_id": "ai.01",
+      "domain_id": "ai-systems",
+      "maturity": "public",
+      "title": "Interconnect Stability Control",
+      "one_liner": "Structural stability diagnostics and control for interconnect induced performance collapse.",
+      "field_of_use": [
+        "infrastructure"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": true,
+      "requires_control_semantics": true
+    },
+    {
+      "application_id": "ai.02",
+      "domain_id": "ai-systems",
+      "maturity": "public",
+      "title": "Structural Drift Diagnostics for AI Workloads",
+      "one_liner": "Detect structural drift across training and inference pipelines beyond metrics and telemetry.",
+      "field_of_use": [
+        "ai-systems"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "ai.03",
+      "domain_id": "ai-systems",
+      "maturity": "public",
+      "title": "Safety and Risk Surfaces under Projection",
+      "one_liner": "Projection based risk surfaces for advanced AI systems, stability classes and failure modes.",
+      "field_of_use": [
+        "safety-critical"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "ai.04",
+      "domain_id": "ai-systems",
+      "maturity": "public",
+      "title": "Runtime Control Coherence",
+      "one_liner": "Diagnose and reduce incoherence between scheduler, runtime and model control loops.",
+      "field_of_use": [
+        "infrastructure"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": true,
+      "requires_control_semantics": true
+    },
+    {
+      "application_id": "ai.05",
+      "domain_id": "ai-systems",
+      "maturity": "public",
+      "title": "Data and Retrieval Structural Integrity",
+      "one_liner": "Structural integrity diagnostics for RAG pipelines and retrieval induced drift.",
+      "field_of_use": [
+        "ai-systems"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cx.01",
+      "domain_id": "complex-systems",
+      "maturity": "public",
+      "title": "Pipeline Stability Control",
+      "one_liner": "Drift and reproducibility diagnostics for distributed dataflow pipelines.",
+      "field_of_use": [
+        "infrastructure"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": true,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cx.02",
+      "domain_id": "complex-systems",
+      "maturity": "public",
+      "title": "Emergent Stability under Projection",
+      "one_liner": "Detect stability islands and regime shifts under projection and aggregation.",
+      "field_of_use": [
+        "research"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cx.03",
+      "domain_id": "complex-systems",
+      "maturity": "public",
+      "title": "Network Function Graph Stability",
+      "one_liner": "Structural stability metrics for function graphs, cascades and recovery.",
+      "field_of_use": [
+        "infrastructure"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": true,
+      "requires_control_semantics": true
+    },
+    {
+      "application_id": "cx.04",
+      "domain_id": "complex-systems",
+      "maturity": "public",
+      "title": "Detection Graph Drift Control",
+      "one_liner": "Drift control for detection graphs, reducing false positives and mode collapse.",
+      "field_of_use": [
+        "safety-critical"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "qs.01",
+      "domain_id": "quantum-systems",
+      "maturity": "public",
+      "title": "Noise Filtering and Operator Diagnostics",
+      "one_liner": "Structural noise filtering and diagnostics for operator chains and channels.",
+      "field_of_use": [
+        "quantum-systems"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "qs.02",
+      "domain_id": "quantum-systems",
+      "maturity": "public",
+      "title": "Error Correction Diagnostics",
+      "one_liner": "Structural criteria for error correction performance and failure detection.",
+      "field_of_use": [
+        "quantum-systems"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "qs.03",
+      "domain_id": "quantum-systems",
+      "maturity": "public",
+      "title": "Hybrid Quantum Workflow Stability",
+      "one_liner": "Stability diagnostics for hybrid quantum classical workflows and scheduling.",
+      "field_of_use": [
+        "infrastructure",
+        "quantum-systems"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": true,
+      "requires_control_semantics": true
+    },
+    {
+      "application_id": "cosmo.01",
+      "domain_id": "cosmology",
+      "maturity": "public",
+      "title": "Early Galaxies",
+      "one_liner": "Explain high redshift massive galaxy candidates via projection stabilized structure formation.",
+      "field_of_use": [
+        "research"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cosmo.02",
+      "domain_id": "cosmology",
+      "maturity": "public",
+      "title": "Early SMBH Seeds",
+      "one_liner": "Reconcile early supermassive black holes via kernel controlled growth and drift regimes.",
+      "field_of_use": [
+        "research"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cosmo.03",
+      "domain_id": "cosmology",
+      "maturity": "public",
+      "title": "Hubble Drift",
+      "one_liner": "Model scale dependent H0 as a projection drift signature across datasets.",
+      "field_of_use": [
+        "research"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cosmo.04",
+      "domain_id": "cosmology",
+      "maturity": "public",
+      "title": "CMB Anomalies",
+      "one_liner": "Treat large scale anomalies as projection level structural artifacts under kernel regimes.",
+      "field_of_use": [
+        "research"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cosmo.05",
+      "domain_id": "cosmology",
+      "maturity": "public",
+      "title": "Dark Baryon Oscillator",
+      "one_liner": "Coupled sector surrogate model for tension patterns via drift coupled response.",
+      "field_of_use": [
+        "research"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    },
+    {
+      "application_id": "cosmo.06",
+      "domain_id": "cosmology",
+      "maturity": "public",
+      "title": "Intergalactic Bridges",
+      "one_liner": "Filament baryons and bridges as stable projections of operator adjacency under kernel coupling.",
+      "field_of_use": [
+        "research"
+      ],
+      "required_evidence_level": "full",
+      "requires_infrastructure_context": false,
+      "requires_control_semantics": false
+    }
+  ]
+}
