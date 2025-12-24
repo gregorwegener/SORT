@@ -265,6 +265,31 @@ python 16_article6_intergalactic_bridges.py
 | 3 | SMBH: η₀=10⁻⁶, δ_proj=0.3 | Realistic seed masses |
 | 4 | Enhancement: kernel-based formula | Structural coupling to σ₀ |
 
+
+---
+
+## License
+
+Copyright © 2024-2025 Gregor Wegener. All rights reserved.
+
+This public skeleton is released for review and evaluation purposes only.
+Proprietary computational implementations remain confidential.
+This repository is licensed under the MIT License for code only.
+No patent rights are granted or implied.
+Patent rights covering underlying methods, systems, and architectures are expressly reserved.
+
+Patent Notice
+
+This repository provides a public reference implementation, architectural mock, 
+and validation framework related to one or more pending patent applications.
+
+The MIT License applies to the software code contained herein only.
+No license is granted, implied or otherwise, to any patent rights,
+except as required by applicable law.
+
+Commercial use of the patented methods, systems, or architectures
+may require a separate patent license.
+
 ---
 
 ## Citation
