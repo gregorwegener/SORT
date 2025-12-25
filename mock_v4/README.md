@@ -615,7 +615,7 @@ This is a public skeleton for review purposes. For contributions or inquiries:
 
 ## License
 
-Copyright © 2024-2025 Gregor Wegener. All rights reserved.
+Copyright © 2025-2026 Gregor Wegener. All rights reserved.
 
 This public skeleton is released for review and evaluation purposes only.
 Proprietary computational implementations remain confidential.
