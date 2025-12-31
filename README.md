@@ -36,6 +36,21 @@ MOCK v4 is **not** an execution framework, **not** a simulation environment, and
 
 ---
 
+## Architecture Freeze and Archive Hash
+
+MOCK v4 represents the final and closed public reference architecture for SORT v6.
+To guarantee immutability and reproducibility, the release archive has been cryptographically frozen.
+
+**Archive:** `SORT_mock_v4.zip`  
+**Architecture status:** Final / Closed  
+**Hash algorithm:** SHA-256  98E55A6883B16E2BB21D1E0CFC36BC98BD2750F5119FC8F8E46DFB9A77983A85
+
+
+This checksum defines the canonical reference state of MOCK v4.
+All future work builds on this architecture without structural modification.
+
+---
+
 ## Relationship Between MOCK v3 and MOCK v4
 
 MOCK Version 3 and MOCK Version 4 serve **fundamentally different but complementary roles** within the SORT research program.
