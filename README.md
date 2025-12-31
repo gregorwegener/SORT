@@ -43,7 +43,9 @@ To guarantee immutability and reproducibility, the release archive has been cryp
 
 **Archive:** `SORT_mock_v4.zip`  
 **Architecture status:** Final / Closed  
-**Hash algorithm:** SHA-256  98E55A6883B16E2BB21D1E0CFC36BC98BD2750F5119FC8F8E46DFB9A77983A85
+**Hash algorithm:** SHA-256  
+
+98E55A6883B16E2BB21D1E0CFC36BC98BD2750F5119FC8F8E46DFB9A77983A85
 
 
 This checksum defines the canonical reference state of MOCK v4.
