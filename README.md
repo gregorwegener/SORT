@@ -157,6 +157,24 @@ These omissions are **intentional design constraints**, not missing features.
 
 ---
 
+## Public Application Catalog
+
+The Public Application Catalog defines the complete set of applications within the SORT framework.  
+Each application represents a distinct analytical or diagnostic perspective that can serve as a basis for articles, white papers, and architectural analysis.
+
+The catalog answers a single question: **What applications exist in the SORT framework?**  
+It does not define products, offerings, implementations, licensing terms, or commercial availability.
+
+The catalog is intentionally **complete** and **domain-spanning**, including applied infrastructure topics as well as foundational research domains such as cosmology and quantum systems. Inclusion in the catalog does not imply monetization, assessment readiness, or engagement availability.
+
+The JSON catalog is the canonical, machine-readable source of truth.  
+A separate Markdown overview provides a fully enumerated, executive-readable representation of the same applications without technical detail.
+
+The Public Application Catalog is independent of internal IP strategy, licensing models, and commercial decisions, which are defined in separate, non-public documents.
+
+
+---
+
 ## Architecture Freeze
 
 The following architecture is **final, stable, and released**:
