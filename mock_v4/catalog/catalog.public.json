@@ -1,5 +1,12 @@
 [
   {
+    "application_id": "sov.01",
+    "domain_id": "sovereign",
+    "maturity": "public",
+    "title": "Sovereign Infrastructure Stability & Bottleneck Risk Control",
+    "one_liner": "Strategic structural assessment of critical infrastructure as coupled system, modeling failure costs, time risks, and sovereignty implications."
+  },
+  {
     "application_id": "ai.01",
     "domain_id": "ai-systems",
     "maturity": "public",
