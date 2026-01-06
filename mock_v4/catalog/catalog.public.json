@@ -7,6 +7,13 @@
     "one_liner": "Strategic structural assessment of critical infrastructure as coupled system, modeling failure costs, time risks, and sovereignty implications."
   },
   {
+    "application_id": "sov.02",
+    "domain_id": "sovereign",
+    "maturity": "public",
+    "title": "Structural Vendor Lock-In Stability and Exit Risk Assessment",
+    "one_liner": "Structural analysis of dependencies that jeopardize stability and controllability during vendor transitions or multi-vendor setups, translating technical dependencies into strategic risks."
+  },
+  {
     "application_id": "ai.01",
     "domain_id": "ai-systems",
     "maturity": "public",
@@ -154,6 +161,69 @@
     "one_liner": "Formal analysis of coupling between SDN control plane, cloud interconnects, and application runtime stability."
   },
   {
+    "application_id": "ai.22",
+    "domain_id": "ai-systems",
+    "maturity": "public",
+    "title": "Structural Architecture Stability Diagnostics for Large-Scale AI Models",
+    "one_liner": "Pre-training and early-training stability analysis for large-scale AI model architectures, identifying structural risk from information flow, residual paths, and routing mechanisms."
+  },
+  {
+    "application_id": "ai.23",
+    "domain_id": "ai-systems",
+    "maturity": "public",
+    "title": "Structural Rollback and Roll-Forward Stability Control",
+    "one_liner": "Structural assessment of rollback and roll-forward mechanisms in large distributed systems, addressing partial failures, inconsistent states, and recovery-induced instability."
+  },
+  {
+    "application_id": "ai.24",
+    "domain_id": "ai-systems",
+    "maturity": "public",
+    "title": "Structural Cost Amplification and Budget Explosion Diagnostics",
+    "one_liner": "Structural analysis of cost escalation through nonlinear control coupling, feedback loops, retry logic, and agentic self-amplification independent of pricing logic."
+  },
+  {
+    "application_id": "ai.25",
+    "domain_id": "ai-systems",
+    "maturity": "public",
+    "title": "Deterministic Inference Control Stability Assessment",
+    "one_liner": "Structural evaluation of control, stability, and scaling implications when transitioning from dynamic GPU inference to deterministic LPU-based inference architectures."
+  },
+  {
+    "application_id": "ai.26",
+    "domain_id": "ai-systems",
+    "maturity": "restricted",
+    "title": "Cross-Domain Control Boundary Stability Diagnostics",
+    "one_liner": "Analysis of structural instabilities at control boundaries between organizational, logical, or infrastructural domains."
+  },
+  {
+    "application_id": "ai.27",
+    "domain_id": "ai-systems",
+    "maturity": "restricted",
+    "title": "Stability Degradation under Partial Observability",
+    "one_liner": "Assessment of structural stability in systems with limited observability due to security, privacy, or organizational silos."
+  },
+  {
+    "application_id": "ai.28",
+    "domain_id": "ai-systems",
+    "maturity": "restricted",
+    "title": "Structural Failure Containment and Blast Radius Control",
+    "one_liner": "Analysis of whether and how structural failures remain contained or escalate system-wide through coupling, projection, and closure mechanisms."
+  },
+  {
+    "application_id": "ai.29",
+    "domain_id": "ai-systems",
+    "maturity": "public",
+    "title": "Structural Continual Learning Stability Assessment",
+    "one_liner": "Structural assessment of stability, control, and forgetting risks in post-hoc model adaptation and incremental learning, treating catastrophic forgetting as structural projection break rather than data problem."
+  },
+  {
+    "application_id": "ai.30",
+    "domain_id": "ai-systems",
+    "maturity": "public",
+    "title": "Structural Stability Evidence Pack for Assessments",
+    "one_liner": "Standardized evidence and assurance structure for stability claims, enabling formal justification and audit-readiness without system implementation details."
+  },
+  {
     "application_id": "cx.01",
     "domain_id": "complex-systems",
     "maturity": "public",
@@ -182,6 +252,34 @@
     "one_liner": "Drift control for detection graphs, reducing false positives and mode collapse."
   },
   {
+    "application_id": "cx.05",
+    "domain_id": "complex-systems",
+    "maturity": "public",
+    "title": "Service Mesh Coupling Stability Assessment",
+    "one_liner": "Structural stability analysis of service mesh, east-west traffic, policy coupling, and dependency graphs in microservice landscapes."
+  },
+  {
+    "application_id": "cx.06",
+    "domain_id": "complex-systems",
+    "maturity": "public",
+    "title": "Autoscaling Oscillation and Phase Transition Diagnostics",
+    "one_liner": "Structural analysis of auto-scaling, queueing, backpressure, and control loop instabilities including oscillations, thundering herd, flapping, and regime shifts."
+  },
+  {
+    "application_id": "cx.07",
+    "domain_id": "complex-systems",
+    "maturity": "public",
+    "title": "Cascading Failure Containment for System of Systems",
+    "one_liner": "Structural assessment of containment capability, blast radius, and propagation paths in coupled platform systems."
+  },
+  {
+    "application_id": "cx.08",
+    "domain_id": "complex-systems",
+    "maturity": "public",
+    "title": "Infrastructure Auditability of Complex Control Planes",
+    "one_liner": "Evidence and auditability layer for control regimes in complex platforms, enabling formal justification without implementation details."
+  },
+  {
     "application_id": "qs.01",
     "domain_id": "quantum-systems",
     "maturity": "public",
@@ -201,6 +299,27 @@
     "maturity": "public",
     "title": "Hybrid Quantum Workflow Stability",
     "one_liner": "Stability diagnostics for hybrid quantum classical workflows and scheduling."
+  },
+  {
+    "application_id": "qs.04",
+    "domain_id": "quantum-systems",
+    "maturity": "public",
+    "title": "Calibration Drift and Retuning Stability Assessment",
+    "one_liner": "Structural assessment of drift, recalibration, and retuning loops including risks that local stabilization causes global instability."
+  },
+  {
+    "application_id": "qs.05",
+    "domain_id": "quantum-systems",
+    "maturity": "public",
+    "title": "Error Burst Emergence and Regime Shift Diagnostics",
+    "one_liner": "Structural detection of error burst regimes and sudden regime shifts in systems showing superficially stable error rates."
+  },
+  {
+    "application_id": "qs.06",
+    "domain_id": "quantum-systems",
+    "maturity": "public",
+    "title": "Evidence of Calibration Stability and Control Integrity",
+    "one_liner": "Evidence and assurance layer for calibration stability and control integrity over time, enabling formal justification for quantum system deployments."
   },
   {
     "application_id": "cosmo.01",
