@@ -430,7 +430,7 @@ Tests validate **structure and contracts**, not numerical correctness.
 
 - Contains **only** entries with `"maturity": "public"`
 - Schema version must be `"0.5.1"`
-- All 18 public applications are production-ready contracts
+- All 52 public applications are production-ready contracts
 
 ### Private Catalog (`catalog.private.json`)
 
