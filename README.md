@@ -2,7 +2,7 @@
 
 **Version:** 0.5.1  
 **Status:** Final Release  
-**Architecture Freeze:** 2024-12  
+**Architecture Freeze:** 2025-12  
 **License:** Proprietary (Gregor Wegener)
 
 ---
@@ -674,7 +674,7 @@ may require a separate patent license.
 
 ## Changelog
 
-### v0.5.1 Final (2024-12)
+### v0.5.1 Final (2025-12)
 
 - **Architecture freeze** — All components final and stable
 - Initial public skeleton release
