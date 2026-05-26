@@ -4,6 +4,7 @@
 **Status:** Final Release  
 **Architecture Freeze:** 2025-12  
 **Public Catalog:** v6.2, February 2026  
+**Current Evidence Release:** SORT-AI Core-3 Kernel-Damping Evidence Release v1  
 **License:** Proprietary (Gregor Wegener)
 
 ---
@@ -24,7 +25,7 @@ MOCK v4 represents the final and closed public reference architecture for SORT v
 
 **Archive:** `SORT_mock_v4.zip`  
 **Architecture status:** Final / Closed  
-**Hash algorithm:** SHA-256  
+**Hash algorithm:** SHA-256
 
 ```text
 98E55A6883B16E2BB21D1E0CFC36BC98BD2750F5119FC8F8E46DFB9A77983A85
@@ -133,6 +134,49 @@ The JSON catalog is the canonical machine-readable source of truth. Markdown fil
 
 ---
 
+## Evidence Releases
+
+Evidence releases provide reproducible analysis-layer artefacts that operate on top of the frozen MOCK v4 reference architecture. They are not MOCK versions, do not modify the MOCK v4 core, and do not imply production deployment or empirical benchmarking.
+
+### SORT-AI Core-3 Kernel-Damping Evidence Release v1
+
+| Field | Value |
+|-------|-------|
+| Release path | `evidence_releases/sort_ai_core3_kernel_damping_v1/` |
+| Release status | Scaffold prepared for extracted ZIP contents |
+| Applications | `AI.01`, `AI.04`, `AI.13` |
+| Coupling axes | physical/interconnect, logical/runtime-control, semantic/agentic |
+| Kernel parameter | `sigma0 = 0.00190643` |
+| Reference architecture | MOCK v4 frozen structural reference |
+| Evidence level | analysis-layer structural reproducibility |
+
+The intended claim is narrow:
+
+```text
+The Core-3 evidence release provides a reproducible analysis-layer kernel-damping protocol for declared SORT-AI risk-transition scenarios under the canonical SORT kernel scale parameter sigma0 = 0.00190643.
+```
+
+The release does **not** claim production deployment, empirical benchmarking, vendor-specific measurement, or execution by MOCK v4.
+
+After the extracted bundle contents are committed, the expected reproduction command is:
+
+```bash
+cd evidence_releases/sort_ai_core3_kernel_damping_v1
+python scripts/run_all.py
+```
+
+Expected relation:
+
+```text
+MOCK v4 frozen architecture
+  -> SORT-AI Core-3 evidence protocol
+  -> GitHub Release
+  -> Zenodo DOI
+  -> Technical Note citation
+```
+
+---
+
 ## Architecture Freeze
 
 The following architecture is final, stable, and released:
@@ -186,6 +230,16 @@ mock_v4/
 │   ├── engine/
 │   └── evidence/
 └── tests/
+
+evidence_releases/
+└── sort_ai_core3_kernel_damping_v1/
+    ├── README.md
+    ├── manifest.json
+    ├── data/
+    ├── docs/
+    ├── scripts/
+    ├── outputs_expected/
+    └── source_material/
 ```
 
 ---
@@ -285,24 +339,6 @@ Applications: 107
 
 ---
 
-## Evidence Bundles
-
-Evidence bundles provide immutable audit trails. Future evidence protocols may be added as separate validation or evidence-layer releases on top of MOCK v4.
-
-A future evidence release may therefore use the following relation:
-
-```text
-MOCK v4 frozen architecture
-  -> validation/evidence protocol
-  -> GitHub Release
-  -> Zenodo DOI
-  -> Technical Note citation
-```
-
-Such evidence releases do not modify MOCK v4 and do not define new MOCK versions.
-
----
-
 ## Relationship to Whitepaper Version 6 and Later Work
 
 With the completion of MOCK v4:
@@ -344,6 +380,12 @@ This public skeleton is released for review and evaluation purposes only. Propri
 ---
 
 ## Changelog
+
+### Evidence Release Scaffold (2026-05)
+
+- Added `evidence_releases/sort_ai_core3_kernel_damping_v1/` as the target path for the SORT-AI Core-3 kernel-damping evidence release.
+- Documented the evidence-layer boundary: analysis-layer structural reproducibility only, no new MOCK version.
+- Added Root README navigation for the Core-3 evidence release.
 
 ### Public Catalog v6.2 (2026-02)
 
