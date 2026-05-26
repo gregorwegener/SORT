@@ -1,0 +1,213 @@
+{
+  "sigma0": 0.00190643,
+  "metric_count": 104,
+  "scenario_count": 20,
+  "application_count": 3,
+  "overall_xi_mean": 969.35,
+  "overall_xi_std_sample": 137.0,
+  "overall_cv": 0.141,
+  "scenarios": [
+    {
+      "scenario_id": "AI.01.B1",
+      "application_id": "AI.01",
+      "scenario_type": "boundary",
+      "metric_count": 5,
+      "xi_mean": 1087.0,
+      "xi_std_sample": 96.8,
+      "cv": 0.089,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.01.B2",
+      "application_id": "AI.01",
+      "scenario_type": "boundary",
+      "metric_count": 5,
+      "xi_mean": 1064.0,
+      "xi_std_sample": 66.09,
+      "cv": 0.062,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.01.C1",
+      "application_id": "AI.01",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 782.0,
+      "xi_std_sample": 34.39,
+      "cv": 0.044,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.01.C2",
+      "application_id": "AI.01",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 920.0,
+      "xi_std_sample": 33.35,
+      "cv": 0.036,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.01.C3",
+      "application_id": "AI.01",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 854.0,
+      "xi_std_sample": 30.08,
+      "cv": 0.035,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.01.O1",
+      "application_id": "AI.01",
+      "scenario_type": "overlap",
+      "metric_count": 6,
+      "xi_mean": 958.33,
+      "xi_std_sample": 196.82,
+      "cv": 0.205,
+      "classification": "acceptable mixed / overlap"
+    },
+    {
+      "scenario_id": "AI.01.O2",
+      "application_id": "AI.01",
+      "scenario_type": "overlap",
+      "metric_count": 5,
+      "xi_mean": 1023.0,
+      "xi_std_sample": 75.55,
+      "cv": 0.074,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.04.B1",
+      "application_id": "AI.04",
+      "scenario_type": "boundary",
+      "metric_count": 5,
+      "xi_mean": 1082.0,
+      "xi_std_sample": 92.64,
+      "cv": 0.086,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.04.C1",
+      "application_id": "AI.04",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 768.4,
+      "xi_std_sample": 28.64,
+      "cv": 0.037,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.04.C2",
+      "application_id": "AI.04",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 952.0,
+      "xi_std_sample": 36.5,
+      "cv": 0.038,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.04.C3",
+      "application_id": "AI.04",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 823.0,
+      "xi_std_sample": 24.9,
+      "cv": 0.03,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.04.O1",
+      "application_id": "AI.04",
+      "scenario_type": "overlap",
+      "metric_count": 6,
+      "xi_mean": 973.33,
+      "xi_std_sample": 158.32,
+      "cv": 0.163,
+      "classification": "acceptable mixed / overlap"
+    },
+    {
+      "scenario_id": "AI.04.O2",
+      "application_id": "AI.04",
+      "scenario_type": "overlap",
+      "metric_count": 6,
+      "xi_mean": 1024.17,
+      "xi_std_sample": 195.05,
+      "cv": 0.19,
+      "classification": "acceptable mixed / overlap"
+    },
+    {
+      "scenario_id": "AI.13.B1",
+      "application_id": "AI.13",
+      "scenario_type": "boundary",
+      "metric_count": 5,
+      "xi_mean": 1150.0,
+      "xi_std_sample": 49.12,
+      "cv": 0.043,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.13.B2",
+      "application_id": "AI.13",
+      "scenario_type": "boundary",
+      "metric_count": 5,
+      "xi_mean": 1079.0,
+      "xi_std_sample": 46.82,
+      "cv": 0.043,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.13.C1",
+      "application_id": "AI.13",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 878.0,
+      "xi_std_sample": 33.28,
+      "cv": 0.038,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.13.C2",
+      "application_id": "AI.13",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 1038.0,
+      "xi_std_sample": 45.08,
+      "cv": 0.043,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.13.C3",
+      "application_id": "AI.13",
+      "scenario_type": "core",
+      "metric_count": 5,
+      "xi_mean": 924.0,
+      "xi_std_sample": 31.1,
+      "cv": 0.034,
+      "classification": "coherent"
+    },
+    {
+      "scenario_id": "AI.13.O1",
+      "application_id": "AI.13",
+      "scenario_type": "overlap",
+      "metric_count": 6,
+      "xi_mean": 956.67,
+      "xi_std_sample": 165.73,
+      "cv": 0.173,
+      "classification": "acceptable mixed / overlap"
+    },
+    {
+      "scenario_id": "AI.13.O2",
+      "application_id": "AI.13",
+      "scenario_type": "overlap",
+      "metric_count": 5,
+      "xi_mean": 1043.0,
+      "xi_std_sample": 57.84,
+      "cv": 0.055,
+      "classification": "coherent"
+    }
+  ],
+  "max_kappa_abs_error_vs_reported": 0.00018888888888884958,
+  "max_xi_abs_error_vs_reported": 0.42777819082493806
+}
