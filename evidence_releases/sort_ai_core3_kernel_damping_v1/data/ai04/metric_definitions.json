@@ -1,0 +1,20 @@
+{
+  "application_id": "AI.04",
+  "metric_columns": [
+    "metric_id",
+    "risk_transform",
+    "raw_baseline",
+    "raw_comparison",
+    "risk_baseline",
+    "risk_comparison",
+    "kappa_reported",
+    "xi_reported"
+  ],
+  "risk_transform_definitions": {
+    "identity": "Direct risk/error/deficit variable; lower is better.",
+    "risk": "Direct risk/error/deficit variable; lower is better.",
+    "health": "Positive health/accuracy/performance variable converted via r = 1 - x.",
+    "multiplier": "Overhead or multiplicative factor converted via r = x - 1."
+  },
+  "scope": "Synthetic but structurally grounded scenario values for analysis-layer kernel-damping validation; not production telemetry."
+}
