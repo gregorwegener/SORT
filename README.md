@@ -239,6 +239,7 @@ evidence_releases/
     ├── docs/
     ├── scripts/
     ├── outputs_expected/
+    ├── outputs_generated/
     └── source_material/
 ```
 
@@ -384,6 +385,7 @@ This public skeleton is released for review and evaluation purposes only. Propri
 ### Evidence Release Scaffold (2026-05)
 
 - Added `evidence_releases/sort_ai_core3_kernel_damping_v1/` as the target path for the SORT-AI Core-3 kernel-damping evidence release.
+- Added `outputs_generated/` for regenerated reproduction artefacts, including `core3_summary.generated.json`.
 - Documented the evidence-layer boundary: analysis-layer structural reproducibility only, no new MOCK version.
 - Added Root README navigation for the Core-3 evidence release.
 
