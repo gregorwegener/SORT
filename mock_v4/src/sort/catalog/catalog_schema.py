@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Tuple
+from typing import Dict, Optional, Tuple
 
 
 @dataclass(frozen=True)
@@ -13,6 +13,10 @@ class CatalogEntry:
     entrypoint: str
     description: str
     version: str
+    cluster: Optional[str] = None
+    core_3: bool = False
+    related_whitepaper: str = ""
+    dimensions: Dict[str, str] | None = None
 
 
 @dataclass(frozen=True)
