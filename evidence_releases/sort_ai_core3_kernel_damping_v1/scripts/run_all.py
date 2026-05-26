@@ -43,7 +43,9 @@ def main() -> None:
 
     scenarios = []
     for scenario_id, group in sorted(scenario_groups.items()):
-        xis = [float(r["xi_reported"]) for r in group]
+        # Use calculated xi values for the generated reproduction summary. The reported
+        # xi values remain in the CSV as reference values for tolerance checks.
+        xis = [float(r["xi_calculated"]) for r in group]
         mean = statistics.mean(xis)
         std = statistics.stdev(xis) if len(xis) > 1 else 0.0
         cv = std / mean if mean else 0.0
@@ -58,9 +60,10 @@ def main() -> None:
             "classification": classify_cv(cv),
         })
 
-    all_xis = [float(r["xi_reported"]) for r in rows]
+    all_xis = [float(r["xi_calculated"]) for r in rows]
     summary = {
         "sigma0": SIGMA0,
+        "summary_source": "xi_calculated_from_declared_risk_vectors",
         "metric_count": len(rows),
         "scenario_count": len(scenarios),
         "application_count": len({r["application_id"] for r in rows}),
