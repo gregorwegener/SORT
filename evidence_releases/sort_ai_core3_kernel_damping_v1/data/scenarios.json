@@ -1,0 +1,142 @@
+[
+  {
+    "application_id": "AI.01",
+    "scenario_id": "AI.01.C1",
+    "scenario_class": "Synchronization-Latency Drift",
+    "scenario_type": "core",
+    "purpose": "Latenz- und Synchronisationsdrift"
+  },
+  {
+    "application_id": "AI.01",
+    "scenario_id": "AI.01.C2",
+    "scenario_class": "Straggler Cascade Propagation",
+    "scenario_type": "core",
+    "purpose": "Straggler-Verstärkung"
+  },
+  {
+    "application_id": "AI.01",
+    "scenario_id": "AI.01.C3",
+    "scenario_class": "Topology-Induced Capacity Loss",
+    "scenario_type": "core",
+    "purpose": "Topologiebedingter Kapazitätsverlust"
+  },
+  {
+    "application_id": "AI.01",
+    "scenario_id": "AI.01.B1",
+    "scenario_class": "Interconnect Saturation Boundary",
+    "scenario_type": "boundary",
+    "purpose": "Grenzbereich der Fabric-Auslastung"
+  },
+  {
+    "application_id": "AI.01",
+    "scenario_id": "AI.01.B2",
+    "scenario_class": "Heterogeneous Fabric Boundary",
+    "scenario_type": "boundary",
+    "purpose": "Grenzbereich heterogener Fabric-Komposition"
+  },
+  {
+    "application_id": "AI.01",
+    "scenario_id": "AI.01.O1",
+    "scenario_class": "Interconnect plus Runtime Control",
+    "scenario_type": "overlap",
+    "purpose": "Interconnect-Control-Mischregime"
+  },
+  {
+    "application_id": "AI.01",
+    "scenario_id": "AI.01.O2",
+    "scenario_class": "Interconnect plus Agentic Orchestration Load",
+    "scenario_type": "overlap",
+    "purpose": "Interconnect-Agentic-Mischregime"
+  },
+  {
+    "application_id": "AI.04",
+    "scenario_id": "AI.04.C1",
+    "scenario_class": "Cross-Layer Control Conflict",
+    "scenario_type": "core",
+    "purpose": "Konflikt zwischen Scheduler, Orchestrator, Runtime und Policy Layer"
+  },
+  {
+    "application_id": "AI.04",
+    "scenario_id": "AI.04.C2",
+    "scenario_class": "Retry Amplification",
+    "scenario_type": "core",
+    "purpose": "lokale Retry-Logik erzeugt globale Kosten- und Attempt-Verstärkung"
+  },
+  {
+    "application_id": "AI.04",
+    "scenario_id": "AI.04.C3",
+    "scenario_class": "Control Oscillation",
+    "scenario_type": "core",
+    "purpose": "Control Loops verstärken sich zeitlich gegenseitig"
+  },
+  {
+    "application_id": "AI.04",
+    "scenario_id": "AI.04.B1",
+    "scenario_class": "SLA Boundary Occupation",
+    "scenario_type": "boundary",
+    "purpose": "System operiert nahe SLA-, Kapazitäts- oder Margin-Grenze"
+  },
+  {
+    "application_id": "AI.04",
+    "scenario_id": "AI.04.O1",
+    "scenario_class": "Control plus Infrastructure Coupling",
+    "scenario_type": "overlap",
+    "purpose": "(AI.04\\cap AI.01)"
+  },
+  {
+    "application_id": "AI.04",
+    "scenario_id": "AI.04.O2",
+    "scenario_class": "Control plus Agentic Execution",
+    "scenario_type": "overlap",
+    "purpose": "(AI.04\\cap AI.13)"
+  },
+  {
+    "application_id": "AI.13",
+    "scenario_id": "AI.13.C1",
+    "scenario_class": "Multi-Agent Intent Divergence",
+    "scenario_type": "core",
+    "purpose": "Intent- und Zielabweichung zwischen Agenten"
+  },
+  {
+    "application_id": "AI.13",
+    "scenario_id": "AI.13.C2",
+    "scenario_class": "Tool-Use Amplification",
+    "scenario_type": "core",
+    "purpose": "Tool-Call-, Kosten- und Ausführungsausweitung"
+  },
+  {
+    "application_id": "AI.13",
+    "scenario_id": "AI.13.C3",
+    "scenario_class": "Recursive Planning Drift",
+    "scenario_type": "core",
+    "purpose": "rekursive Planungsinstabilität"
+  },
+  {
+    "application_id": "AI.13",
+    "scenario_id": "AI.13.B1",
+    "scenario_class": "Context Saturation Boundary",
+    "scenario_type": "boundary",
+    "purpose": "Grenzbereich Kontext, Memory, State-Carryover"
+  },
+  {
+    "application_id": "AI.13",
+    "scenario_id": "AI.13.B2",
+    "scenario_class": "Verification / Execution Boundary",
+    "scenario_type": "boundary",
+    "purpose": "Grenzbereich zwischen Prüfung, Freigabe und Ausführung"
+  },
+  {
+    "application_id": "AI.13",
+    "scenario_id": "AI.13.O1",
+    "scenario_class": "Agentic plus Runtime Control",
+    "scenario_type": "overlap",
+    "purpose": "agentische Ausführung koppelt mit Runtime-Control"
+  },
+  {
+    "application_id": "AI.13",
+    "scenario_id": "AI.13.O2",
+    "scenario_class": "Agentic plus Infrastructure Coupling",
+    "scenario_type": "overlap",
+    "purpose": "agentische Orchestrierung koppelt mit Infrastruktur/Interconnect"
+  }
+]

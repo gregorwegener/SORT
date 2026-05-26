@@ -1,0 +1,56 @@
+{
+  "release_id": "sort_ai_core3_kernel_damping_v1",
+  "title": "SORT-AI Core-3 Kernel-Damping Evidence Release",
+  "version": "1.0.0-draft",
+  "status": "analysis-layer evidence release",
+  "created_utc": "2026-05-26",
+  "canonical_parameters": {
+    "sigma0": 0.00190643,
+    "n_operators": 22
+  },
+  "mock_reference": {
+    "version": "MOCK v4",
+    "role": "frozen structural reference architecture; not execution engine"
+  },
+  "applications": {
+    "AI.01": {
+      "title": "Interconnect Stability Control",
+      "cluster": "A",
+      "coupling_axis": "physical / interconnect coupling",
+      "source_file": "AI.01 Kernel-Damping Evidence Set v1.md",
+      "claim": "AI.01 admits a kernel-damping representation for interconnect-risk modes."
+    },
+    "AI.04": {
+      "title": "Runtime Control Coherence",
+      "cluster": "C",
+      "coupling_axis": "logical / runtime-control coupling",
+      "source_file": "AI.04 Kernel-Damping Evidence Set v3.md",
+      "claim": "AI.04 admits a kernel-damping representation for runtime-control risk modes, including boundary and overlap regimes."
+    },
+    "AI.13": {
+      "title": "Agentic System Stability",
+      "cluster": "D",
+      "coupling_axis": "semantic / agentic coupling",
+      "source_file": "AI.13 Kernel-Damping Evidence Set v1.md",
+      "claim": "AI.13 admits a kernel-damping representation for semantic/agentic risk modes."
+    }
+  },
+  "counts": {
+    "applications": 3,
+    "scenarios": 20,
+    "metrics": 104
+  },
+  "entrypoints": {
+    "metrics_csv": "data/core3_metrics.csv",
+    "scenario_registry": "data/scenarios.json",
+    "run_script": "scripts/run_all.py",
+    "expected_summary": "outputs_expected/core3_summary.json"
+  },
+  "validation_tolerances": {
+    "kappa_abs_tolerance": 0.001,
+    "xi_abs_tolerance": 1.0,
+    "cv_rounding_tolerance": 0.001
+  },
+  "evidence_level": "structural consistency proof; not production validation; not benchmark; not implementation claim",
+  "license_note": "Repository license applies. No patent rights granted or implied."
+}

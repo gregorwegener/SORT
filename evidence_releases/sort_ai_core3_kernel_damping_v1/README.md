@@ -1,0 +1,100 @@
+# SORT-AI Core-3 Kernel-Damping Evidence Release
+
+**Release ID:** `sort_ai_core3_kernel_damping_v1`  
+**Version:** `1.0.0-draft`  
+**Status:** analysis-layer evidence release  
+**Canonical scale parameter:** `sigma0 = 0.00190643`  
+**MOCK dependency:** MOCK v4 frozen structural reference architecture
+
+This evidence release provides a reproducible kernel-damping protocol for the SORT-AI Core-3 applications:
+
+| Application | Structural axis | Cluster | Scenarios | Metrics |
+|---|---|---:|---:|---:|
+| `AI.01` Interconnect Stability Control | physical / interconnect coupling | A | 7 | 36 |
+| `AI.04` Runtime Control Coherence | logical / runtime-control coupling | C | 6 | 32 |
+| `AI.13` Agentic System Stability | semantic / agentic coupling | D | 7 | 36 |
+
+| **Total** | Core-3 structural damping validation | A/C/D | **20** | **104** |
+
+## Scope
+
+The release tests whether structurally defined risk transitions for AI.01, AI.04, and AI.13 admit a Gaussian kernel-damping representation under the canonical SORT scale parameter:
+
+\[
+\kappa_i=\frac{r_i^{(1)}}{r_i^{(0)}}
+\]
+
+\[
+\kappa_{\sigma_0}(\xi_i)=\exp\left[-\frac{(\sigma_0\xi_i)^2}{2}\right]
+\]
+
+\[
+\xi_i=\frac{\sqrt{-2\ln(\kappa_i)}}{\sigma_0}
+\]
+
+with
+
+\[
+\sigma_0=0.00190643.
+\]
+
+## Non-claims
+
+This release does not claim production deployment, empirical benchmarking, vendor-specific measurement, runtime optimization, or execution by MOCK v4. The scenario values are synthetic but structurally grounded analysis-layer inputs. The release demonstrates reproducible structural calculation, not external system performance.
+
+## Repository structure
+
+```text
+evidence_releases/sort_ai_core3_kernel_damping_v1/
+  README.md
+  manifest.json
+  CITATION.cff
+  requirements.txt
+  data/
+    core3_metrics.csv
+    scenarios.json
+    ai01/scenario_metrics.json
+    ai04/scenario_metrics.json
+    ai13/scenario_metrics.json
+  docs/
+    methodology.md
+    mock_v4_reference_boundary.md
+    non_claims.md
+    source_notes.md
+  scripts/
+    kernel_damping.py
+    run_all.py
+    validate_manifest.py
+    build_core3_evidence.py
+  outputs_expected/
+    core3_summary.json
+    ai01_results.csv
+    ai04_results.csv
+    ai13_results.csv
+    reproducibility_report.md
+  outputs_generated/
+    .gitkeep
+```
+
+## Output folders
+
+`outputs_expected/` contains the committed reference outputs for the release. These files define the expected reproduction state.
+
+`outputs_generated/` is intentionally kept empty in version control except for `.gitkeep`. Local reproduction runs write generated outputs into this folder without overwriting the committed reference outputs.
+
+## Reproduction
+
+```bash
+cd evidence_releases/sort_ai_core3_kernel_damping_v1
+python scripts/run_all.py
+```
+
+The script recomputes `kappa`, `xi`, scenario means, sample standard deviations, and coefficients of variation from the declared risk vectors. Generated outputs are written to `outputs_generated/` and can be compared against `outputs_expected/` within declared rounding tolerances. The generated summary uses `xi_calculated` values computed from the declared risk vectors; reported `xi` values in the CSV are retained only as reference values for tolerance checks.
+
+## Interpretation
+
+The intended public interpretation is narrow:
+
+> The Core-3 SORT-AI applications admit reproducible kernel-damping representations for structurally defined risk-transition modes under the canonical scale parameter `sigma0 = 0.00190643`.
+
+This supports a Technical Note on the Kernel-Damping Evidence Protocol. It does not define a new MOCK version.
