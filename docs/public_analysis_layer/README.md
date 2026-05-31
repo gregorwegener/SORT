@@ -6,7 +6,7 @@ The Public Analysis Layer explains how a structural observation becomes an asses
 
 It defines the public structural assessment grammar:
 
-\[
+$$
 S_D
 \rightarrow
 (V_1,V_2,V_3,V_4)
@@ -20,19 +20,19 @@ M_{j\ell}
 \rho_{j\ell}
 \rightarrow
 E_{j\ell}.
-\]
+$$
 
 where:
 
 | Symbol | Meaning |
 |---|---|
-| \(S_D\) | structured system state in domain \(D\) |
-| \(V_1,V_2,V_3,V_4\) | public diagnostic dimensions |
-| \(A_j\) | application identity |
-| \(C_{j\ell}\) | scenario class within application \(A_j\) |
-| \(M_{j\ell}\) | metric set associated with the scenario class |
-| \(\rho_{j\ell}\) | regime classification |
-| \(E_{j\ell}\) | evidence interface |
+| $S_D$ | structured system state in domain $D$ |
+| $V_1,V_2,V_3,V_4$ | public diagnostic dimensions |
+| $A_j$ | application identity |
+| $C_{j\ell}$ | scenario class within application $A_j$ |
+| $M_{j\ell}$ | metric set associated with the scenario class |
+| $\rho_{j\ell}$ | regime classification |
+| $E_{j\ell}$ | evidence interface |
 
 ## Scope
 
@@ -76,7 +76,7 @@ This directory does not disclose:
 
 MOCK v4 remains the frozen structural reference architecture. The Public Analysis Layer operates above MOCK v4 and does not modify it.
 
-\[
+$$
 \text{MOCK v4}
 \rightarrow
 \text{Public Analysis Layer}
@@ -84,10 +84,10 @@ MOCK v4 remains the frozen structural reference architecture. The Public Analysi
 \text{Evidence Protocols}
 \rightarrow
 \text{Future Execution Layers}
-\]
+$$
 
 ## Relation to Evidence Releases
 
-Evidence releases, such as the SORT-AI Core-3 Kernel-Damping Evidence Release, attach to public assessment cases through the evidence interface \(E_{j\ell}\).
+Evidence releases, such as the SORT-AI Core-3 Kernel-Damping Evidence Release, attach to public assessment cases through the evidence interface $E_{j\ell}$.
 
 The Public Analysis Layer explains how a case becomes structurally assessable. Evidence releases show how selected declared risk-transition cases can be reproduced mathematically.
