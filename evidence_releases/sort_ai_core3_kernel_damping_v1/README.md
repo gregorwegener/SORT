@@ -20,23 +20,23 @@ This evidence release provides a reproducible kernel-damping protocol for the SO
 
 The release tests whether structurally defined risk transitions for AI.01, AI.04, and AI.13 admit a Gaussian kernel-damping representation under the canonical SORT scale parameter:
 
-\[
+$$
 \kappa_i=\frac{r_i^{(1)}}{r_i^{(0)}}
-\]
+$$
 
-\[
+$$
 \kappa_{\sigma_0}(\xi_i)=\exp\left[-\frac{(\sigma_0\xi_i)^2}{2}\right]
-\]
+$$
 
-\[
+$$
 \xi_i=\frac{\sqrt{-2\ln(\kappa_i)}}{\sigma_0}
-\]
+$$
 
 with
 
-\[
+$$
 \sigma_0=0.00190643.
-\]
+$$
 
 ## Non-claims
 
