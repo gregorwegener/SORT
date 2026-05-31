@@ -58,18 +58,7 @@ These objects would correspond to execution-layer or customer-specific assessmen
 A future execution-layer object may extend the public case:
 
 $$
-\mathcal{A}^{\mathrm{exec}}_{\mathrm{case}}
-=
-\left(
-\mathcal{A}_{\mathrm{case}},
-\hat{J}^{\mathrm{exec}},
-\mathbf{t},
-\mathbf{w},
-\mathbf{s},
-\Theta,
-\mathcal{I},
-\mathcal{T}
-\right)
+\mathcal{A}^{\mathrm{exec}}_{\mathrm{case}} = (\mathcal{A}_{\mathrm{case}},\hat{J}^{\mathrm{exec}},\mathbf{t},\mathbf{w},\mathbf{s},\Theta,\mathcal{I},\mathcal{T})
 $$
 
 This future object is not implemented here. The present document only defines the public analysis-layer case.
