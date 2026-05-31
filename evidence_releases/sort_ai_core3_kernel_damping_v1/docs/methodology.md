@@ -29,23 +29,23 @@ All variables are converted into risk variables, where lower is better:
 
 ## Kernel-damping equations
 
-\[
+$$
 \kappa_i=\frac{r_i^{(1)}}{r_i^{(0)}}
-\]
+$$
 
-\[
+$$
 \kappa_{\sigma_0}(\xi_i)=\exp\left[-\frac{(\sigma_0\xi_i)^2}{2}\right]
-\]
+$$
 
-\[
+$$
 \xi_i=\frac{\sqrt{-2\ln(\kappa_i)}}{\sigma_0}
-\]
+$$
 
 with
 
-\[
+$$
 \sigma_0=0.00190643.
-\]
+$$
 
 ## Classification
 
