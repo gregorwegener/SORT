@@ -8,27 +8,7 @@ The protocol describes how an observed system condition becomes a structurally a
 
 A structural assessment case is formed through the public chain:
 
-$$
-\text{Observation}
-\rightarrow
-V_1
-\rightarrow
-V_2
-\rightarrow
-V_3
-\rightarrow
-V_4
-\rightarrow
-A_j
-\rightarrow
-C_{j\ell}
-\rightarrow
-M_{j\ell}
-\rightarrow
-\rho_{j\ell}
-\rightarrow
-E_{j\ell}
-$$
+$$\text{Observation}\rightarrow V_1\rightarrow V_2\rightarrow V_3\rightarrow V_4\rightarrow A_j\rightarrow C_{j\ell}\rightarrow M_{j\ell}\rightarrow \rho_{j\ell}\rightarrow E_{j\ell}$$
 
 The chain is diagnostic and methodological. It does not prescribe production instrumentation or intervention.
 
@@ -36,18 +16,7 @@ The chain is diagnostic and methodological. It does not prescribe production ins
 
 The public assessment case is represented as:
 
-$$
-\mathcal{A}_{\mathrm{case}} =
-\left(
-S_D,
-V_1,V_2,V_3,V_4,
-A_j,
-C_{j\ell},
-M_{j\ell},
-\rho_{j\ell},
-E_{j\ell}
-\right)
-$$
+$$\mathcal{A}_{\mathrm{case}}=(S_D,V_1,V_2,V_3,V_4,A_j,C_{j\ell},M_{j\ell},\rho_{j\ell},E_{j\ell})$$
 
 | Component | Meaning |
 |---|---|
@@ -83,25 +52,13 @@ SORT discloses a complete assessment engine.
 
 The abstract public interface can be written as:
 
-$$
-S_D
-\rightarrow
-\hat{J}_D
-\rightarrow
-\hat{P}_{\kappa}(\hat{J}_D)
-\rightarrow
-R_D(\Delta)
-$$
+$$S_D\rightarrow\hat{J}_D\rightarrow\hat{P}_{\kappa}(\hat{J}_D)\rightarrow R_D(\Delta)$$
 
 where $\hat{J}_D$ denotes an abstract structural coupling chain, $\hat{P}_{\kappa}$ denotes kernel-modulated projection, and $R_D(\Delta)$ denotes a structural deviation or risk field.
 
 This public interface does not define customer-specific operator chains:
 
-$$
-\hat{J}^{\mathrm{customer}}_D
-=
-\hat{O}_{a_1}\hat{O}_{a_2}\cdots\hat{O}_{a_m}
-$$
+$$\hat{J}^{\mathrm{customer}}_D=\hat{O}_{a_1}\hat{O}_{a_2}\cdots\hat{O}_{a_m}$$
 
 Customer-specific operator chains are not part of the public analysis layer.
 
@@ -109,12 +66,7 @@ Customer-specific operator chains are not part of the public analysis layer.
 
 A scenario class becomes evidence-compatible when its metric set admits declared baseline/comparison risk pairs:
 
-$$
-C_{j\ell}\sim E
-\Longleftrightarrow
-M_{j\ell}
-\text{ admits declared baseline/comparison risk pairs}
-$$
+$$C_{j\ell}\sim E\Longleftrightarrow M_{j\ell}\text{ admits declared baseline/comparison risk pairs}$$
 
 For kernel-damping evidence releases, these pairs are transformed into risk-transition vectors and tested through the public evidence protocol.
 
