@@ -23,16 +23,16 @@ The tuple is a public analysis-layer object. It is not an executable production 
 
 | Component | Meaning |
 |---|---|
-| `S_D` | structured system state in domain `D` |
-| `V_1` | observed structural phenomenon |
-| `V_2` | structural cause or coupling surface |
-| `V_3` | effect, projection, risk, or drift space |
-| `V_4` | decision, evidence, or governance surface |
-| `A_j` | application identity |
-| `C_jl` | scenario class inside application `A_j` |
-| `M_jl` | metric set for scenario class `C_jl` |
-| `rho_jl` | regime classification |
-| `E_jl` | evidence interface |
+| $S_D$ | structured system state in domain $D$ |
+| $V_1$ | observed structural phenomenon |
+| $V_2$ | structural cause or coupling surface |
+| $V_3$ | effect, projection, risk, or drift space |
+| $V_4$ | decision, evidence, or governance surface |
+| $A_j$ | application identity |
+| $C_{j\ell}$ | scenario class inside application $A_j$ |
+| $M_{j\ell}$ | metric set for scenario class $C_{j\ell}$ |
+| $\rho_{j\ell}$ | regime classification |
+| $E_{j\ell}$ | evidence interface |
 
 ## Public Use
 
