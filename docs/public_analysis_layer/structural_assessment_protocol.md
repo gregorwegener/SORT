@@ -54,7 +54,11 @@ The abstract public interface can be written as:
 
 $$S_D\rightarrow\hat{J}_D\rightarrow\hat{P}_{\kappa}(\hat{J}_D)\rightarrow R_D(\Delta)$$
 
-where $\hat{J}_D$ denotes an abstract structural coupling chain, $\hat{P}_{\kappa}$ denotes kernel-modulated projection, and $R_D(\Delta)$ denotes a structural deviation or risk field.
+| Symbol | Meaning |
+|---|---|
+| $\hat{J}_D$ | abstract structural coupling chain |
+| $\hat{P}_{\kappa}$ | kernel-modulated projection |
+| $R_D(\Delta)$ | structural deviation or risk field |
 
 This public interface does not define customer-specific operator chains:
 
