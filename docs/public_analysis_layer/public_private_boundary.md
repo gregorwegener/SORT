@@ -54,11 +54,11 @@ SORT has released SWORD execution logic.
 
 The public analysis layer is intended to make SORT scientifically readable and methodologically auditable without disclosing the customer-specific or execution-layer machinery required for operational deployment.
 
-\[
+$$
 \text{public grammar}
 \neq
 \text{complete assessment engine}.
-\]
+$$
 
 ## Future Disclosure
 
