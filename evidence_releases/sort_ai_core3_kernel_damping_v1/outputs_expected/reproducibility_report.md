@@ -11,15 +11,15 @@ The declared evidence bundle contains:
 
 All metric rows were checked by recomputing:
 
-\[
+$$
 \kappa_i=\frac{r_i^{(1)}}{r_i^{(0)}}
-\]
+$$
 
 and
 
-\[
+$$
 \xi_i=\frac{\sqrt{-2\ln(\kappa_i)}}{\sigma_0}.
-\]
+$$
 
 Maximum absolute deviation against reported rounded values:
 
