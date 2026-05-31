@@ -4,15 +4,23 @@ This document defines the public hierarchy used by the SORT Public Analysis Laye
 
 ## Hierarchy
 
-```text
-Domain
-  -> Cluster
-  -> Application
-  -> Scenario Class
-  -> Metric Set
-  -> Regime Classification
-  -> Evidence Interface
-```
+The public hierarchy is:
+
+$$
+\text{Domain}
+\rightarrow
+\text{Cluster}
+\rightarrow
+\text{Application}
+\rightarrow
+\text{Scenario Class}
+\rightarrow
+\text{Metric Set}
+\rightarrow
+\text{Regime Classification}
+\rightarrow
+\text{Evidence Interface}
+$$
 
 ## Application
 
@@ -30,7 +38,7 @@ $$
 C_{j\ell} \in \mathcal{S}(A_j)
 $$
 
-where the scenario-class space of application `A_j` is denoted by `S(A_j)` in the public prose notation.
+where $\mathcal{S}(A_j)$ denotes the scenario-class space of application $A_j$.
 
 ## Regime Classes
 
@@ -105,4 +113,4 @@ $$
 E_{j\ell}
 $$
 
-For kernel-damping evidence releases, `E_jl` contains declared risk-transition pairs and reproducible calculation rules.
+For kernel-damping evidence releases, $E_{j\ell}$ contains declared risk-transition pairs and reproducible calculation rules.
