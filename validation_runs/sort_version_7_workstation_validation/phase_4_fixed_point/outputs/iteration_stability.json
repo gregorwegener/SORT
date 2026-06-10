@@ -1,0 +1,236 @@
+{
+  "run_id": "sort-version-7-workstation-validation-20260610T213622p0200",
+  "sort_version": "Version 7",
+  "phase": "Phase 4 — Fixed-Point Structure",
+  "repeatability_summary": {
+    "repeat_same_seed": true,
+    "epsilon_repeatability": 1e-10,
+    "maximum_residual": 0.0,
+    "mean_residual": 0.0,
+    "passed": true
+  },
+  "perturbation_summary": {
+    "perturbation_test": true,
+    "perturbation_scale": 1e-06,
+    "classification_rule": "Repeatability must pass epsilon_repeatability. Perturbation response is classified as attractor, neutral, or divergent; only divergent or unclassified cases fail Gate 4.",
+    "classification_counts": {
+      "attractor": 30,
+      "neutral": 2,
+      "divergent": 0
+    },
+    "cases": [
+      {
+        "state_id": 1,
+        "terminal_distance": 1.0917352870960372e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 2,
+        "terminal_distance": 2.191014728584578e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 3,
+        "terminal_distance": 5.207972302001196e-09,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 4,
+        "terminal_distance": 4.505776696728765e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 5,
+        "terminal_distance": 8.357535499111181e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 6,
+        "terminal_distance": 5.101422847523322e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 7,
+        "terminal_distance": 1.353133596195512e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 8,
+        "terminal_distance": 7.129222912012984e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 9,
+        "terminal_distance": 1.0418427187543964e-06,
+        "classification": "neutral",
+        "passed": true
+      },
+      {
+        "state_id": 10,
+        "terminal_distance": 8.420490639078167e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 11,
+        "terminal_distance": 8.842026500153624e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 12,
+        "terminal_distance": 4.2704008218391163e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 13,
+        "terminal_distance": 2.40332788441385e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 14,
+        "terminal_distance": 1.6160460292696977e-06,
+        "classification": "neutral",
+        "passed": true
+      },
+      {
+        "state_id": 15,
+        "terminal_distance": 5.6460296602035e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 16,
+        "terminal_distance": 8.094033728862004e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 17,
+        "terminal_distance": 6.915217254926465e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 18,
+        "terminal_distance": 7.19235286779493e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 19,
+        "terminal_distance": 1.6445100048825663e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 20,
+        "terminal_distance": 2.7837767602125314e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 21,
+        "terminal_distance": 2.744220907006944e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 22,
+        "terminal_distance": 2.2095145743485684e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 23,
+        "terminal_distance": 5.996756971103191e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 24,
+        "terminal_distance": 5.05906425406672e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 25,
+        "terminal_distance": 6.884484915688822e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 26,
+        "terminal_distance": 2.605557802288561e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 27,
+        "terminal_distance": 5.234926020967344e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 28,
+        "terminal_distance": 8.831924127564324e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 29,
+        "terminal_distance": 3.582219212424671e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 30,
+        "terminal_distance": 1.5154727118240765e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 31,
+        "terminal_distance": 6.234150424265912e-07,
+        "classification": "attractor",
+        "passed": true
+      },
+      {
+        "state_id": 32,
+        "terminal_distance": 2.3977805086947235e-07,
+        "classification": "attractor",
+        "passed": true
+      }
+    ],
+    "divergent_cases": [],
+    "passed": true
+  },
+  "perturbation_scale": 1e-06,
+  "stability_classification_counts": {
+    "attractor": 30,
+    "neutral": 2,
+    "divergent": 0
+  },
+  "divergent_cases": [],
+  "passed": true,
+  "non_claims": [
+    "Phase 4 validates iterative numerical behavior on synthetic states only.",
+    "Phase 4 iteration is not physical time evolution.",
+    "Phase 4 does not introduce Level-1 dynamics.",
+    "Phase 4 does not use empirical data.",
+    "Phase 4 does not constitute SWORD execution.",
+    "Phase 4 does not prove physical attractors.",
+    "Phase 4 does not prove minimality.",
+    "Phase 4 does not prove structural necessity."
+  ]
+}
