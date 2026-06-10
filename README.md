@@ -232,6 +232,7 @@ Validation runs provide deterministic structural validation artifacts for SORT V
 | Validation path | `validation_runs/sort_version_7_workstation_validation/` |
 | Frozen package | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/SORT_Version_7_Workstation_Validation.zip` |
 | Freeze report | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/freeze_report.json` |
+| Zenodo DOI | `https://doi.org/10.5281/zenodo.20634212` |
 | Validation scope | Level-0 structural validation |
 | Execution context | Lenovo ThinkStation P3 Ultra workstation |
 | Phase sequence | Phase 0 through Phase 7 |
@@ -360,6 +361,26 @@ Expected SHA-256:
 
 ```text
 2fc5e68551f70ac25e8970e51204de80c03d593003aab8123091366cac8df505
+```
+
+---
+
+## Citation
+
+If you use or reference the SORT Version 7 workstation validation artifact package, please cite:
+
+Wegener, G. H. (2026). *gregorwegener/SORT: SORT Version 7 Workstation Validation Run — Frozen Artifact Package (sort-v7-workstation-validation-v1.0.0).* Zenodo. https://doi.org/10.5281/zenodo.20634212
+
+```bibtex
+@software{wegener_2026_sort_v7_workstation_validation,
+  author       = {Wegener, Gregor H.},
+  title        = {{gregorwegener/SORT: SORT Version 7 Workstation Validation Run — Frozen Artifact Package}},
+  year         = {2026},
+  publisher    = {Zenodo},
+  version      = {sort-v7-workstation-validation-v1.0.0},
+  doi          = {10.5281/zenodo.20634212},
+  url          = {https://doi.org/10.5281/zenodo.20634212}
+}
 ```
 
 ---
