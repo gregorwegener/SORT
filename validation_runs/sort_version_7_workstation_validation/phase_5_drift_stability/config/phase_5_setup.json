@@ -1,0 +1,90 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 5 — Drift and Stability",
+  "drift_thresholds": {
+    "negligible_max": 1e-10,
+    "moderate_max": 1e-6,
+    "structural_min": 1e-6
+  },
+  "perturbation_strengths": [
+    1e-8,
+    1e-6,
+    1e-4
+  ],
+  "synthetic_references": {
+    "reference_state_count_per_class": 32,
+    "state_dimension": 22,
+    "classes": [
+      "projector_invariant",
+      "slightly_violated",
+      "strongly_violated"
+    ],
+    "seed_reference": "../phase_0_setup/seed_config.json"
+  },
+  "projection_iterations": 25,
+  "norm_type": "frobenius",
+  "effective_drift_projector": {
+    "mode": "H_after_pi_kappa",
+    "k_value": 1.0,
+    "definition": "H_eff(Psi) = H(pi_kappa(Psi))",
+    "rationale": "The Phase 3 global projector H is the identity projector in the current finite workstation representation. Phase 5 therefore evaluates drift against the effective declared structural projection apparatus H composed with pi_kappa, matching the Phase 4 iteration rule."
+  },
+  "drift_metric": {
+    "definition": "D(Psi) = ||H_eff(Psi) - Psi||",
+    "normalized_definition": "D_norm(Psi) = D(Psi) / max(||Psi||, epsilon)",
+    "dimensionless": true,
+    "scale_robust": true,
+    "scale_behavior": "Raw drift is homogeneous under scalar rescaling. Normalized drift is used for scale-robust comparison."
+  },
+  "metric_invariance": {
+    "rescaling_factors": [
+      0.5,
+      1.0,
+      2.0,
+      10.0
+    ],
+    "expected_raw_behavior": "homogeneous_scaling",
+    "expected_normalized_behavior": "approximately_invariant"
+  },
+  "stability": {
+    "classification_labels": [
+      "stable",
+      "marginal",
+      "unstable"
+    ],
+    "classification_rule": "deterministic perturbation response under declared projection iterations"
+  },
+  "inputs": {
+    "operator_registry": "input/operator_registry.json",
+    "projection_operator_ref": "input/projection_operator_ref.json",
+    "global_projector_ref": "input/global_projector_ref.json",
+    "fixed_point_metrics": "input/fixed_point_metrics.json",
+    "env_spec": "../phase_0_setup/env_spec.yaml",
+    "seed_config": "../phase_0_setup/seed_config.json",
+    "run_manifest": "../phase_0_setup/run_manifest.json",
+    "operator_integrity_report": "../phase_1_operator_integrity/outputs/operator_integrity_report.json",
+    "kernel_norm_report": "../phase_2_projection_kernel/outputs/kernel_norm_report.json",
+    "projector_validation": "../phase_3_global_projector/outputs/projector_validation.json",
+    "phase_4_fixed_point_metrics": "../phase_4_fixed_point/outputs/fixed_point_metrics.json",
+    "phase_4_convergence_series": "../phase_4_fixed_point/outputs/convergence_series.csv",
+    "phase_4_norm_invariance_report": "../phase_4_fixed_point/outputs/norm_invariance_report.json",
+    "phase_4_iteration_stability": "../phase_4_fixed_point/outputs/iteration_stability.json"
+  },
+  "outputs": {
+    "drift_profiles": "outputs/drift_profiles.csv",
+    "stability_response": "outputs/stability_response.json",
+    "synthetic_reference_catalog": "outputs/synthetic_reference_catalog.json",
+    "drift_metric_definition": "outputs/drift_metric_definition.json"
+  },
+  "non_claims": [
+    "Phase 5 validates structural drift diagnostics on synthetic states only.",
+    "Phase 5 does not use empirical data.",
+    "Phase 5 does not perform production drift detection.",
+    "Phase 5 does not perform ASDV.",
+    "Phase 5 does not constitute SWORD execution.",
+    "Phase 5 does not establish physical regime boundaries.",
+    "Phase 5 does not prove physical stability.",
+    "Phase 5 does not prove minimality.",
+    "Phase 5 does not prove structural necessity."
+  ]
+}
