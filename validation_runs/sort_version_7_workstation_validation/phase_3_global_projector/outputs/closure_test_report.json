@@ -1,0 +1,24 @@
+{
+  "run_id": "sort-version-7-workstation-validation-20260610T213622p0200",
+  "sort_version": "Version 7",
+  "phase": "Phase 3 — Global Projector",
+  "admissible_space_definition": {
+    "rule": "finite_vector_space_with_declared_norm_bounds",
+    "description": "Synthetic projected states must remain finite and within declared numerical norm bounds.",
+    "max_norm": 1000000.0
+  },
+  "synthetic_state_count": 32,
+  "violation_count": 0,
+  "violation_rate": 0.0,
+  "borderline_cases": [],
+  "passed": true,
+  "non_claims": [
+    "Phase 3 validates the declared global projector only.",
+    "Phase 3 does not introduce Level-1 dynamics.",
+    "Phase 3 does not assume global commutativity.",
+    "Phase 3 does not use empirical data.",
+    "Phase 3 does not constitute SWORD execution.",
+    "Phase 3 does not prove minimality.",
+    "Phase 3 does not prove structural necessity."
+  ]
+}
