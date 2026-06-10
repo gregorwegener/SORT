@@ -1,0 +1,63 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 6 — Workstation Scaling",
+  "required_references": {
+    "phase_0": [
+      "../phase_0_setup/env_spec.yaml",
+      "../phase_0_setup/seed_config.json",
+      "../phase_0_setup/run_manifest.json"
+    ],
+    "phase_2": [
+      "../phase_2_projection_kernel/src/kernel_definition.py",
+      "../phase_2_projection_kernel/src/projection_operator.py",
+      "../phase_2_projection_kernel/outputs/kernel_norm_report.json",
+      "../phase_2_projection_kernel/outputs/projection_residuals.csv"
+    ],
+    "phase_3": [
+      "../phase_3_global_projector/src/global_projector.py",
+      "../phase_3_global_projector/outputs/projector_validation.json",
+      "../phase_3_global_projector/outputs/projector_residuals.csv"
+    ]
+  },
+  "optional_references": {
+    "phase_4": [
+      "../phase_4_fixed_point/outputs/fixed_point_metrics.json",
+      "../phase_4_fixed_point/outputs/convergence_series.csv"
+    ],
+    "phase_5": [
+      "../phase_5_drift_stability/outputs/drift_profiles.csv",
+      "../phase_5_drift_stability/outputs/stability_response.json"
+    ]
+  },
+  "availability_status": {
+    "phase_0": {
+      "../phase_0_setup/env_spec.yaml": true,
+      "../phase_0_setup/seed_config.json": true,
+      "../phase_0_setup/run_manifest.json": true
+    },
+    "phase_2": {
+      "../phase_2_projection_kernel/src/kernel_definition.py": true,
+      "../phase_2_projection_kernel/src/projection_operator.py": true,
+      "../phase_2_projection_kernel/outputs/kernel_norm_report.json": true,
+      "../phase_2_projection_kernel/outputs/projection_residuals.csv": true
+    },
+    "phase_3": {
+      "../phase_3_global_projector/src/global_projector.py": true,
+      "../phase_3_global_projector/outputs/projector_validation.json": true,
+      "../phase_3_global_projector/outputs/projector_residuals.csv": true
+    },
+    "phase_4": {
+      "../phase_4_fixed_point/outputs/fixed_point_metrics.json": true,
+      "../phase_4_fixed_point/outputs/convergence_series.csv": true
+    },
+    "phase_5": {
+      "../phase_5_drift_stability/outputs/drift_profiles.csv": true,
+      "../phase_5_drift_stability/outputs/stability_response.json": true
+    }
+  },
+  "non_claims": [
+    "This manifest records validation references only.",
+    "It does not create an additional validation result.",
+    "It does not constitute SWORD execution."
+  ]
+}

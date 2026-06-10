@@ -1,0 +1,17 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 6 — Workstation Scaling",
+  "phase_3_dependencies": {
+    "global_projector": "../phase_3_global_projector/src/global_projector.py",
+    "phase_3_setup": "../phase_3_global_projector/config/phase_3_setup.json",
+    "projector_validation": "../phase_3_global_projector/outputs/projector_validation.json",
+    "projector_residuals": "../phase_3_global_projector/outputs/projector_residuals.csv"
+  },
+  "dependency_statement": "Phase 6 consumes the Phase 3 global projector and does not redefine the global projector.",
+  "non_claims": [
+    "This reference does not constitute a new global-projector validation.",
+    "This reference does not introduce Level-1 dynamics.",
+    "This reference does not introduce SWORD execution.",
+    "This reference does not introduce empirical data."
+  ]
+}

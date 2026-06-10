@@ -1,0 +1,56 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 6 — Workstation Scaling",
+  "scaling": {
+    "grids": [128, 256, 512],
+    "threads": [1, 2, 4, 8, 16, 32],
+    "repeats": 5,
+    "warmup_runs": 1
+  },
+  "benchmark_kernel": {
+    "projection_iterations": 20,
+    "global_projector_iterations": 5,
+    "early_stopping": false,
+    "adaptive_parameters": false
+  },
+  "runtime": {
+    "norm_type": "L2",
+    "blas_threads_mode": "explicit",
+    "memory_sampling_interval_ms": 50
+  },
+  "execution_policy": {
+    "declared_full_matrix": true,
+    "default_execution_profile": "safe_workstation_gate_run",
+    "safe_gate_grids": [128],
+    "safe_gate_threads": [1, 2, 4, 8, 16, 32],
+    "safe_gate_repeats": 2,
+    "record_skipped_declared_runs": true,
+    "skip_reason_for_unexecuted_declared_runs": "Not executed in safe workstation gate run; full run remains available through --mode full."
+  },
+  "seed": {
+    "global_seed": 117666,
+    "seed_reference": "../phase_0_setup/seed_config.json"
+  },
+  "inputs": {
+    "env_spec": "../phase_0_setup/env_spec.yaml",
+    "seed_config": "../phase_0_setup/seed_config.json",
+    "run_manifest": "../phase_0_setup/run_manifest.json",
+    "projection_operator_ref": "input/projection_operator_ref.json",
+    "global_projector_ref": "input/global_projector_ref.json",
+    "validation_reference_manifest": "input/validation_reference_manifest.json"
+  },
+  "outputs": {
+    "scaling_results": "outputs/scaling_results.csv",
+    "runtime_profiles": "outputs/runtime_profiles.json",
+    "memory_profiles": "outputs/memory_profiles.json",
+    "raw_logs": "outputs/raw_logs/"
+  },
+  "non_claims": [
+    "Phase 6 records workstation scaling behavior only.",
+    "Phase 6 does not claim performance superiority.",
+    "Phase 6 does not establish production readiness.",
+    "Phase 6 does not establish HPC scalability.",
+    "Phase 6 does not establish cloud readiness.",
+    "Phase 6 does not constitute SWORD execution."
+  ]
+}

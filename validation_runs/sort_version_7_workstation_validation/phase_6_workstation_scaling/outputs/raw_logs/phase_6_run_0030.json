@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-06-10T23:14:43+02:00",
+  "command": "src\\benchmark_runner.py --config config\\phase_6_setup.json --mode safe-gate",
+  "config_path": "C:\\Users\\grego\\OneDrive\\Dokumente\\Gregor\\Privat\\Ideen\\ToE Project\\SORT\\validation_runs\\sort_version_7_workstation_validation\\phase_6_workstation_scaling\\config\\phase_6_setup.json",
+  "mode": "safe-gate",
+  "grid_size": 512,
+  "thread_count": 32,
+  "repeat_index": "skipped",
+  "environment_variables": {
+    "OMP_NUM_THREADS": "32",
+    "MKL_NUM_THREADS": "32",
+    "OPENBLAS_NUM_THREADS": "32",
+    "NUMEXPR_NUM_THREADS": "32"
+  },
+  "status": "skipped",
+  "error_message": "",
+  "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+  "output_paths": {
+    "scaling_results": "outputs/scaling_results.csv",
+    "runtime_profiles": "outputs/runtime_profiles.json",
+    "memory_profiles": "outputs/memory_profiles.json",
+    "raw_logs": "outputs/raw_logs/"
+  }
+}
