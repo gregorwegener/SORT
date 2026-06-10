@@ -1,0 +1,126 @@
+{
+  "run_id": "sort-version-7-workstation-validation-20260610T213622p0200",
+  "sort_version": "Version 7",
+  "phase": "Phase 2 — Projection Kernel",
+  "repository": {
+    "name": "gregorwegener/SORT",
+    "canonical_url": "https://github.com/gregorwegener/SORT",
+    "validation_root": "validation_runs/sort_version_7_workstation_validation",
+    "phase_path": "validation_runs/sort_version_7_workstation_validation/phase_2_projection_kernel"
+  },
+  "phase_0_references": {
+    "env_spec": "../phase_0_setup/env_spec.yaml",
+    "seed_config": "../phase_0_setup/seed_config.json",
+    "run_manifest": "../phase_0_setup/run_manifest.json",
+    "run_id": "sort-version-7-workstation-validation-20260610T213622p0200"
+  },
+  "phase_1_references": {
+    "operator_registry": "../phase_1_operator_integrity/input/operator_registry.json",
+    "operator_integrity_report": "../phase_1_operator_integrity/outputs/operator_integrity_report.json",
+    "operator_integrity_gate_passed": true
+  },
+  "setup_reference": "config/phase_2_setup.json",
+  "kernel_definition_reference": "input/kernel_definitions.yaml",
+  "operator_registry_reference": "input/operator_registry.json",
+  "kernel_normalization_summary": {
+    "integration_method": "discrete_sum",
+    "domain_type": "synthetic_finite_grid",
+    "normalization_target": 1.0,
+    "epsilon_norm": 1e-10,
+    "scale_results": [
+      {
+        "k_value": 0.25,
+        "raw_norm": 4.690323867024972,
+        "normalized_norm": 1.0,
+        "residual": 0.0,
+        "tolerance": 1e-10,
+        "passed": true
+      },
+      {
+        "k_value": 0.5,
+        "raw_norm": 4.690048215824325,
+        "normalized_norm": 1.0,
+        "residual": 0.0,
+        "tolerance": 1e-10,
+        "passed": true
+      },
+      {
+        "k_value": 1.0,
+        "raw_norm": 4.688946018821243,
+        "normalized_norm": 0.9999999999999999,
+        "residual": 1.1102230246251565e-16,
+        "tolerance": 1e-10,
+        "passed": true
+      },
+      {
+        "k_value": 2.0,
+        "raw_norm": 4.684543747963352,
+        "normalized_norm": 1.0,
+        "residual": 0.0,
+        "tolerance": 1e-10,
+        "passed": true
+      },
+      {
+        "k_value": 4.0,
+        "raw_norm": 4.667038451833649,
+        "normalized_norm": 1.0,
+        "residual": 0.0,
+        "tolerance": 1e-10,
+        "passed": true
+      }
+    ],
+    "maximum_residual": 1.1102230246251565e-16,
+    "failed_k_values": [],
+    "passed": true
+  },
+  "projection_idempotency_summary": {
+    "count": 160,
+    "maximum_residual": 2.603703785810335e-16,
+    "mean_residual": 4.919065212536836e-17,
+    "median_residual": 2.984258545370141e-17,
+    "epsilon_projection": 1e-10,
+    "norm_type": "frobenius",
+    "state_count": 32,
+    "state_dimension": 22,
+    "seed_reference": "../phase_0_setup/seed_config.json",
+    "global_seed": 117666,
+    "k_values": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "passed_count": 160,
+    "failed_count": 0,
+    "failed_cases": [],
+    "passed": true
+  },
+  "scale_grid_summary": {
+    "mode": "fixed",
+    "values": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "xi_grid_mode": "fixed_coordinate_grid",
+    "xi_grid_count": 22
+  },
+  "norm_type": "frobenius",
+  "tolerances": {
+    "epsilon_norm": 1e-10,
+    "epsilon_projection": 1e-10
+  },
+  "overall_passed": true,
+  "gate_2_passed": true,
+  "non_claims": [
+    "Phase 2 validates the declared structural projection interface only.",
+    "Phase 2 does not use empirical data.",
+    "Phase 2 does not fit parameters.",
+    "Phase 2 does not establish cross-domain sigma_0 universality.",
+    "Phase 2 does not establish physical fundamentality of sigma_0.",
+    "Phase 2 does not constitute SWORD execution."
+  ]
+}

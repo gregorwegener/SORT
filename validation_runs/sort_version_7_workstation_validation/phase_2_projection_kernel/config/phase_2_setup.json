@@ -1,0 +1,52 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 2 — Projection Kernel",
+  "tolerances": {
+    "epsilon_norm": 1e-10,
+    "epsilon_projection": 1e-10
+  },
+  "norm_type": "frobenius",
+  "integration": {
+    "method": "discrete_sum",
+    "domain_type": "synthetic_finite_grid",
+    "normalization_target": 1.0
+  },
+  "synthetic_states": {
+    "state_count": 32,
+    "state_dimension": 22,
+    "seed_reference": "../phase_0_setup/seed_config.json"
+  },
+  "k_grid": {
+    "mode": "fixed",
+    "values": [0.25, 0.5, 1.0, 2.0, 4.0]
+  },
+  "xi_grid": {
+    "mode": "fixed_coordinate_grid",
+    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+  },
+  "projection_interface": {
+    "mode": "rank_one_kernel_projection",
+    "description": "The Gaussian kernel profile defines a normalized kernel vector u. The projection is P = u u^T, so applying the projection twice is idempotent within numerical precision."
+  },
+  "inputs": {
+    "operator_registry": "input/operator_registry.json",
+    "kernel_definitions": "input/kernel_definitions.yaml",
+    "env_spec": "../phase_0_setup/env_spec.yaml",
+    "seed_config": "../phase_0_setup/seed_config.json",
+    "run_manifest": "../phase_0_setup/run_manifest.json",
+    "operator_integrity_report": "../phase_1_operator_integrity/outputs/operator_integrity_report.json"
+  },
+  "outputs": {
+    "kernel_norm_report": "outputs/kernel_norm_report.json",
+    "kernel_profiles": "outputs/kernel_profiles.csv",
+    "projection_residuals": "outputs/projection_residuals.csv"
+  },
+  "non_claims": [
+    "Phase 2 validates the declared structural projection interface only.",
+    "Phase 2 does not use empirical data.",
+    "Phase 2 does not fit parameters.",
+    "Phase 2 does not establish cross-domain sigma_0 universality.",
+    "Phase 2 does not establish physical fundamentality of sigma_0.",
+    "Phase 2 does not constitute SWORD execution."
+  ]
+}
