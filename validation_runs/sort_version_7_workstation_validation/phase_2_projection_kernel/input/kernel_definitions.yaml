@@ -1,0 +1,23 @@
+sort_version: "Version 7"
+phase: "Phase 2 — Projection Kernel"
+kernel:
+  kernel_name: "SORT structural projection kernel"
+  symbol: "kappa"
+  analytic_form: "exp(-0.5 * (sigma_0 * xi)^2)"
+  scale_parameter:
+    symbol: "sigma_0"
+    value: 0.00190643
+    interpretation: "structural reference value for Version 7 workstation validation"
+  normalization_domain:
+    variable: "Psi"
+    domain_type: "synthetic finite grid"
+    bounds: []
+    discretization: "deterministic finite coordinate grid"
+  k_grid:
+    source: "config/phase_2_setup.json"
+  projection_role: "structural projection interface"
+non_claims:
+  - "The kernel definition does not establish empirical validity."
+  - "The kernel definition does not establish physical fundamentality of sigma_0."
+  - "The kernel definition does not establish cross-domain universality."
+  - "The kernel definition does not constitute SWORD execution."
