@@ -27,6 +27,9 @@
     "phase_5": [
       "../phase_5_drift_stability/outputs/drift_profiles.csv",
       "../phase_5_drift_stability/outputs/stability_response.json"
+    ],
+    "phase_6": [
+      "input/workstation_reference.json"
     ]
   },
   "availability_status": {
@@ -53,6 +56,9 @@
     "phase_5": {
       "../phase_5_drift_stability/outputs/drift_profiles.csv": true,
       "../phase_5_drift_stability/outputs/stability_response.json": true
+    },
+    "phase_6": {
+      "input/workstation_reference.json": true
     }
   },
   "non_claims": [

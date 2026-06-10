@@ -144,6 +144,7 @@ def main(argv: list[str] | None = None) -> int:
         memory_runs=memory_runs,
     )
     runtime_profile = _runtime_profile(
+        phase_root=phase_root,
         config=config,
         runtime_environment=runtime_environment,
         args=args,
@@ -483,6 +484,7 @@ def _write_scaling_results(path: Path, results: list[dict[str, Any]]) -> None:
 
 def _runtime_profile(
     *,
+    phase_root: Path,
     config: dict[str, Any],
     runtime_environment: dict[str, Any],
     args: argparse.Namespace,
@@ -505,6 +507,7 @@ def _runtime_profile(
         },
         "executed_profile": args.mode,
         "machine_profile": runtime_environment,
+        "workstation_reference": _load_workstation_reference(phase_root),
         "python_version": runtime_environment["python_version"],
         "library_versions": {"numpy": runtime_environment["numpy_version"]},
         "blas": runtime_environment["blas"],
@@ -524,6 +527,13 @@ def _runtime_profile(
         "gate_6_passed": gate_summary["gate_6_passed"],
         "non_claims": config["non_claims"],
     }
+
+
+def _load_workstation_reference(phase_root: Path) -> dict[str, Any] | None:
+    path = phase_root / "input" / "workstation_reference.json"
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _memory_profile(

@@ -75,6 +75,14 @@ Optional Phase 5 sanity-check files:
 ../phase_5_drift_stability/outputs/stability_response.json
 ```
 
+Sanitized local workstation reference:
+
+```text
+input/workstation_reference.json
+```
+
+The workstation reference records summarized Lenovo ThinkStation P3 Ultra context for Phase 6 only. Raw HWiNFO logs, serial numbers, MAC addresses, device instance IDs, drive health counters, and other unique machine identifiers are intentionally excluded and must not be committed.
+
 ## Configuration
 
 ```text
