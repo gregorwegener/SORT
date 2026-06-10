@@ -1,0 +1,70 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 7 — Artifact Freeze",
+  "package_name": "SORT_Version_7_Workstation_Validation.zip",
+  "repository": {
+    "name": "gregorwegener/SORT",
+    "canonical_url": "https://github.com/gregorwegener/SORT",
+    "validation_root": "validation_runs/sort_version_7_workstation_validation",
+    "local_working_copy": "C:\\Users\\grego\\OneDrive\\Dokumente\\Gregor\\Privat\\Ideen\\ToE Project\\SORT"
+  },
+  "git": {
+    "commit": "7cd809e7abd9d09bce554ac30e18d26a0f9bca77",
+    "branch": "sort-version-7-phase-7-artifact-freeze",
+    "dirty": true,
+    "remote_origin": "https://github.com/gregorwegener/SORT.git"
+  },
+  "machine": {
+    "source": "../phase_0_setup/env_spec.yaml",
+    "workstation_reference": "../phase_6_workstation_scaling/input/workstation_reference.json"
+  },
+  "seed": {
+    "source": "../phase_0_setup/seed_config.json",
+    "global_seed": 117666
+  },
+  "included_phases": [
+    "Phase 0 — Setup and Reproducibility",
+    "Phase 1 — Operator Integrity",
+    "Phase 2 — Projection Kernel",
+    "Phase 3 — Global Projector",
+    "Phase 4 — Fixed-Point Structure",
+    "Phase 5 — Drift and Stability",
+    "Phase 6 — Workstation Scaling"
+  ],
+  "recommended_phases": {
+    "Phase 6 — Workstation Scaling": "included"
+  },
+  "artifacts": {
+    "inventory": "outputs/artifact_inventory.csv",
+    "hashes": "outputs/hashes.txt",
+    "zip_package": "outputs/SORT_Version_7_Workstation_Validation.zip"
+  },
+  "validation_scope": {
+    "level": "Level-0 structural validation",
+    "uses_empirical_data": false,
+    "uses_production_telemetry": false,
+    "uses_customer_data": false,
+    "uses_hpc": false,
+    "uses_sword": false,
+    "uses_asdv": false
+  },
+  "self_reference_policy": {
+    "policy": "Phase 7 self-referential manifest files are included in the ZIP, but stable self-hashes are not attempted.",
+    "self_referential_files": [
+      "phase_7_artifact_freeze/outputs/artifact_inventory.csv",
+      "phase_7_artifact_freeze/outputs/hashes.txt",
+      "phase_7_artifact_freeze/outputs/repro_manifest.json",
+      "phase_7_artifact_freeze/outputs/freeze_report.json"
+    ],
+    "zip_hash_policy": "The ZIP is created with the Phase 7 reports available at packaging time. The repository-side freeze_report.json is then updated with the final ZIP SHA-256 and size."
+  },
+  "non_claims": [
+    "This frozen package records workstation validation artifacts only.",
+    "This frozen package does not constitute empirical validation.",
+    "This frozen package does not constitute SWORD execution.",
+    "This frozen package does not constitute ASDV execution.",
+    "This frozen package does not establish minimality.",
+    "This frozen package does not establish structural necessity.",
+    "This frozen package does not create a new MOCK version."
+  ]
+}

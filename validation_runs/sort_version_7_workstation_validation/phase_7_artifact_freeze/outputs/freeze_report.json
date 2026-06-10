@@ -1,0 +1,37 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 7 — Artifact Freeze",
+  "freeze_status": "complete",
+  "gate_7_passed": true,
+  "package": {
+    "name": "SORT_Version_7_Workstation_Validation.zip",
+    "path": "outputs/SORT_Version_7_Workstation_Validation.zip",
+    "sha256": "2fc5e68551f70ac25e8970e51204de80c03d593003aab8123091366cac8df505",
+    "size_bytes": 289337
+  },
+  "inputs": {
+    "prefreeze_audit_report": "outputs/prefreeze_audit_report.json",
+    "artifact_inventory": "outputs/artifact_inventory.csv",
+    "hashes": "outputs/hashes.txt",
+    "repro_manifest": "outputs/repro_manifest.json"
+  },
+  "phase_6_status": "included",
+  "self_reference_policy": {
+    "policy": "Phase 7 self-referential manifest files are included in the ZIP, but stable self-hashes are not attempted.",
+    "self_referential_files": [
+      "phase_7_artifact_freeze/outputs/artifact_inventory.csv",
+      "phase_7_artifact_freeze/outputs/hashes.txt",
+      "phase_7_artifact_freeze/outputs/repro_manifest.json",
+      "phase_7_artifact_freeze/outputs/freeze_report.json"
+    ],
+    "zip_hash_policy": "The ZIP is created with the Phase 7 reports available at packaging time. The repository-side freeze_report.json is then updated with the final ZIP SHA-256 and size."
+  },
+  "warnings": [],
+  "non_claims": [
+    "The freeze operation packages validation artifacts only.",
+    "The ZIP package is not a SWORD release.",
+    "The ZIP package is not an ASDV evidence run.",
+    "The ZIP package is not a new MOCK version.",
+    "The ZIP package is not empirical validation."
+  ]
+}
