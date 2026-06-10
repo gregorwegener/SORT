@@ -1,0 +1,199 @@
+{
+  "run_id": "sort-version-7-workstation-validation-20260610T213622p0200",
+  "sort_version": "Version 7",
+  "phase": "Phase 3 — Global Projector",
+  "repository": {
+    "name": "gregorwegener/SORT",
+    "canonical_url": "https://github.com/gregorwegener/SORT",
+    "validation_root": "validation_runs/sort_version_7_workstation_validation",
+    "phase_path": "validation_runs/sort_version_7_workstation_validation/phase_3_global_projector"
+  },
+  "phase_0_references": {
+    "env_spec": "../phase_0_setup/env_spec.yaml",
+    "seed_config": "../phase_0_setup/seed_config.json",
+    "run_manifest": "../phase_0_setup/run_manifest.json",
+    "run_id": "sort-version-7-workstation-validation-20260610T213622p0200"
+  },
+  "phase_1_references": {
+    "operator_registry": "../phase_1_operator_integrity/input/operator_registry.json",
+    "operator_integrity_report": "../phase_1_operator_integrity/outputs/operator_integrity_report.json",
+    "operator_integrity_gate_passed": true
+  },
+  "phase_2_references": {
+    "kernel_norm_report": "../phase_2_projection_kernel/outputs/kernel_norm_report.json",
+    "projection_residuals": "../phase_2_projection_kernel/outputs/projection_residuals.csv",
+    "projection_kernel_gate_passed": true
+  },
+  "setup_reference": "config/phase_3_setup.json",
+  "operator_registry_reference": "input/operator_registry.json",
+  "projection_operator_reference": "input/projection_operator_ref.json",
+  "global_projector_construction_summary": {
+    "symbol": "H",
+    "construction_rule": "sum_of_coordinate_projection_operators",
+    "operator_count": 22,
+    "matrix_dimension": 22,
+    "description": "In the finite-dimensional workstation representation, H is constructed as the sum of the 22 coordinate projection operators from the frozen Phase 1 registry. This yields the 22-dimensional identity projector and validates the global projector interface under controlled structural conditions."
+  },
+  "idempotency_summary": {
+    "count": 32,
+    "maximum_residual": 0.0,
+    "mean_residual": 0.0,
+    "median_residual": 0.0,
+    "standard_deviation": 0.0,
+    "direct_projector_residual": 0.0,
+    "direct_projector_passed": true,
+    "epsilon_projector": 1e-10,
+    "norm_type": "frobenius",
+    "state_count": 32,
+    "seed_reference": "../phase_0_setup/seed_config.json",
+    "global_seed": 117666,
+    "passed_count": 32,
+    "failed_count": 0,
+    "failed_state_ids": [],
+    "passed": true
+  },
+  "closure_summary": {
+    "admissible_space": {
+      "rule": "finite_vector_space_with_declared_norm_bounds",
+      "description": "Synthetic projected states must remain finite and within declared numerical norm bounds.",
+      "max_norm": 1000000.0
+    },
+    "synthetic_state_count": 32,
+    "finite_state_count": 32,
+    "norm_bound_pass_count": 32,
+    "violation_count": 0,
+    "violation_rate": 0.0,
+    "borderline_cases": [],
+    "epsilon_closure": 1e-10,
+    "norm_type": "frobenius",
+    "seed_reference": "../phase_0_setup/seed_config.json",
+    "global_seed": 117666,
+    "passed": true
+  },
+  "composition_summary": {
+    "count": 704,
+    "maximum_residual": 0.0,
+    "mean_residual": 0.0,
+    "median_residual": 0.0,
+    "standard_deviation": 0.0,
+    "mode": "explicit_pairs",
+    "assume_global_commutativity": false,
+    "global_commutativity_statement": "Global commutativity is not assumed by this Phase 3 composition check.",
+    "evaluated_operator_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        22,
+        1
+      ]
+    ],
+    "pair_count": 22,
+    "state_count_per_pair": 32,
+    "expected_row_count": 704,
+    "epsilon_composition": 1e-10,
+    "norm_type": "frobenius",
+    "passed_count": 704,
+    "failed_count": 0,
+    "unstable_pairs": [],
+    "passed": true
+  },
+  "norm_type": "frobenius",
+  "tolerances": {
+    "epsilon_projector": 1e-10,
+    "epsilon_closure": 1e-10,
+    "epsilon_composition": 1e-10
+  },
+  "overall_passed": true,
+  "gate_3_passed": true,
+  "non_claims": [
+    "Phase 3 validates the declared global projector only.",
+    "Phase 3 does not introduce Level-1 dynamics.",
+    "Phase 3 does not assume global commutativity.",
+    "Phase 3 does not use empirical data.",
+    "Phase 3 does not constitute SWORD execution.",
+    "Phase 3 does not prove minimality.",
+    "Phase 3 does not prove structural necessity."
+  ]
+}
