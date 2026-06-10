@@ -1,0 +1,78 @@
+{
+  "run_id": "sort-version-7-workstation-validation-20260610T213622p0200",
+  "sort_version": "Version 7",
+  "phase": "Phase 1 — Operator Integrity",
+  "repository": {
+    "name": "gregorwegener/SORT",
+    "canonical_url": "https://github.com/gregorwegener/SORT",
+    "validation_root": "validation_runs/sort_version_7_workstation_validation",
+    "phase_path": "validation_runs/sort_version_7_workstation_validation/phase_1_operator_integrity"
+  },
+  "phase_0_references": {
+    "operator_registry": "input/operator_registry.json",
+    "env_spec": "../phase_0_setup/env_spec.yaml",
+    "seed_config": "../phase_0_setup/seed_config.json",
+    "run_manifest": "../phase_0_setup/run_manifest.json"
+  },
+  "phase_0_run_id": "sort-version-7-workstation-validation-20260610T213622p0200",
+  "phase_0_git": {
+    "commit": "4ce357f0d68f08635bda38060c027e99d11dd9aa",
+    "branch": "sort-version-7-phase-0-validation",
+    "dirty": true,
+    "available": true,
+    "remote_origin": "https://github.com/gregorwegener/SORT.git",
+    "default_branch": "main"
+  },
+  "setup_reference": "config/phase_1_setup.json",
+  "registry_reference": "input/operator_registry.json",
+  "operator_count": 22,
+  "matrix_dimension": 22,
+  "norm_type": "frobenius",
+  "tolerances": {
+    "epsilon_idempotency": 1e-10,
+    "epsilon_balance": 1e-10,
+    "epsilon_jacobi": 1e-10
+  },
+  "idempotency_summary": {
+    "count": 22,
+    "maximum_residual": 0.0,
+    "mean_residual": 0.0,
+    "median_residual": 0.0,
+    "tolerance": 1e-10,
+    "passed_count": 22,
+    "failed_count": 0,
+    "failed_operator_ids": [],
+    "passed": true
+  },
+  "balance_summary": {
+    "weight_sum": 0.0,
+    "absolute_residual": 0.0,
+    "tolerance": 1e-10,
+    "passed": true
+  },
+  "jacobi_summary": {
+    "count": 1000,
+    "maximum_residual": 0.0,
+    "mean_residual": 0.0,
+    "median_residual": 0.0,
+    "mode": "sampled",
+    "sample_count": 1000,
+    "tolerance": 1e-10,
+    "seed_reference": "../phase_0_setup/seed_config.json",
+    "global_seed": 117666,
+    "passed_count": 1000,
+    "failed_count": 0,
+    "failed_triples": [],
+    "passed": true
+  },
+  "overall_passed": true,
+  "gate_1_passed": true,
+  "non_claims": [
+    "Phase 1 validates declared operator integrity only.",
+    "Phase 1 does not prove minimality.",
+    "Phase 1 does not prove structural necessity.",
+    "Phase 1 does not prove uniqueness.",
+    "Phase 1 does not constitute empirical validation.",
+    "Phase 1 does not constitute SWORD execution."
+  ]
+}

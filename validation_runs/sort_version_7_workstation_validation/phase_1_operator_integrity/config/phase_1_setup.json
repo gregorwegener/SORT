@@ -1,0 +1,33 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 1 — Operator Integrity",
+  "tolerances": {
+    "epsilon_idempotency": 1e-10,
+    "epsilon_balance": 1e-10,
+    "epsilon_jacobi": 1e-10
+  },
+  "norm_type": "frobenius",
+  "jacobi": {
+    "mode": "sampled",
+    "sample_count": 1000,
+    "seed_reference": "../phase_0_setup/seed_config.json"
+  },
+  "inputs": {
+    "operator_registry": "input/operator_registry.json",
+    "env_spec": "../phase_0_setup/env_spec.yaml",
+    "seed_config": "../phase_0_setup/seed_config.json",
+    "run_manifest": "../phase_0_setup/run_manifest.json"
+  },
+  "outputs": {
+    "operator_integrity_report": "outputs/operator_integrity_report.json",
+    "operator_residuals": "outputs/operator_residuals.csv"
+  },
+  "non_claims": [
+    "Phase 1 validates declared operator integrity only.",
+    "Phase 1 does not prove minimality.",
+    "Phase 1 does not prove structural necessity.",
+    "Phase 1 does not prove uniqueness.",
+    "Phase 1 does not constitute empirical validation.",
+    "Phase 1 does not constitute SWORD execution."
+  ]
+}
