@@ -1,0 +1,1810 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 6 — Workstation Scaling",
+  "peak_memory_per_run": [
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 1,
+      "peak_memory_mb": 64.00389099121094,
+      "memory_trace": [
+        {
+          "timestamp": 1781126716.0744772,
+          "tracemalloc_current_mb": 0.0029144287109375,
+          "tracemalloc_peak_mb": 0.0030517578125,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.1247761,
+          "tracemalloc_current_mb": 32.00391387939453,
+          "tracemalloc_peak_mb": 48.00334930419922,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.1752706,
+          "tracemalloc_current_mb": 48.00347900390625,
+          "tracemalloc_peak_mb": 48.00347900390625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.2258391,
+          "tracemalloc_current_mb": 48.00360870361328,
+          "tracemalloc_peak_mb": 48.00360870361328,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.27631,
+          "tracemalloc_current_mb": 64.00389099121094,
+          "tracemalloc_peak_mb": 64.00389099121094,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.3267503,
+          "tracemalloc_current_mb": 0.00299835205078125,
+          "tracemalloc_peak_mb": 64.00408935546875,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 2,
+      "peak_memory_mb": 48.003578186035156,
+      "memory_trace": [
+        {
+          "timestamp": 1781126716.327556,
+          "tracemalloc_current_mb": 0.00289154052734375,
+          "tracemalloc_peak_mb": 0.00302886962890625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.3778374,
+          "tracemalloc_current_mb": 48.003448486328125,
+          "tracemalloc_peak_mb": 48.003448486328125,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.4284205,
+          "tracemalloc_current_mb": 48.003578186035156,
+          "tracemalloc_peak_mb": 48.003578186035156,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.4790428,
+          "tracemalloc_current_mb": 32.0042724609375,
+          "tracemalloc_peak_mb": 48.00370788574219,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.5328755,
+          "tracemalloc_current_mb": 0.0029754638671875,
+          "tracemalloc_peak_mb": 64.00411224365234,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 1,
+      "peak_memory_mb": 64.0039291381836,
+      "memory_trace": [
+        {
+          "timestamp": 1781126716.7470832,
+          "tracemalloc_current_mb": 0.003021240234375,
+          "tracemalloc_peak_mb": 0.00308990478515625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.7971811,
+          "tracemalloc_current_mb": 32.00414276123047,
+          "tracemalloc_peak_mb": 48.003578186035156,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.847808,
+          "tracemalloc_current_mb": 48.00370788574219,
+          "tracemalloc_peak_mb": 48.00370788574219,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.8983974,
+          "tracemalloc_current_mb": 32.00440216064453,
+          "tracemalloc_peak_mb": 48.00383758544922,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.9488337,
+          "tracemalloc_current_mb": 64.0039291381836,
+          "tracemalloc_peak_mb": 64.00395965576172,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.9994946,
+          "tracemalloc_current_mb": 0.003204345703125,
+          "tracemalloc_peak_mb": 64.00431823730469,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00375461578369,
+      "memory_trace": [
+        {
+          "timestamp": 1781126717.0002503,
+          "tracemalloc_current_mb": 0.0028467178344726562,
+          "tracemalloc_peak_mb": 0.0029840469360351562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.0508084,
+          "tracemalloc_current_mb": 32.003968238830566,
+          "tracemalloc_peak_mb": 48.003403663635254,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.1010118,
+          "tracemalloc_current_mb": 48.003533363342285,
+          "tracemalloc_peak_mb": 48.003533363342285,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.1518557,
+          "tracemalloc_current_mb": 32.00422763824463,
+          "tracemalloc_peak_mb": 48.003663063049316,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.2021635,
+          "tracemalloc_current_mb": 64.00375461578369,
+          "tracemalloc_peak_mb": 64.00378513336182,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.25281,
+          "tracemalloc_current_mb": 0.0030298233032226562,
+          "tracemalloc_peak_mb": 64.00414371490479,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 1,
+      "peak_memory_mb": 32.00435733795166,
+      "memory_trace": [
+        {
+          "timestamp": 1781126717.46064,
+          "tracemalloc_current_mb": 0.0029764175415039062,
+          "tracemalloc_peak_mb": 0.0031137466430664062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.5107074,
+          "tracemalloc_current_mb": 32.0040979385376,
+          "tracemalloc_peak_mb": 48.003533363342285,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.560767,
+          "tracemalloc_current_mb": 32.00422763824463,
+          "tracemalloc_peak_mb": 48.003663063049316,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.612332,
+          "tracemalloc_current_mb": 32.00435733795166,
+          "tracemalloc_peak_mb": 48.00379276275635,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.6674619,
+          "tracemalloc_current_mb": 0.0030603408813476562,
+          "tracemalloc_peak_mb": 64.0041971206665,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00405216217041,
+      "memory_trace": [
+        {
+          "timestamp": 1781126717.6682694,
+          "tracemalloc_current_mb": 0.0028009414672851562,
+          "tracemalloc_peak_mb": 0.0029382705688476562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.7188332,
+          "tracemalloc_current_mb": 32.00392246246338,
+          "tracemalloc_peak_mb": 48.003357887268066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.7693686,
+          "tracemalloc_current_mb": 48.003602027893066,
+          "tracemalloc_peak_mb": 48.003602027893066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.8198829,
+          "tracemalloc_current_mb": 48.003846168518066,
+          "tracemalloc_peak_mb": 48.003846168518066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.8703876,
+          "tracemalloc_current_mb": 64.00405216217041,
+          "tracemalloc_peak_mb": 64.00408267974854,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.9211903,
+          "tracemalloc_current_mb": 0.0034418106079101562,
+          "tracemalloc_peak_mb": 64.0044412612915,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 1,
+      "peak_memory_mb": 48.0039758682251,
+      "memory_trace": [
+        {
+          "timestamp": 1781126718.1290722,
+          "tracemalloc_current_mb": 0.0029306411743164062,
+          "tracemalloc_peak_mb": 0.0029993057250976562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.1795747,
+          "tracemalloc_current_mb": 32.00405216217041,
+          "tracemalloc_peak_mb": 48.0034875869751,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.230754,
+          "tracemalloc_current_mb": 32.00429630279541,
+          "tracemalloc_peak_mb": 48.0037317276001,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.2810488,
+          "tracemalloc_current_mb": 48.0039758682251,
+          "tracemalloc_peak_mb": 48.0039758682251,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.3350725,
+          "tracemalloc_current_mb": 0.0033578872680664062,
+          "tracemalloc_peak_mb": 64.00449466705322,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00402164459229,
+      "memory_trace": [
+        {
+          "timestamp": 1781126718.3359363,
+          "tracemalloc_current_mb": 0.0029840469360351562,
+          "tracemalloc_peak_mb": 0.0031213760375976562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.3875313,
+          "tracemalloc_current_mb": 32.00410556793213,
+          "tracemalloc_peak_mb": 48.003540992736816,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.43796,
+          "tracemalloc_current_mb": 48.003785133361816,
+          "tracemalloc_peak_mb": 48.003785133361816,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.488565,
+          "tracemalloc_current_mb": 64.00402164459229,
+          "tracemalloc_peak_mb": 64.00402164459229,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.5392156,
+          "tracemalloc_current_mb": 0.0033502578735351562,
+          "tracemalloc_peak_mb": 64.00434970855713,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 1,
+      "peak_memory_mb": 64.00396060943604,
+      "memory_trace": [
+        {
+          "timestamp": 1781126718.751752,
+          "tracemalloc_current_mb": 0.0027093887329101562,
+          "tracemalloc_peak_mb": 0.0028467178344726562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.8020935,
+          "tracemalloc_current_mb": 32.003830909729004,
+          "tracemalloc_peak_mb": 48.00326633453369,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.852547,
+          "tracemalloc_current_mb": 48.00351047515869,
+          "tracemalloc_peak_mb": 48.00351047515869,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.9030986,
+          "tracemalloc_current_mb": 48.00375461578369,
+          "tracemalloc_peak_mb": 48.00375461578369,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.9533782,
+          "tracemalloc_current_mb": 64.00396060943604,
+          "tracemalloc_peak_mb": 64.00399112701416,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.004031,
+          "tracemalloc_current_mb": 0.0033502578735351562,
+          "tracemalloc_peak_mb": 64.00434970855713,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 2,
+      "peak_memory_mb": 48.00388431549072,
+      "memory_trace": [
+        {
+          "timestamp": 1781126719.0047565,
+          "tracemalloc_current_mb": 0.0028390884399414062,
+          "tracemalloc_peak_mb": 0.0029764175415039062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.0549572,
+          "tracemalloc_current_mb": 32.003960609436035,
+          "tracemalloc_peak_mb": 48.00339603424072,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.1058857,
+          "tracemalloc_current_mb": 32.004204750061035,
+          "tracemalloc_peak_mb": 48.00364017486572,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.1562493,
+          "tracemalloc_current_mb": 48.00388431549072,
+          "tracemalloc_peak_mb": 48.00388431549072,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.20883,
+          "tracemalloc_current_mb": 0.0032663345336914062,
+          "tracemalloc_peak_mb": 64.00440311431885,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 1,
+      "peak_memory_mb": 48.00386142730713,
+      "memory_trace": [
+        {
+          "timestamp": 1781126719.4142363,
+          "tracemalloc_current_mb": 0.0028162002563476562,
+          "tracemalloc_peak_mb": 0.0028848648071289062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.4647815,
+          "tracemalloc_current_mb": 32.00393772125244,
+          "tracemalloc_peak_mb": 48.00337314605713,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.5161273,
+          "tracemalloc_current_mb": 32.00418186187744,
+          "tracemalloc_peak_mb": 48.00361728668213,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.5663545,
+          "tracemalloc_current_mb": 48.00386142730713,
+          "tracemalloc_peak_mb": 48.00386142730713,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.620035,
+          "tracemalloc_current_mb": 0.0032434463500976562,
+          "tracemalloc_peak_mb": 64.00438022613525,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00389194488525,
+      "memory_trace": [
+        {
+          "timestamp": 1781126719.6207447,
+          "tracemalloc_current_mb": 0.0026407241821289062,
+          "tracemalloc_peak_mb": 0.0027780532836914062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.6713107,
+          "tracemalloc_current_mb": 32.00376224517822,
+          "tracemalloc_peak_mb": 48.00319766998291,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.7221737,
+          "tracemalloc_current_mb": 48.00344181060791,
+          "tracemalloc_peak_mb": 48.00344181060791,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.772359,
+          "tracemalloc_current_mb": 48.00368595123291,
+          "tracemalloc_peak_mb": 48.00368595123291,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.82305,
+          "tracemalloc_current_mb": 64.00389194488525,
+          "tracemalloc_peak_mb": 64.00392246246338,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.873853,
+          "tracemalloc_current_mb": 0.0032815933227539062,
+          "tracemalloc_peak_mb": 64.00428104400635,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 1,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 2,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 4,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 8,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 16,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 32,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 1,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 2,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 4,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 8,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 16,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 32,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    }
+  ],
+  "memory_sampling_method": "psutil RSS when available, standard-library tracemalloc fallback",
+  "memory_sampling_interval_ms": 50,
+  "memory_trace": [
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 1,
+      "trace": [
+        {
+          "timestamp": 1781126716.0744772,
+          "tracemalloc_current_mb": 0.0029144287109375,
+          "tracemalloc_peak_mb": 0.0030517578125,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.1247761,
+          "tracemalloc_current_mb": 32.00391387939453,
+          "tracemalloc_peak_mb": 48.00334930419922,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.1752706,
+          "tracemalloc_current_mb": 48.00347900390625,
+          "tracemalloc_peak_mb": 48.00347900390625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.2258391,
+          "tracemalloc_current_mb": 48.00360870361328,
+          "tracemalloc_peak_mb": 48.00360870361328,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.27631,
+          "tracemalloc_current_mb": 64.00389099121094,
+          "tracemalloc_peak_mb": 64.00389099121094,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.3267503,
+          "tracemalloc_current_mb": 0.00299835205078125,
+          "tracemalloc_peak_mb": 64.00408935546875,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 2,
+      "trace": [
+        {
+          "timestamp": 1781126716.327556,
+          "tracemalloc_current_mb": 0.00289154052734375,
+          "tracemalloc_peak_mb": 0.00302886962890625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.3778374,
+          "tracemalloc_current_mb": 48.003448486328125,
+          "tracemalloc_peak_mb": 48.003448486328125,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.4284205,
+          "tracemalloc_current_mb": 48.003578186035156,
+          "tracemalloc_peak_mb": 48.003578186035156,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.4790428,
+          "tracemalloc_current_mb": 32.0042724609375,
+          "tracemalloc_peak_mb": 48.00370788574219,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.5328755,
+          "tracemalloc_current_mb": 0.0029754638671875,
+          "tracemalloc_peak_mb": 64.00411224365234,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 1,
+      "trace": [
+        {
+          "timestamp": 1781126716.7470832,
+          "tracemalloc_current_mb": 0.003021240234375,
+          "tracemalloc_peak_mb": 0.00308990478515625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.7971811,
+          "tracemalloc_current_mb": 32.00414276123047,
+          "tracemalloc_peak_mb": 48.003578186035156,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.847808,
+          "tracemalloc_current_mb": 48.00370788574219,
+          "tracemalloc_peak_mb": 48.00370788574219,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.8983974,
+          "tracemalloc_current_mb": 32.00440216064453,
+          "tracemalloc_peak_mb": 48.00383758544922,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.9488337,
+          "tracemalloc_current_mb": 64.0039291381836,
+          "tracemalloc_peak_mb": 64.00395965576172,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.9994946,
+          "tracemalloc_current_mb": 0.003204345703125,
+          "tracemalloc_peak_mb": 64.00431823730469,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 2,
+      "trace": [
+        {
+          "timestamp": 1781126717.0002503,
+          "tracemalloc_current_mb": 0.0028467178344726562,
+          "tracemalloc_peak_mb": 0.0029840469360351562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.0508084,
+          "tracemalloc_current_mb": 32.003968238830566,
+          "tracemalloc_peak_mb": 48.003403663635254,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.1010118,
+          "tracemalloc_current_mb": 48.003533363342285,
+          "tracemalloc_peak_mb": 48.003533363342285,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.1518557,
+          "tracemalloc_current_mb": 32.00422763824463,
+          "tracemalloc_peak_mb": 48.003663063049316,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.2021635,
+          "tracemalloc_current_mb": 64.00375461578369,
+          "tracemalloc_peak_mb": 64.00378513336182,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.25281,
+          "tracemalloc_current_mb": 0.0030298233032226562,
+          "tracemalloc_peak_mb": 64.00414371490479,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 1,
+      "trace": [
+        {
+          "timestamp": 1781126717.46064,
+          "tracemalloc_current_mb": 0.0029764175415039062,
+          "tracemalloc_peak_mb": 0.0031137466430664062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.5107074,
+          "tracemalloc_current_mb": 32.0040979385376,
+          "tracemalloc_peak_mb": 48.003533363342285,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.560767,
+          "tracemalloc_current_mb": 32.00422763824463,
+          "tracemalloc_peak_mb": 48.003663063049316,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.612332,
+          "tracemalloc_current_mb": 32.00435733795166,
+          "tracemalloc_peak_mb": 48.00379276275635,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.6674619,
+          "tracemalloc_current_mb": 0.0030603408813476562,
+          "tracemalloc_peak_mb": 64.0041971206665,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 2,
+      "trace": [
+        {
+          "timestamp": 1781126717.6682694,
+          "tracemalloc_current_mb": 0.0028009414672851562,
+          "tracemalloc_peak_mb": 0.0029382705688476562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.7188332,
+          "tracemalloc_current_mb": 32.00392246246338,
+          "tracemalloc_peak_mb": 48.003357887268066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.7693686,
+          "tracemalloc_current_mb": 48.003602027893066,
+          "tracemalloc_peak_mb": 48.003602027893066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.8198829,
+          "tracemalloc_current_mb": 48.003846168518066,
+          "tracemalloc_peak_mb": 48.003846168518066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.8703876,
+          "tracemalloc_current_mb": 64.00405216217041,
+          "tracemalloc_peak_mb": 64.00408267974854,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.9211903,
+          "tracemalloc_current_mb": 0.0034418106079101562,
+          "tracemalloc_peak_mb": 64.0044412612915,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 1,
+      "trace": [
+        {
+          "timestamp": 1781126718.1290722,
+          "tracemalloc_current_mb": 0.0029306411743164062,
+          "tracemalloc_peak_mb": 0.0029993057250976562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.1795747,
+          "tracemalloc_current_mb": 32.00405216217041,
+          "tracemalloc_peak_mb": 48.0034875869751,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.230754,
+          "tracemalloc_current_mb": 32.00429630279541,
+          "tracemalloc_peak_mb": 48.0037317276001,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.2810488,
+          "tracemalloc_current_mb": 48.0039758682251,
+          "tracemalloc_peak_mb": 48.0039758682251,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.3350725,
+          "tracemalloc_current_mb": 0.0033578872680664062,
+          "tracemalloc_peak_mb": 64.00449466705322,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 2,
+      "trace": [
+        {
+          "timestamp": 1781126718.3359363,
+          "tracemalloc_current_mb": 0.0029840469360351562,
+          "tracemalloc_peak_mb": 0.0031213760375976562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.3875313,
+          "tracemalloc_current_mb": 32.00410556793213,
+          "tracemalloc_peak_mb": 48.003540992736816,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.43796,
+          "tracemalloc_current_mb": 48.003785133361816,
+          "tracemalloc_peak_mb": 48.003785133361816,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.488565,
+          "tracemalloc_current_mb": 64.00402164459229,
+          "tracemalloc_peak_mb": 64.00402164459229,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.5392156,
+          "tracemalloc_current_mb": 0.0033502578735351562,
+          "tracemalloc_peak_mb": 64.00434970855713,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 1,
+      "trace": [
+        {
+          "timestamp": 1781126718.751752,
+          "tracemalloc_current_mb": 0.0027093887329101562,
+          "tracemalloc_peak_mb": 0.0028467178344726562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.8020935,
+          "tracemalloc_current_mb": 32.003830909729004,
+          "tracemalloc_peak_mb": 48.00326633453369,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.852547,
+          "tracemalloc_current_mb": 48.00351047515869,
+          "tracemalloc_peak_mb": 48.00351047515869,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.9030986,
+          "tracemalloc_current_mb": 48.00375461578369,
+          "tracemalloc_peak_mb": 48.00375461578369,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.9533782,
+          "tracemalloc_current_mb": 64.00396060943604,
+          "tracemalloc_peak_mb": 64.00399112701416,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.004031,
+          "tracemalloc_current_mb": 0.0033502578735351562,
+          "tracemalloc_peak_mb": 64.00434970855713,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 2,
+      "trace": [
+        {
+          "timestamp": 1781126719.0047565,
+          "tracemalloc_current_mb": 0.0028390884399414062,
+          "tracemalloc_peak_mb": 0.0029764175415039062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.0549572,
+          "tracemalloc_current_mb": 32.003960609436035,
+          "tracemalloc_peak_mb": 48.00339603424072,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.1058857,
+          "tracemalloc_current_mb": 32.004204750061035,
+          "tracemalloc_peak_mb": 48.00364017486572,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.1562493,
+          "tracemalloc_current_mb": 48.00388431549072,
+          "tracemalloc_peak_mb": 48.00388431549072,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.20883,
+          "tracemalloc_current_mb": 0.0032663345336914062,
+          "tracemalloc_peak_mb": 64.00440311431885,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 1,
+      "trace": [
+        {
+          "timestamp": 1781126719.4142363,
+          "tracemalloc_current_mb": 0.0028162002563476562,
+          "tracemalloc_peak_mb": 0.0028848648071289062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.4647815,
+          "tracemalloc_current_mb": 32.00393772125244,
+          "tracemalloc_peak_mb": 48.00337314605713,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.5161273,
+          "tracemalloc_current_mb": 32.00418186187744,
+          "tracemalloc_peak_mb": 48.00361728668213,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.5663545,
+          "tracemalloc_current_mb": 48.00386142730713,
+          "tracemalloc_peak_mb": 48.00386142730713,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.620035,
+          "tracemalloc_current_mb": 0.0032434463500976562,
+          "tracemalloc_peak_mb": 64.00438022613525,
+          "rss_mb": "unavailable"
+        }
+      ]
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 2,
+      "trace": [
+        {
+          "timestamp": 1781126719.6207447,
+          "tracemalloc_current_mb": 0.0026407241821289062,
+          "tracemalloc_peak_mb": 0.0027780532836914062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.6713107,
+          "tracemalloc_current_mb": 32.00376224517822,
+          "tracemalloc_peak_mb": 48.00319766998291,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.7221737,
+          "tracemalloc_current_mb": 48.00344181060791,
+          "tracemalloc_peak_mb": 48.00344181060791,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.772359,
+          "tracemalloc_current_mb": 48.00368595123291,
+          "tracemalloc_peak_mb": 48.00368595123291,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.82305,
+          "tracemalloc_current_mb": 64.00389194488525,
+          "tracemalloc_peak_mb": 64.00392246246338,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.873853,
+          "tracemalloc_current_mb": 0.0032815933227539062,
+          "tracemalloc_peak_mb": 64.00428104400635,
+          "rss_mb": "unavailable"
+        }
+      ]
+    }
+  ],
+  "completeness_status": "partial",
+  "skipped_or_failed_memory_traces": [
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 1,
+      "peak_memory_mb": 64.00389099121094,
+      "memory_trace": [
+        {
+          "timestamp": 1781126716.0744772,
+          "tracemalloc_current_mb": 0.0029144287109375,
+          "tracemalloc_peak_mb": 0.0030517578125,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.1247761,
+          "tracemalloc_current_mb": 32.00391387939453,
+          "tracemalloc_peak_mb": 48.00334930419922,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.1752706,
+          "tracemalloc_current_mb": 48.00347900390625,
+          "tracemalloc_peak_mb": 48.00347900390625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.2258391,
+          "tracemalloc_current_mb": 48.00360870361328,
+          "tracemalloc_peak_mb": 48.00360870361328,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.27631,
+          "tracemalloc_current_mb": 64.00389099121094,
+          "tracemalloc_peak_mb": 64.00389099121094,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.3267503,
+          "tracemalloc_current_mb": 0.00299835205078125,
+          "tracemalloc_peak_mb": 64.00408935546875,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 2,
+      "peak_memory_mb": 48.003578186035156,
+      "memory_trace": [
+        {
+          "timestamp": 1781126716.327556,
+          "tracemalloc_current_mb": 0.00289154052734375,
+          "tracemalloc_peak_mb": 0.00302886962890625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.3778374,
+          "tracemalloc_current_mb": 48.003448486328125,
+          "tracemalloc_peak_mb": 48.003448486328125,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.4284205,
+          "tracemalloc_current_mb": 48.003578186035156,
+          "tracemalloc_peak_mb": 48.003578186035156,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.4790428,
+          "tracemalloc_current_mb": 32.0042724609375,
+          "tracemalloc_peak_mb": 48.00370788574219,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.5328755,
+          "tracemalloc_current_mb": 0.0029754638671875,
+          "tracemalloc_peak_mb": 64.00411224365234,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 1,
+      "peak_memory_mb": 64.0039291381836,
+      "memory_trace": [
+        {
+          "timestamp": 1781126716.7470832,
+          "tracemalloc_current_mb": 0.003021240234375,
+          "tracemalloc_peak_mb": 0.00308990478515625,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.7971811,
+          "tracemalloc_current_mb": 32.00414276123047,
+          "tracemalloc_peak_mb": 48.003578186035156,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.847808,
+          "tracemalloc_current_mb": 48.00370788574219,
+          "tracemalloc_peak_mb": 48.00370788574219,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.8983974,
+          "tracemalloc_current_mb": 32.00440216064453,
+          "tracemalloc_peak_mb": 48.00383758544922,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.9488337,
+          "tracemalloc_current_mb": 64.0039291381836,
+          "tracemalloc_peak_mb": 64.00395965576172,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126716.9994946,
+          "tracemalloc_current_mb": 0.003204345703125,
+          "tracemalloc_peak_mb": 64.00431823730469,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00375461578369,
+      "memory_trace": [
+        {
+          "timestamp": 1781126717.0002503,
+          "tracemalloc_current_mb": 0.0028467178344726562,
+          "tracemalloc_peak_mb": 0.0029840469360351562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.0508084,
+          "tracemalloc_current_mb": 32.003968238830566,
+          "tracemalloc_peak_mb": 48.003403663635254,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.1010118,
+          "tracemalloc_current_mb": 48.003533363342285,
+          "tracemalloc_peak_mb": 48.003533363342285,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.1518557,
+          "tracemalloc_current_mb": 32.00422763824463,
+          "tracemalloc_peak_mb": 48.003663063049316,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.2021635,
+          "tracemalloc_current_mb": 64.00375461578369,
+          "tracemalloc_peak_mb": 64.00378513336182,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.25281,
+          "tracemalloc_current_mb": 0.0030298233032226562,
+          "tracemalloc_peak_mb": 64.00414371490479,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 1,
+      "peak_memory_mb": 32.00435733795166,
+      "memory_trace": [
+        {
+          "timestamp": 1781126717.46064,
+          "tracemalloc_current_mb": 0.0029764175415039062,
+          "tracemalloc_peak_mb": 0.0031137466430664062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.5107074,
+          "tracemalloc_current_mb": 32.0040979385376,
+          "tracemalloc_peak_mb": 48.003533363342285,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.560767,
+          "tracemalloc_current_mb": 32.00422763824463,
+          "tracemalloc_peak_mb": 48.003663063049316,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.612332,
+          "tracemalloc_current_mb": 32.00435733795166,
+          "tracemalloc_peak_mb": 48.00379276275635,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.6674619,
+          "tracemalloc_current_mb": 0.0030603408813476562,
+          "tracemalloc_peak_mb": 64.0041971206665,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00405216217041,
+      "memory_trace": [
+        {
+          "timestamp": 1781126717.6682694,
+          "tracemalloc_current_mb": 0.0028009414672851562,
+          "tracemalloc_peak_mb": 0.0029382705688476562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.7188332,
+          "tracemalloc_current_mb": 32.00392246246338,
+          "tracemalloc_peak_mb": 48.003357887268066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.7693686,
+          "tracemalloc_current_mb": 48.003602027893066,
+          "tracemalloc_peak_mb": 48.003602027893066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.8198829,
+          "tracemalloc_current_mb": 48.003846168518066,
+          "tracemalloc_peak_mb": 48.003846168518066,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.8703876,
+          "tracemalloc_current_mb": 64.00405216217041,
+          "tracemalloc_peak_mb": 64.00408267974854,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126717.9211903,
+          "tracemalloc_current_mb": 0.0034418106079101562,
+          "tracemalloc_peak_mb": 64.0044412612915,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 1,
+      "peak_memory_mb": 48.0039758682251,
+      "memory_trace": [
+        {
+          "timestamp": 1781126718.1290722,
+          "tracemalloc_current_mb": 0.0029306411743164062,
+          "tracemalloc_peak_mb": 0.0029993057250976562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.1795747,
+          "tracemalloc_current_mb": 32.00405216217041,
+          "tracemalloc_peak_mb": 48.0034875869751,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.230754,
+          "tracemalloc_current_mb": 32.00429630279541,
+          "tracemalloc_peak_mb": 48.0037317276001,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.2810488,
+          "tracemalloc_current_mb": 48.0039758682251,
+          "tracemalloc_peak_mb": 48.0039758682251,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.3350725,
+          "tracemalloc_current_mb": 0.0033578872680664062,
+          "tracemalloc_peak_mb": 64.00449466705322,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00402164459229,
+      "memory_trace": [
+        {
+          "timestamp": 1781126718.3359363,
+          "tracemalloc_current_mb": 0.0029840469360351562,
+          "tracemalloc_peak_mb": 0.0031213760375976562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.3875313,
+          "tracemalloc_current_mb": 32.00410556793213,
+          "tracemalloc_peak_mb": 48.003540992736816,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.43796,
+          "tracemalloc_current_mb": 48.003785133361816,
+          "tracemalloc_peak_mb": 48.003785133361816,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.488565,
+          "tracemalloc_current_mb": 64.00402164459229,
+          "tracemalloc_peak_mb": 64.00402164459229,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.5392156,
+          "tracemalloc_current_mb": 0.0033502578735351562,
+          "tracemalloc_peak_mb": 64.00434970855713,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 1,
+      "peak_memory_mb": 64.00396060943604,
+      "memory_trace": [
+        {
+          "timestamp": 1781126718.751752,
+          "tracemalloc_current_mb": 0.0027093887329101562,
+          "tracemalloc_peak_mb": 0.0028467178344726562,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.8020935,
+          "tracemalloc_current_mb": 32.003830909729004,
+          "tracemalloc_peak_mb": 48.00326633453369,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.852547,
+          "tracemalloc_current_mb": 48.00351047515869,
+          "tracemalloc_peak_mb": 48.00351047515869,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.9030986,
+          "tracemalloc_current_mb": 48.00375461578369,
+          "tracemalloc_peak_mb": 48.00375461578369,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126718.9533782,
+          "tracemalloc_current_mb": 64.00396060943604,
+          "tracemalloc_peak_mb": 64.00399112701416,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.004031,
+          "tracemalloc_current_mb": 0.0033502578735351562,
+          "tracemalloc_peak_mb": 64.00434970855713,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 2,
+      "peak_memory_mb": 48.00388431549072,
+      "memory_trace": [
+        {
+          "timestamp": 1781126719.0047565,
+          "tracemalloc_current_mb": 0.0028390884399414062,
+          "tracemalloc_peak_mb": 0.0029764175415039062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.0549572,
+          "tracemalloc_current_mb": 32.003960609436035,
+          "tracemalloc_peak_mb": 48.00339603424072,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.1058857,
+          "tracemalloc_current_mb": 32.004204750061035,
+          "tracemalloc_peak_mb": 48.00364017486572,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.1562493,
+          "tracemalloc_current_mb": 48.00388431549072,
+          "tracemalloc_peak_mb": 48.00388431549072,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.20883,
+          "tracemalloc_current_mb": 0.0032663345336914062,
+          "tracemalloc_peak_mb": 64.00440311431885,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 1,
+      "peak_memory_mb": 48.00386142730713,
+      "memory_trace": [
+        {
+          "timestamp": 1781126719.4142363,
+          "tracemalloc_current_mb": 0.0028162002563476562,
+          "tracemalloc_peak_mb": 0.0028848648071289062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.4647815,
+          "tracemalloc_current_mb": 32.00393772125244,
+          "tracemalloc_peak_mb": 48.00337314605713,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.5161273,
+          "tracemalloc_current_mb": 32.00418186187744,
+          "tracemalloc_peak_mb": 48.00361728668213,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.5663545,
+          "tracemalloc_current_mb": 48.00386142730713,
+          "tracemalloc_peak_mb": 48.00386142730713,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.620035,
+          "tracemalloc_current_mb": 0.0032434463500976562,
+          "tracemalloc_peak_mb": 64.00438022613525,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 2,
+      "peak_memory_mb": 64.00389194488525,
+      "memory_trace": [
+        {
+          "timestamp": 1781126719.6207447,
+          "tracemalloc_current_mb": 0.0026407241821289062,
+          "tracemalloc_peak_mb": 0.0027780532836914062,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.6713107,
+          "tracemalloc_current_mb": 32.00376224517822,
+          "tracemalloc_peak_mb": 48.00319766998291,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.7221737,
+          "tracemalloc_current_mb": 48.00344181060791,
+          "tracemalloc_peak_mb": 48.00344181060791,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.772359,
+          "tracemalloc_current_mb": 48.00368595123291,
+          "tracemalloc_peak_mb": 48.00368595123291,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.82305,
+          "tracemalloc_current_mb": 64.00389194488525,
+          "tracemalloc_peak_mb": 64.00392246246338,
+          "rss_mb": "unavailable"
+        },
+        {
+          "timestamp": 1781126719.873853,
+          "tracemalloc_current_mb": 0.0032815933227539062,
+          "tracemalloc_peak_mb": 64.00428104400635,
+          "rss_mb": "unavailable"
+        }
+      ],
+      "completeness_status": "partial",
+      "sampling_method": "tracemalloc"
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 1,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 2,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 4,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 8,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 16,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 256,
+      "threads": 32,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 1,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 2,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 4,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 8,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 16,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    {
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "grid": 512,
+      "threads": 32,
+      "repeat_index": "skipped",
+      "peak_memory_mb": "unavailable",
+      "memory_trace": [],
+      "completeness_status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    }
+  ],
+  "gate_6_passed": true,
+  "non_claims": [
+    "Phase 6 records workstation scaling behavior only.",
+    "Phase 6 does not claim performance superiority.",
+    "Phase 6 does not establish production readiness.",
+    "Phase 6 does not establish HPC scalability.",
+    "Phase 6 does not establish cloud readiness.",
+    "Phase 6 does not constitute SWORD execution."
+  ]
+}

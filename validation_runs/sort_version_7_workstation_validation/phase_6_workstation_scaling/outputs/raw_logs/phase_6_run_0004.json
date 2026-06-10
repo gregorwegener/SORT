@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-06-10T23:25:16+02:00",
+  "command": "src\\benchmark_runner.py --config config\\phase_6_setup.json --mode safe-gate",
+  "config_path": "config\\phase_6_setup.json",
+  "mode": "safe-gate",
+  "grid": 128,
+  "threads": 2,
+  "repeat_index": "warmup_1",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "status": "warmup",
+  "error_message": "",
+  "output_paths": {
+    "scaling_results": "outputs/scaling_results.csv",
+    "runtime_profiles": "outputs/runtime_profiles.json",
+    "memory_profiles": "outputs/memory_profiles.json",
+    "raw_logs": "outputs/raw_logs/"
+  }
+}

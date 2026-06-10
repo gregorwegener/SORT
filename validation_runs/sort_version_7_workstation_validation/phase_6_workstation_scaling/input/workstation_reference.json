@@ -1,0 +1,39 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 6 — Workstation Scaling",
+  "machine_reference": {
+    "machine_label": "Lenovo ThinkStation P3 Ultra",
+    "computer_name": "THINKSTATION",
+    "model_identifier": "LENOVO 30HACTO1WW",
+    "operating_system": "Microsoft Windows 11 Professional x64 Build 26100.6584",
+    "cpu": "Intel Core i9-13900K",
+    "cpu_topology": {
+      "physical_processors": 1,
+      "physical_cores": 24,
+      "logical_processors": 32,
+      "performance_cores": 8,
+      "efficient_cores": 16
+    },
+    "memory": {
+      "total_memory_gb": 64,
+      "type": "DDR5",
+      "configuration": "2 x 32 GB Samsung DDR5-4800 SODIMM"
+    },
+    "gpu": [
+      "NVIDIA T1000 8GB",
+      "Intel UHD Graphics 770"
+    ],
+    "storage": [
+      "SKHynix NVMe 1 TB"
+    ],
+    "virtualization_note": "Hyper-V is active; some low-level hardware readings may reflect virtualization effects."
+  },
+  "privacy_note": "Raw HWiNFO logs, serial numbers, MAC addresses, device instance IDs, and other unique identifiers are intentionally excluded.",
+  "non_claims": [
+    "This machine reference documents the local workstation context only.",
+    "It does not establish performance superiority.",
+    "It does not establish production readiness.",
+    "It does not establish HPC scalability.",
+    "It does not constitute SWORD execution."
+  ]
+}

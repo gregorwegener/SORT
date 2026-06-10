@@ -1,0 +1,595 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 6 — Workstation Scaling",
+  "repository": {
+    "name": "gregorwegener/SORT",
+    "canonical_url": "https://github.com/gregorwegener/SORT",
+    "validation_root": "validation_runs/sort_version_7_workstation_validation",
+    "phase_path": "validation_runs/sort_version_7_workstation_validation/phase_6_workstation_scaling"
+  },
+  "configuration_snapshot": {
+    "sort_version": "Version 7",
+    "phase": "Phase 6 — Workstation Scaling",
+    "scaling": {
+      "grids": [
+        128,
+        256,
+        512
+      ],
+      "threads": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "repeats": 5,
+      "warmup_runs": 1
+    },
+    "benchmark_kernel": {
+      "projection_iterations": 20,
+      "global_projector_iterations": 5,
+      "early_stopping": false,
+      "adaptive_parameters": false
+    },
+    "runtime": {
+      "norm_type": "L2",
+      "blas_threads_mode": "explicit",
+      "memory_sampling_interval_ms": 50
+    },
+    "execution_policy": {
+      "declared_full_matrix": true,
+      "default_execution_profile": "safe_workstation_gate_run",
+      "safe_gate_grids": [
+        128
+      ],
+      "safe_gate_threads": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "safe_gate_repeats": 2,
+      "record_skipped_declared_runs": true,
+      "skip_reason_for_unexecuted_declared_runs": "Not executed in safe workstation gate run; full run remains available through --mode full."
+    },
+    "seed": {
+      "global_seed": 117666,
+      "seed_reference": "../phase_0_setup/seed_config.json"
+    },
+    "inputs": {
+      "env_spec": "../phase_0_setup/env_spec.yaml",
+      "seed_config": "../phase_0_setup/seed_config.json",
+      "run_manifest": "../phase_0_setup/run_manifest.json",
+      "projection_operator_ref": "input/projection_operator_ref.json",
+      "global_projector_ref": "input/global_projector_ref.json",
+      "validation_reference_manifest": "input/validation_reference_manifest.json"
+    },
+    "outputs": {
+      "scaling_results": "outputs/scaling_results.csv",
+      "runtime_profiles": "outputs/runtime_profiles.json",
+      "memory_profiles": "outputs/memory_profiles.json",
+      "raw_logs": "outputs/raw_logs/"
+    },
+    "non_claims": [
+      "Phase 6 records workstation scaling behavior only.",
+      "Phase 6 does not claim performance superiority.",
+      "Phase 6 does not establish production readiness.",
+      "Phase 6 does not establish HPC scalability.",
+      "Phase 6 does not establish cloud readiness.",
+      "Phase 6 does not constitute SWORD execution."
+    ]
+  },
+  "declared_scaling_matrix": {
+    "grids": [
+      128,
+      256,
+      512
+    ],
+    "threads": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "executed_profile": "safe-gate",
+  "machine_profile": {
+    "timestamp": "2026-06-10T23:25:15+02:00",
+    "machine_id": "ThinkStation",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "os_name": "Windows",
+    "os_version": "10.0.26200",
+    "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "python_version": "3.13.5",
+    "python_executable": "C:\\Users\\grego\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "numpy_version": "2.2.6",
+    "blas": {
+      "implementation": "OpenBLAS",
+      "details": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.1.0\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-iv6bfc05\\Scripts\\python.exe\n  version: '3.13'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL"
+    },
+    "git": {
+      "commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "branch": "sort-version-7-phase-6-workstation-scaling",
+      "remote_origin": "https://github.com/gregorwegener/SORT.git"
+    }
+  },
+  "workstation_reference": {
+    "sort_version": "Version 7",
+    "phase": "Phase 6 — Workstation Scaling",
+    "machine_reference": {
+      "machine_label": "Lenovo ThinkStation P3 Ultra",
+      "computer_name": "THINKSTATION",
+      "model_identifier": "LENOVO 30HACTO1WW",
+      "operating_system": "Microsoft Windows 11 Professional x64 Build 26100.6584",
+      "cpu": "Intel Core i9-13900K",
+      "cpu_topology": {
+        "physical_processors": 1,
+        "physical_cores": 24,
+        "logical_processors": 32,
+        "performance_cores": 8,
+        "efficient_cores": 16
+      },
+      "memory": {
+        "total_memory_gb": 64,
+        "type": "DDR5",
+        "configuration": "2 x 32 GB Samsung DDR5-4800 SODIMM"
+      },
+      "gpu": [
+        "NVIDIA T1000 8GB",
+        "Intel UHD Graphics 770"
+      ],
+      "storage": [
+        "SKHynix NVMe 1 TB"
+      ],
+      "virtualization_note": "Hyper-V is active; some low-level hardware readings may reflect virtualization effects."
+    },
+    "privacy_note": "Raw HWiNFO logs, serial numbers, MAC addresses, device instance IDs, and other unique identifiers are intentionally excluded.",
+    "non_claims": [
+      "This machine reference documents the local workstation context only.",
+      "It does not establish performance superiority.",
+      "It does not establish production readiness.",
+      "It does not establish HPC scalability.",
+      "It does not constitute SWORD execution."
+    ]
+  },
+  "python_version": "3.13.5",
+  "library_versions": {
+    "numpy": "2.2.6"
+  },
+  "blas": {
+    "implementation": "OpenBLAS",
+    "details": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.1.0\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-iv6bfc05\\Scripts\\python.exe\n  version: '3.13'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL"
+  },
+  "os": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "os_name": "Windows",
+    "os_version": "10.0.26200"
+  },
+  "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "git_state": {
+    "commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+    "branch": "sort-version-7-phase-6-workstation-scaling",
+    "remote_origin": "https://github.com/gregorwegener/SORT.git"
+  },
+  "thread_environment_variables": {
+    "OMP_NUM_THREADS": "32",
+    "MKL_NUM_THREADS": "32",
+    "OPENBLAS_NUM_THREADS": "32",
+    "NUMEXPR_NUM_THREADS": "32"
+  },
+  "run_summaries": [
+    {
+      "timestamp": "2026-06-10T23:25:16+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 1,
+      "wall_time_sec": "0.207627100",
+      "peak_rss_mb": 64.00389099121094,
+      "final_residual": 1448.4805620979291,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:16+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 1,
+      "repeat_index": 2,
+      "wall_time_sec": "0.205105400",
+      "peak_rss_mb": 48.003578186035156,
+      "final_residual": 1446.739126407142,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:16+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 1,
+      "wall_time_sec": "0.211214100",
+      "peak_rss_mb": 64.0039291381836,
+      "final_residual": 1446.739126407142,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:16+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 2,
+      "repeat_index": 2,
+      "wall_time_sec": "0.211989300",
+      "peak_rss_mb": 64.00375461578369,
+      "final_residual": 1447.8495810825525,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:17+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 1,
+      "wall_time_sec": "0.206606500",
+      "peak_rss_mb": 32.00435733795166,
+      "final_residual": 1448.4488525095858,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:17+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 4,
+      "repeat_index": 2,
+      "wall_time_sec": "0.208930900",
+      "peak_rss_mb": 64.00405216217041,
+      "final_residual": 1447.755176337833,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:18+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 1,
+      "wall_time_sec": "0.205803400",
+      "peak_rss_mb": 48.0039758682251,
+      "final_residual": 1448.3508566656026,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:18+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 8,
+      "repeat_index": 2,
+      "wall_time_sec": "0.181523800",
+      "peak_rss_mb": 64.00402164459229,
+      "final_residual": 1448.7533079700067,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:18+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 1,
+      "wall_time_sec": "0.210314600",
+      "peak_rss_mb": 64.00396060943604,
+      "final_residual": 1449.0559505327005,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 16,
+      "repeat_index": 2,
+      "wall_time_sec": "0.203882400",
+      "peak_rss_mb": 48.00388431549072,
+      "final_residual": 1448.3964563672712,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 1,
+      "wall_time_sec": "0.205571200",
+      "peak_rss_mb": 48.00386142730713,
+      "final_residual": 1447.5743032507694,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 128,
+      "threads": 32,
+      "repeat_index": 2,
+      "wall_time_sec": "0.209711200",
+      "peak_rss_mb": 64.00389194488525,
+      "final_residual": 1446.0697627122636,
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "success",
+      "skip_reason": "",
+      "error_message": ""
+    }
+  ],
+  "skipped_run_summaries": [
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 256,
+      "threads": 1,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 256,
+      "threads": 2,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 256,
+      "threads": 4,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 256,
+      "threads": 8,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 256,
+      "threads": 16,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 256,
+      "threads": 32,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 512,
+      "threads": 1,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 512,
+      "threads": 2,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 512,
+      "threads": 4,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 512,
+      "threads": 8,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 512,
+      "threads": 16,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    },
+    {
+      "timestamp": "2026-06-10T23:25:19+02:00",
+      "run_id": "sort-version-7-phase-6-20260610T232515+0200",
+      "mode": "safe-gate",
+      "grid": 512,
+      "threads": 32,
+      "repeat_index": "skipped",
+      "wall_time_sec": "",
+      "peak_rss_mb": "",
+      "final_residual": "",
+      "git_commit": "7e8c890b9fca8ce5a31bed73fe59ed920d2d64dc",
+      "machine_id": "ThinkStation",
+      "status": "skipped",
+      "skip_reason": "Not executed in safe workstation gate run; full run remains available through --mode full.",
+      "error_message": ""
+    }
+  ],
+  "failed_run_summaries": [],
+  "gate_6_completion": {
+    "measured_run_count": 12,
+    "skipped_run_count": 12,
+    "failed_run_count": 0,
+    "skipped_declared_runs_recorded": true,
+    "required_references_available": true,
+    "memory_recorded_or_explicitly_unavailable": true,
+    "raw_log_count": 30,
+    "gate_6_passed": true
+  },
+  "overall_passed": true,
+  "gate_6_passed": true,
+  "non_claims": [
+    "Phase 6 records workstation scaling behavior only.",
+    "Phase 6 does not claim performance superiority.",
+    "Phase 6 does not establish production readiness.",
+    "Phase 6 does not establish HPC scalability.",
+    "Phase 6 does not establish cloud readiness.",
+    "Phase 6 does not constitute SWORD execution."
+  ]
+}
