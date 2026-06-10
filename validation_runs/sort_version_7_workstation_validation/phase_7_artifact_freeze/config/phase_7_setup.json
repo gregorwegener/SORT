@@ -1,0 +1,88 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 7 — Artifact Freeze",
+  "repository": {
+    "name": "gregorwegener/SORT",
+    "canonical_url": "https://github.com/gregorwegener/SORT",
+    "validation_root": "validation_runs/sort_version_7_workstation_validation"
+  },
+  "required_phases": [
+    "phase_0_setup",
+    "phase_1_operator_integrity",
+    "phase_2_projection_kernel",
+    "phase_3_global_projector",
+    "phase_4_fixed_point",
+    "phase_5_drift_stability"
+  ],
+  "recommended_phases": [
+    "phase_6_workstation_scaling"
+  ],
+  "optional_phase_policy": {
+    "phase_6_workstation_scaling": "include_if_available_else_record_skipped"
+  },
+  "hashing": {
+    "algorithm": "sha256",
+    "include_file_size": true,
+    "include_relative_path": true
+  },
+  "freeze_package": {
+    "zip_name": "SORT_Version_7_Workstation_Validation.zip",
+    "include_source_files": true,
+    "include_outputs": true,
+    "include_readmes": true,
+    "include_manifests": true
+  },
+  "exclude_patterns": [
+    "__pycache__",
+    "*.pyc",
+    ".pytest_cache",
+    ".DS_Store",
+    "Thumbs.db",
+    ".idea",
+    ".git",
+    "*.LOG",
+    "*.log.raw",
+    "THINKSTATION*.LOG",
+    "SORT_Version_7_Workstation_Validation.zip"
+  ],
+  "audit_rules": {
+    "forbidden_version_labels": [
+      "Version 7.1",
+      "Version 7.2",
+      "v7.1",
+      "v7.2",
+      "internal v7"
+    ],
+    "forbidden_claim_terms": [
+      "SWORD execution",
+      "ASDV execution",
+      "empirical validation",
+      "production validation",
+      "benchmark superiority",
+      "HPC validation",
+      "cloud-readiness",
+      "production-readiness",
+      "minimality proof",
+      "necessity proof",
+      "MOCK v5"
+    ],
+    "non_claim_context_allowed": true
+  },
+  "outputs": {
+    "prefreeze_audit_report": "outputs/prefreeze_audit_report.json",
+    "artifact_inventory": "outputs/artifact_inventory.csv",
+    "hashes": "outputs/hashes.txt",
+    "repro_manifest": "outputs/repro_manifest.json",
+    "freeze_report": "outputs/freeze_report.json",
+    "zip_package": "outputs/SORT_Version_7_Workstation_Validation.zip"
+  },
+  "non_claims": [
+    "Phase 7 freezes validation artifacts only.",
+    "Phase 7 does not generate new scientific results.",
+    "Phase 7 does not constitute SWORD execution.",
+    "Phase 7 does not constitute ASDV execution.",
+    "Phase 7 does not constitute empirical validation.",
+    "Phase 7 does not establish minimality or structural necessity.",
+    "Phase 7 does not create a new MOCK version."
+  ]
+}
