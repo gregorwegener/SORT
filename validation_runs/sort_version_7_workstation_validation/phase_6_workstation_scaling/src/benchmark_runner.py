@@ -1,7 +1,7 @@
 """Phase 6 workstation scaling runner.
 
 This runner records controlled workstation execution behavior. It does not
-produce performance superiority, production readiness, or HPC scalability claims.
+assert speed, readiness, or distributed scaling conclusions.
 """
 
 from __future__ import annotations
@@ -136,13 +136,21 @@ def main(argv: list[str] | None = None) -> int:
         raw_logs.append(_raw_log(args, config_path, result, capture_thread_environment()))
 
     _write_scaling_results(phase_root / config["outputs"]["scaling_results"], results)
+    gate_summary = _gate_6_summary(
+        phase_root=phase_root,
+        config=config,
+        results=results,
+        raw_logs=raw_logs,
+        memory_runs=memory_runs,
+    )
     runtime_profile = _runtime_profile(
         config=config,
         runtime_environment=runtime_environment,
         args=args,
         results=results,
+        gate_summary=gate_summary,
     )
-    memory_profile = _memory_profile(config=config, memory_runs=memory_runs)
+    memory_profile = _memory_profile(config=config, memory_runs=memory_runs, gate_summary=gate_summary)
     write_runtime_profile(phase_root / config["outputs"]["runtime_profiles"], runtime_profile)
     write_runtime_profile(phase_root / config["outputs"]["memory_profiles"], memory_profile)
     _write_raw_logs(phase_root, config, raw_logs)
@@ -201,6 +209,51 @@ def _update_reference_manifest(phase_root: Path, config: dict[str, Any]) -> None
         json.dumps(manifest, indent=2, ensure_ascii=False, sort_keys=False) + "\n",
         encoding="utf-8",
     )
+
+
+def _required_references_available(phase_root: Path, config: dict[str, Any]) -> bool:
+    manifest_path = phase_root / config["inputs"]["validation_reference_manifest"]
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    availability = manifest.get("availability_status", {})
+    required = availability.get("phase_0", {}) | availability.get("phase_2", {}) | availability.get("phase_3", {})
+    return bool(required) and all(required.values())
+
+
+def _gate_6_summary(
+    *,
+    phase_root: Path,
+    config: dict[str, Any],
+    results: list[dict[str, Any]],
+    raw_logs: list[dict[str, Any]],
+    memory_runs: list[dict[str, Any]],
+) -> dict[str, Any]:
+    measured_count = sum(1 for result in results if result["status"] == "success")
+    skipped_count = sum(1 for result in results if result["status"] == "skipped")
+    failed_count = sum(1 for result in results if result["status"] == "failed")
+    safe_gate_requires_skips = config["execution_policy"].get("record_skipped_declared_runs", False)
+    skipped_runs_recorded = skipped_count > 0 if safe_gate_requires_skips else True
+    required_references_available = _required_references_available(phase_root, config)
+    memory_recorded_or_explicit = all(
+        "peak_memory_mb" in run and run.get("completeness_status") for run in memory_runs
+    )
+    gate_6_passed = (
+        measured_count > 0
+        and failed_count == 0
+        and skipped_runs_recorded
+        and required_references_available
+        and memory_recorded_or_explicit
+        and len(raw_logs) > 0
+    )
+    return {
+        "measured_run_count": measured_count,
+        "skipped_run_count": skipped_count,
+        "failed_run_count": failed_count,
+        "skipped_declared_runs_recorded": skipped_runs_recorded,
+        "required_references_available": required_references_available,
+        "memory_recorded_or_explicitly_unavailable": memory_recorded_or_explicit,
+        "raw_log_count": len(raw_logs),
+        "gate_6_passed": gate_6_passed,
+    }
 
 
 def _selected_run_specs(config: dict[str, Any], args: argparse.Namespace) -> list[dict[str, Any]]:
@@ -434,6 +487,7 @@ def _runtime_profile(
     runtime_environment: dict[str, Any],
     args: argparse.Namespace,
     results: list[dict[str, Any]],
+    gate_summary: dict[str, Any],
 ) -> dict[str, Any]:
     return {
         "sort_version": "Version 7",
@@ -465,11 +519,18 @@ def _runtime_profile(
         "run_summaries": [result for result in results if result["status"] == "success"],
         "skipped_run_summaries": [result for result in results if result["status"] == "skipped"],
         "failed_run_summaries": [result for result in results if result["status"] == "failed"],
+        "gate_6_completion": gate_summary,
+        "overall_passed": gate_summary["gate_6_passed"],
+        "gate_6_passed": gate_summary["gate_6_passed"],
         "non_claims": config["non_claims"],
     }
 
 
-def _memory_profile(config: dict[str, Any], memory_runs: list[dict[str, Any]]) -> dict[str, Any]:
+def _memory_profile(
+    config: dict[str, Any],
+    memory_runs: list[dict[str, Any]],
+    gate_summary: dict[str, Any],
+) -> dict[str, Any]:
     return {
         "sort_version": "Version 7",
         "phase": "Phase 6 — Workstation Scaling",
@@ -493,6 +554,7 @@ def _memory_profile(config: dict[str, Any], memory_runs: list[dict[str, Any]]) -
         "skipped_or_failed_memory_traces": [
             run for run in memory_runs if run.get("completeness_status") in {"skipped", "failed", "partial"}
         ],
+        "gate_6_passed": gate_summary["gate_6_passed"],
         "non_claims": config["non_claims"],
     }
 
