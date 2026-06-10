@@ -1,0 +1,39 @@
+sort_version: "Version 7"
+phase: "Phase 0 — Setup and Reproducibility"
+generated_at: "2026-06-10T21:36:22+02:00"
+repository:
+  name: "gregorwegener/SORT"
+  canonical_url: "https://github.com/gregorwegener/SORT"
+  validation_root: "validation_runs/sort_version_7_workstation_validation"
+  local_working_copy: "C:\\Users\\grego\\OneDrive\\Dokumente\\Gregor\\Privat\\Ideen\\ToE Project\\SORT"
+machine:
+  hostname: "ThinkStation"
+  platform: "Windows-11-10.0.26200-SP0"
+  os_name: "Windows"
+  os_version: "10.0.26200"
+  cpu_model: "13th Gen Intel(R) Core(TM) i9-13900K"
+  physical_cores: null
+  logical_threads: 32
+  ram_gb: 63.57
+python:
+  version: "3.13.5"
+  executable: "C:\\Users\\grego\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+libraries:
+  numpy: "2.2.6"
+  scipy: "1.16.3"
+  sympy: "1.14.0"
+blas:
+  implementation: "OpenBLAS"
+  details: "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.1.0\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-iv6bfc05\\Scripts\\python.exe\n  version: '3.13'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  not found:\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n"
+git:
+  commit: "4ce357f0d68f08635bda38060c027e99d11dd9aa"
+  branch: "sort-version-7-phase-0-validation"
+  dirty: true
+  remote_origin: "https://github.com/gregorwegener/SORT.git"
+  default_branch: "main"
+seed_reference:
+  file: "seed_config.json"
+  global_seed: 117666
+notes:
+  - "Phase 0 records environment, repository, and reproducibility metadata only."
+  - "No scientific results are generated in this phase."

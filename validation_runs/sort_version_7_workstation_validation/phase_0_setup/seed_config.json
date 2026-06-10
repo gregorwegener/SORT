@@ -1,0 +1,24 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 0 — Setup and Reproducibility",
+  "global_seed": 117666,
+  "rng_backend": "numpy.random.default_rng",
+  "deterministic": true,
+  "adaptive_reseed_allowed": false,
+  "seed_policy": "The global seed is fixed for all SORT Version 7 workstation validation phases. Adaptive reseeding is not allowed.",
+  "allowed_usage": [
+    "synthetic reference state generation",
+    "deterministic perturbation generation",
+    "reproducible validation runs"
+  ],
+  "not_allowed_usage": [
+    "empirical fitting",
+    "production telemetry sampling",
+    "customer data processing",
+    "adaptive optimization"
+  ],
+  "notes": [
+    "This seed configuration supports reproducibility only.",
+    "It does not establish empirical validity or structural necessity."
+  ]
+}

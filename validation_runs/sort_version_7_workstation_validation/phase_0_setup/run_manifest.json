@@ -1,0 +1,71 @@
+{
+  "run_id": "sort-version-7-workstation-validation-20260610T213622p0200",
+  "sort_version": "Version 7",
+  "phase": "Phase 0 — Setup and Reproducibility",
+  "generated_at": "2026-06-10T21:36:22+02:00",
+  "repository": {
+    "name": "gregorwegener/SORT",
+    "canonical_url": "https://github.com/gregorwegener/SORT",
+    "validation_root": "validation_runs/sort_version_7_workstation_validation",
+    "local_working_copy": "C:\\Users\\grego\\OneDrive\\Dokumente\\Gregor\\Privat\\Ideen\\ToE Project\\SORT"
+  },
+  "machine": {
+    "hostname": "ThinkStation",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "os_name": "Windows",
+    "os_version": "10.0.26200",
+    "cpu_model": "13th Gen Intel(R) Core(TM) i9-13900K",
+    "physical_cores": null,
+    "logical_threads": 32,
+    "ram_gb": 63.57
+  },
+  "python": {
+    "version": "3.13.5",
+    "executable": "C:\\Users\\grego\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+  },
+  "git": {
+    "commit": "4ce357f0d68f08635bda38060c027e99d11dd9aa",
+    "branch": "sort-version-7-phase-0-validation",
+    "dirty": true,
+    "available": true,
+    "remote_origin": "https://github.com/gregorwegener/SORT.git",
+    "default_branch": "main"
+  },
+  "references": {
+    "env_spec": "phase_0_setup/env_spec.yaml",
+    "seed_config": "phase_0_setup/seed_config.json"
+  },
+  "phase_0_outputs": {
+    "env_spec": "phase_0_setup/env_spec.yaml",
+    "seed_config": "phase_0_setup/seed_config.json",
+    "run_manifest": "phase_0_setup/run_manifest.json",
+    "collect_env": "phase_0_setup/collect_env.py",
+    "readme": "phase_0_setup/README.md"
+  },
+  "validation_scope": {
+    "level": "Level-0 structural validation",
+    "uses_empirical_data": false,
+    "uses_production_telemetry": false,
+    "uses_customer_data": false,
+    "uses_hpc": false,
+    "uses_sword": false,
+    "uses_asdv": false
+  },
+  "phase_sequence": [
+    "Phase 0 — Setup and Reproducibility",
+    "Phase 1 — Operator Integrity",
+    "Phase 2 — Projection Kernel",
+    "Phase 3 — Global Projector",
+    "Phase 4 — Fixed-Point Structure",
+    "Phase 5 — Drift and Stability",
+    "Phase 6 — Workstation Scaling",
+    "Phase 7 — Artifact Freeze"
+  ],
+  "non_claims": [
+    "Phase 0 produces no scientific results.",
+    "This run does not constitute empirical validation.",
+    "This run does not constitute SWORD execution.",
+    "This run does not constitute a new MOCK version.",
+    "This run does not establish minimality or structural necessity."
+  ]
+}
