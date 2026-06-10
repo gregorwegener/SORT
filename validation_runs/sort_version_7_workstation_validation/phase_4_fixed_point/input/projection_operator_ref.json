@@ -1,0 +1,18 @@
+{
+  "sort_version": "Version 7",
+  "phase": "Phase 4 — Fixed-Point Structure",
+  "phase_2_dependencies": {
+    "projection_operator": "../phase_2_projection_kernel/src/projection_operator.py",
+    "kernel_definitions": "../phase_2_projection_kernel/input/kernel_definitions.yaml",
+    "phase_2_setup": "../phase_2_projection_kernel/config/phase_2_setup.json",
+    "kernel_norm_report": "../phase_2_projection_kernel/outputs/kernel_norm_report.json",
+    "projection_residuals": "../phase_2_projection_kernel/outputs/projection_residuals.csv",
+    "kernel_profiles": "../phase_2_projection_kernel/outputs/kernel_profiles.csv"
+  },
+  "dependency_statement": "Phase 4 consumes the Phase 2 projection interface and does not redefine the projection kernel.",
+  "non_claims": [
+    "This reference does not constitute a new projection-kernel validation.",
+    "This reference does not introduce SWORD execution.",
+    "This reference does not introduce empirical data."
+  ]
+}
