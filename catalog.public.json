@@ -1,0 +1,1314 @@
+{
+  "$schema": "https://sort-framework.org/schemas/catalog.public.v6.2.json",
+  "version": "6.2",
+  "date": "2026-02",
+  "status": "public",
+  "source_of_record": "catalog.public.json",
+  "metadata": {
+    "total_applications": 107,
+    "technical_domains": 91,
+    "meta_domain": 5,
+    "non_ip": 11
+  },
+  "architecture": {
+    "axes": [
+      {
+        "name": "domain",
+        "type": "vertical",
+        "meaning": "Market, buyer group, regulatory context",
+        "license_relevant": true
+      },
+      {
+        "name": "cluster",
+        "type": "horizontal",
+        "meaning": "License and patent levels",
+        "license_relevant": true
+      },
+      {
+        "name": "structural_dimensions",
+        "type": "internal",
+        "meaning": "Ordering and explanation layer (V1-V4)",
+        "license_relevant": false
+      }
+    ],
+    "clusters": {
+      "A": { "label": "Coupling", "focus": "Physical and logical coupling" },
+      "B": { "label": "Learning", "focus": "Temporal adaptation and learning" },
+      "C": { "label": "Control", "focus": "Operative control and coherence" },
+      "D": { "label": "Emergence", "focus": "Emergent, non-linear behavior" },
+      "E": { "label": "Evidence", "focus": "Traceability, auditability, justification" }
+    }
+  },
+  "domains": {
+    "sovereign": {
+      "label": "SOV",
+      "type": "meta-domain",
+      "cluster_scope": ["A", "C", "E"],
+      "description": "Projects structural results from AI, CX, and QS onto strategic, regulatory, and state decision spaces"
+    },
+    "ai-systems": {
+      "label": "AI",
+      "type": "technical",
+      "cluster_scope": ["A", "B", "C", "D", "E"]
+    },
+    "complex-systems": {
+      "label": "CX",
+      "type": "technical",
+      "cluster_scope": ["A", "B", "C", "D", "E"]
+    },
+    "quantum-systems": {
+      "label": "QS",
+      "type": "technical",
+      "cluster_scope": ["A", "B", "C", "D", "E"]
+    },
+    "cosmology": {
+      "label": "COSMO",
+      "type": "non-ip",
+      "cluster_scope": null,
+      "description": "Scientific publications only, not licensed"
+    }
+  },
+  "core_3": {
+    "description": "Three cluster licenses (A + C + D). Clusters B and E not included.",
+    "applications": ["ai.01", "ai.04", "ai.13"]
+  },
+  "applications": {
+    "sovereign": [
+      {
+        "id": "sov.01",
+        "title": "Sovereign Infrastructure Stability & Bottleneck Risk Control",
+        "one_liner": "Strategic structural assessment of critical infrastructure as coupled system, modeling failure costs, time risks, and sovereignty implications.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "National infrastructure shows unexpected fragility under scaling or disruption",
+          "V2": "Coupling between subsystems creates systemic risks beyond local metrics",
+          "V3": "Projection onto structural stability spaces; bottleneck identification",
+          "V4": "Strategic CapEx decisions, sovereignty assessment, time-risk estimation"
+        }
+      },
+      {
+        "id": "sov.02",
+        "title": "Structural Vendor Lock-In Stability and Exit Risk Assessment",
+        "one_liner": "Structural analysis of dependencies that jeopardize stability and controllability during vendor transitions or multi-vendor setups, translating technical dependencies into strategic risks.",
+        "cluster": "E",
+        "dimensions": {
+          "V1": "Vendor transitions cause unexpected instability despite functional equivalence",
+          "V2": "Lock-in is structural through implicit control assumptions",
+          "V3": "Dependency graph analysis; evidence generation for exit risks",
+          "V4": "Exit strategy assessment, multi-vendor architecture decisions, procurement justification"
+        }
+      },
+      {
+        "id": "sov.03",
+        "title": "Sovereign Runtime Auditability and Control Transparency",
+        "one_liner": "Structural evidence provision for runtime control in sovereign infrastructures, enabling formal justification to regulatory and state actors.",
+        "cluster": "E",
+        "dimensions": {
+          "V1": "Sovereign systems are functionally stable but not formally auditable",
+          "V2": "Gap between operational control and demonstrable control integrity",
+          "V3": "Evidence layer for runtime control decisions without implementation disclosure",
+          "V4": "Regulatory compliance, state certification, audit-readiness"
+        }
+      },
+      {
+        "id": "sov.04",
+        "title": "Multi-Layer Infrastructure Dependency and Bottleneck Analysis",
+        "one_liner": "Structural analysis of dependencies and bottlenecks across infrastructure layers (energy, network, compute, storage), identifying critical coupling paths.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Infrastructure layers show unexpected coupling effects under scaling or failure",
+          "V2": "Cross-layer dependencies create systemic bottlenecks",
+          "V3": "Structural projection of multi-layer dependencies onto stability spaces",
+          "V4": "Infrastructure investment decisions, capacity planning, risk prioritization"
+        }
+      },
+      {
+        "id": "sov.05",
+        "title": "Strategic Decision Support for Regulatory and State Actors",
+        "one_liner": "Structural decision support translating technical stability analyses into governance-relevant decision foundations for regulatory and strategic actors.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Technical stability analyses are not decision-relevant for regulatory actors",
+          "V2": "Gap between engineering perspective and governance requirements",
+          "V3": "Structural translation of stability spaces into decision foundations",
+          "V4": "Regulatory framework decisions, funding allocation, strategic infrastructure planning"
+        }
+      }
+    ],
+    "ai-systems": [
+      {
+        "id": "ai.01",
+        "title": "Interconnect Stability Control",
+        "one_liner": "Structural stability diagnostics and control for interconnect induced performance collapse in distributed AI and HPC systems.",
+        "cluster": "A",
+        "core_3": true,
+        "related_whitepaper": "SORT-AI: Interconnect Stability and Cost per Performance",
+        "dimensions": {
+          "V1": "Sudden performance collapse despite stable individual components",
+          "V2": "Interconnect coupling creates structural dependencies beyond bandwidth and latency",
+          "V3": "Projection onto structural coupling-stability spaces; critical path identification",
+          "V4": "Network architecture, topology decisions, scaling strategies"
+        }
+      },
+      {
+        "id": "ai.02",
+        "title": "Structural Drift Diagnostics for AI Workloads",
+        "one_liner": "Detect structural drift across training and inference pipelines beyond metrics and telemetry.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Workload behavior drifts despite stable metrics",
+          "V2": "Structural changes in pipelines not captured by telemetry",
+          "V3": "Projection onto structural drift spaces; early detection before metric degradation",
+          "V4": "Pipeline monitoring, release decisions, drift prevention"
+        }
+      },
+      {
+        "id": "ai.03",
+        "title": "Safety and Risk Surfaces under Projection",
+        "one_liner": "Projection based risk surfaces for advanced AI systems, stability classes and failure modes.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Safety boundaries are not stable under projection",
+          "V2": "Emergent effects shift risk surfaces",
+          "V3": "Structural projection of safety surfaces and stability classes",
+          "V4": "Safety strategy, risk assessment, failure mode analysis"
+        }
+      },
+      {
+        "id": "ai.04",
+        "title": "Runtime Control Coherence",
+        "one_liner": "Diagnose and reduce incoherence between scheduler, runtime and model control loops.",
+        "cluster": "C",
+        "core_3": true,
+        "related_whitepaper": "SORT-AI: Runtime Control Coherence",
+        "dimensions": {
+          "V1": "Incoherence between scheduler, runtime, and model control",
+          "V2": "Control loops interact at different time scales",
+          "V3": "Structural diagnosis of control loop incoherence",
+          "V4": "Runtime architecture, scheduler design, control harmonization"
+        }
+      },
+      {
+        "id": "ai.05",
+        "title": "Data and Retrieval Structural Integrity",
+        "one_liner": "Structural integrity diagnostics for RAG pipelines and retrieval induced drift.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "RAG pipelines show unexpected quality issues despite functional tests",
+          "V2": "Retrieval coupling creates structural dependencies to data inventory",
+          "V3": "Structural integrity diagnostics for retrieval paths",
+          "V4": "Index update strategies, retrieval architecture, quality assurance"
+        }
+      },
+      {
+        "id": "ai.06",
+        "title": "Energy-Interconnect Stability Coupling",
+        "one_liner": "Analysis of feedback loops between load dynamics, power supply, and interconnect stability in AI campuses.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Interconnect instability correlates with load and energy fluctuations",
+          "V2": "Feedback loops between power supply and network performance",
+          "V3": "Projection onto coupled energy-interconnect stability spaces",
+          "V4": "Campus design, power management, capacity planning"
+        }
+      },
+      {
+        "id": "ai.07",
+        "title": "Accelerator Runtime Control",
+        "one_liner": "Structure compatible control for heterogeneous hardware execution across GPU, TPU, NPU, and ASIC fleets.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Heterogeneous hardware fleets show inconsistent performance characteristics",
+          "V2": "Coupling effects between different accelerator types and runtime",
+          "V3": "Structural control over heterogeneous execution paths",
+          "V4": "Fleet management, hardware allocation, runtime configuration"
+        }
+      },
+      {
+        "id": "ai.08",
+        "title": "Structural Scalability Certification",
+        "one_liner": "Formal certification whether a system remains structurally stable under planned scaling increments.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Scaling leads to unforeseen stability problems",
+          "V2": "Structural couplings change non-linearly with scaling",
+          "V3": "Certification of structural stability under scaling scenarios",
+          "V4": "Scaling decisions, capacity planning, CapEx justification"
+        }
+      },
+      {
+        "id": "ai.09",
+        "title": "Control-Flow Instability Mapping",
+        "one_liner": "Structural analysis of complex control flows across CUDA, OpenCL, agent workflows, and orchestration layers.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Complex control flows show sporadic instabilities",
+          "V2": "Coupling between different control levels (CUDA, orchestration, agent)",
+          "V3": "Structural mapping of control flow instabilities",
+          "V4": "Workflow design, orchestration architecture, debugging strategies"
+        }
+      },
+      {
+        "id": "ai.10",
+        "title": "Interconnect-Aware Control Flow Diagnostics",
+        "one_liner": "Correlation of barriers, kernel launches, memory transfers, and network load for interconnect coupled instability.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Control flow events correlate with interconnect instabilities",
+          "V2": "Barriers, kernel launches, and memory transfers couple to network load",
+          "V3": "Correlation diagnostics between control flow and interconnect",
+          "V4": "Kernel design, barrier strategies, memory transfer optimization"
+        }
+      },
+      {
+        "id": "ai.11",
+        "title": "Structural Network Scalability Risk Modeling",
+        "one_liner": "Model based assessment of network scaling risks including topology, SDN, routing, and fault tolerance.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Network scaling creates unexpected risk profiles",
+          "V2": "Topology, SDN, and routing interact non-linearly at scale",
+          "V3": "Model-based risk assessment for network scaling scenarios",
+          "V4": "Network architecture, topology decisions, SDN configuration"
+        }
+      },
+      {
+        "id": "ai.12",
+        "title": "Network Scalability Stress Mapping",
+        "one_liner": "Dynamic projection of network states into a structural stability space for congestion and tail latency risk.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Network shows congestion and tail latency spikes under load",
+          "V2": "Dynamic load states couple to structural stability boundaries",
+          "V3": "Projection of network states onto stability and risk spaces",
+          "V4": "Traffic engineering, congestion management, SLA compliance"
+        }
+      },
+      {
+        "id": "ai.13",
+        "title": "Agentic System Stability",
+        "one_liner": "Stability control for agent workflows with retry loops, self verification, and tool calling.",
+        "cluster": "D",
+        "core_3": true,
+        "related_whitepaper": "SORT-AI: Agentic System Stability",
+        "dimensions": {
+          "V1": "Agent workflows show unexpected instabilities",
+          "V2": "Retry loops, self-verification, and tool calling couple non-linearly",
+          "V3": "Structural stability control for agentic patterns",
+          "V4": "Agent architecture, workflow design, safety constraints"
+        }
+      },
+      {
+        "id": "ai.14",
+        "title": "Virtualization Overhead Stability Analysis",
+        "one_liner": "Structural instability analysis through virtualization, SR-IOV, RDMA, and multi tenant noise effects.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Virtualization creates unpredictable performance variance",
+          "V2": "SR-IOV, RDMA, and multi-tenant noise couple to structural stability",
+          "V3": "Structural analysis of virtualization overhead and noise effects",
+          "V4": "Virtualization strategy, tenant isolation, performance guarantees"
+        }
+      },
+      {
+        "id": "ai.15",
+        "title": "Memory-Interconnect Coupling Diagnostics",
+        "one_liner": "Analysis of coupling between memory bandwidth, memory latency, and interconnect synchronization behavior.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Memory performance correlates with interconnect behavior",
+          "V2": "Memory bandwidth, latency, and interconnect synchronization couple",
+          "V3": "Coupling diagnostics for memory-interconnect interactions",
+          "V4": "Memory architecture, interconnect design, performance optimization"
+        }
+      },
+      {
+        "id": "ai.16",
+        "title": "Benchmark Integrity and Drift Diagnostics",
+        "one_liner": "Structural stability metrics complementing classical benchmarks to detect drift across releases and configurations.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Benchmarks don't fully capture performance drift",
+          "V2": "Temporal adaptation changes benchmark relevance",
+          "V3": "Structural stability metrics as benchmark complement",
+          "V4": "Benchmark selection, release decisions, regression testing"
+        }
+      },
+      {
+        "id": "ai.17",
+        "title": "Fault-Recovery Collapse Prevention",
+        "one_liner": "Analysis of instability through checkpointing, restart, replication, and proactive migration.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Recovery mechanisms create instabilities themselves",
+          "V2": "Checkpointing, restart, and migration interact with runtime",
+          "V3": "Structural analysis of recovery-induced instability",
+          "V4": "Recovery strategy, checkpointing design, migration policy"
+        }
+      },
+      {
+        "id": "ai.18",
+        "title": "Workload Placement Stability Validation",
+        "one_liner": "Structural assessment of placement decisions independent of scheduler logic.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Placement decisions lead to instabilities",
+          "V2": "Scheduler logic doesn't account for all structural factors",
+          "V3": "Structural validation of placement independent of scheduler",
+          "V4": "Placement constraints, scheduler override, stability verification"
+        }
+      },
+      {
+        "id": "ai.19",
+        "title": "Kubernetes Control-Plane Stability Assessment",
+        "one_liner": "Structural impact assessment of control plane decisions on interconnect and runtime stability.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Kubernetes decisions create interconnect instabilities",
+          "V2": "Control plane logic couples to physical infrastructure stability",
+          "V3": "Structural assessment of control plane impacts",
+          "V4": "Kubernetes configuration, scheduler tuning, control plane design"
+        }
+      },
+      {
+        "id": "ai.20",
+        "title": "Structural Cloud Migration Risk Assessment",
+        "one_liner": "Structural analysis of on premises to cloud migrations across compute, network, and control plane layers.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Cloud migration creates unexpected stability problems",
+          "V2": "Change of couplings across compute, network, and control plane",
+          "V3": "Structural risk assessment for migration scenarios",
+          "V4": "Migration strategy, phasing decisions, risk minimization"
+        }
+      },
+      {
+        "id": "ai.21",
+        "title": "SDN-Interconnect Stability Diagnostics",
+        "one_liner": "Formal analysis of coupling between SDN control plane, cloud interconnects, and application runtime stability.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "SDN changes affect application stability",
+          "V2": "Coupling between SDN control plane and interconnect performance",
+          "V3": "Formal analysis of SDN-interconnect coupling",
+          "V4": "SDN architecture, policy design, change management"
+        }
+      },
+      {
+        "id": "ai.22",
+        "title": "Structural Architecture Stability Diagnostics for Large-Scale AI Models",
+        "one_liner": "Pre-training and early-training stability analysis for large-scale AI model architectures.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Large-scale training shows early instability signals",
+          "V2": "Information flow, residual paths, and routing create structural risks",
+          "V3": "Structural stability analysis for pre-training phase",
+          "V4": "Architecture decisions, training configuration, early stopping"
+        }
+      },
+      {
+        "id": "ai.23",
+        "title": "Model Capacity Saturation and Collapse Risk",
+        "one_liner": "Analysis of capacity saturation patterns and sudden collapse risks under scaling stress.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Models show sudden performance collapse",
+          "V2": "Capacity saturation creates non-linear failure modes",
+          "V3": "Structural analysis of saturation and collapse patterns",
+          "V4": "Capacity planning, scaling limits, collapse prevention"
+        }
+      },
+      {
+        "id": "ai.24",
+        "title": "Emergent Capability Boundary Stability",
+        "one_liner": "Structural stability analysis at capability emergence boundaries.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "New capabilities emerge suddenly and unpredictably",
+          "V2": "Phase transitions at capability boundaries",
+          "V3": "Structural stability analysis for emergence boundaries",
+          "V4": "Capability monitoring, emergence detection, risk assessment"
+        }
+      },
+      {
+        "id": "ai.25",
+        "title": "Training Pipeline Consistency Monitoring",
+        "one_liner": "Structural consistency monitoring across training pipeline stages, detecting drift before it affects model quality.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Training quality varies between pipeline runs",
+          "V2": "Temporal inconsistencies across pipeline stages",
+          "V3": "Structural consistency monitoring for training pipelines",
+          "V4": "Pipeline design, reproducibility, quality assurance"
+        }
+      },
+      {
+        "id": "ai.26",
+        "title": "Distributed Training Synchronization Stability",
+        "one_liner": "Structural stability analysis of distributed training synchronization including gradient aggregation and parameter server patterns.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Distributed training shows synchronization problems",
+          "V2": "Gradient aggregation and parameter server patterns create couplings",
+          "V3": "Structural stability analysis for synchronization methods",
+          "V4": "Training architecture, synchronization strategy, scaling decisions"
+        }
+      },
+      {
+        "id": "ai.27",
+        "title": "Inference Pipeline Control Coherence",
+        "one_liner": "Structural coherence analysis of inference pipelines including batching, caching, and serving control loops.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Inference pipelines show coherence problems under load",
+          "V2": "Batching, caching, and serving interact incoherently",
+          "V3": "Structural coherence analysis for inference control loops",
+          "V4": "Inference architecture, batching strategy, cache policy"
+        }
+      },
+      {
+        "id": "ai.28",
+        "title": "Structural Failure Containment and Blast Radius Control",
+        "one_liner": "Analysis of whether structural failures remain contained or escalate system-wide.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Local failures escalate to system-wide outages",
+          "V2": "Coupling and projection mechanisms amplify failures",
+          "V3": "Structural analysis of containment and blast radius",
+          "V4": "Failure isolation, containment design, resilience engineering"
+        }
+      },
+      {
+        "id": "ai.29",
+        "title": "Structural Continual Learning Stability Assessment",
+        "one_liner": "Structural assessment of stability, control, and forgetting risks in post-hoc model adaptation.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Continual learning leads to catastrophic forgetting",
+          "V2": "Temporal adaptation destabilizes previous capabilities",
+          "V3": "Structural assessment of forgetting risks",
+          "V4": "Adaptation strategy, retention policy, incremental learning design"
+        }
+      },
+      {
+        "id": "ai.30",
+        "title": "Structural Stability Evidence Pack for Assessments",
+        "one_liner": "Standardized evidence structure for stability claims, enabling formal justification and audit-readiness.",
+        "cluster": "E",
+        "dimensions": {
+          "V1": "Stability claims are not formally defensible",
+          "V2": "Difference between operative stability and proof",
+          "V3": "Standardized evidence structure for stability assessments",
+          "V4": "Audit-readiness, compliance documentation, governance proofs"
+        }
+      },
+      {
+        "id": "ai.31",
+        "title": "Instrumental Goal Convergence Diagnostics",
+        "one_liner": "Structural detection of convergent instrumental sub-goals in goal-directed systems.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Systems develop unexpected instrumental goals",
+          "V2": "Emergent goal convergence independent of terminal goal",
+          "V3": "Structural detection of convergent instrumental sub-goals",
+          "V4": "Goal architecture, instrumental convergence prevention, alignment"
+        }
+      },
+      {
+        "id": "ai.32",
+        "title": "Training-Deployment Phase Transition Diagnostics",
+        "one_liner": "Structural analysis of objective function coherence across training-deployment boundary.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Model behaves differently in deployment than expected",
+          "V2": "Phase transition training→deployment changes effective objectives",
+          "V3": "Structural diagnostics of phase transition coherence",
+          "V4": "Deployment validation, objective alignment, transition testing"
+        }
+      },
+      {
+        "id": "ai.33",
+        "title": "Objective-Constraint Surface Divergence Analysis",
+        "one_liner": "Structural analysis of divergence between specified constraints and implicit desiderata.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Model seemingly optimizes for something other than specified",
+          "V2": "Goodhart effect and reward hacking through constraint divergence",
+          "V3": "Structural analysis of objective-constraint surface",
+          "V4": "Objective design, constraint specification, alignment verification"
+        }
+      },
+      {
+        "id": "ai.34",
+        "title": "Internal-External Representation Projection Diagnostics",
+        "one_liner": "Structural analysis of information loss in mapping internal computation to external explanation, identifying interpretability limits.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Explanations don't fully reflect internal computations",
+          "V2": "Structural information loss in projection from internal to external",
+          "V3": "Diagnostics of representation-projection gap",
+          "V4": "Interpretability strategy, explanation design, audit requirements"
+        }
+      },
+      {
+        "id": "ai.35",
+        "title": "Capability Space Structural Decomposition",
+        "one_liner": "Orthogonal decomposition of AI capability dimensions with safety region mapping across autonomy, generality, and intelligence axes.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Capability gains create unexpected risk changes",
+          "V2": "Autonomy, generalization, and intelligence couple on different axes",
+          "V3": "Structural decomposition of capability space with safety regions",
+          "V4": "Capability steering, safety boundaries, development decisions"
+        }
+      },
+      {
+        "id": "ai.36",
+        "title": "Multi-Agent Stability Regime Analysis",
+        "one_liner": "Structural analysis of stability conditions in multi-agent systems with incompatible objectives.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Multi-agent systems show unstable equilibria",
+          "V2": "Incompatible objectives create emergent instabilities",
+          "V3": "Structural analysis of stability regimes in multi-agent settings",
+          "V4": "Multi-agent design, coordination mechanisms, stability guarantees"
+        }
+      },
+      {
+        "id": "ai.37",
+        "title": "Capability Emergence Threshold Diagnostics",
+        "one_liner": "Structural characterization of discontinuous capability emergence at scale thresholds.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Capabilities jump discontinuously at scale thresholds",
+          "V2": "Phase transitions at capability emergence",
+          "V3": "Structural characterization of emergence thresholds",
+          "V4": "Scale planning, threshold monitoring, emergence preparedness"
+        }
+      },
+      {
+        "id": "ai.38",
+        "title": "Value Trajectory Lock-In Analysis",
+        "one_liner": "Structural analysis of modifiability constraints as capability increases.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Later corrections become increasingly difficult",
+          "V2": "Capability increase reduces modifiability",
+          "V3": "Structural analysis of lock-in trajectories and intervention windows",
+          "V4": "Timing of interventions, value alignment strategy, correction planning"
+        }
+      },
+      {
+        "id": "ai.39",
+        "title": "Mesa-Optimization Structural Detection",
+        "one_liner": "Structural signatures of internal optimization processes diverging from base objectives.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Model develops internal optimization processes",
+          "V2": "Mesa-optimizers diverge from base objective",
+          "V3": "Structural signatures of mesa-optimization",
+          "V4": "Mesa-detection, optimizer alignment, inner alignment verification"
+        }
+      },
+      {
+        "id": "ai.40",
+        "title": "Training Data Poisoning Backdoor Diagnostics",
+        "one_liner": "Structural detection of hidden backdoor patterns in trained models, analyzing coupling between data artifacts and model behavior.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Models show unexpected behavior on certain triggers",
+          "V2": "Backdoors arise through coupling between training artifacts and model",
+          "V3": "Structural detection of backdoor patterns",
+          "V4": "Data security, training pipeline audit, supply chain security"
+        }
+      },
+      {
+        "id": "ai.41",
+        "title": "Fine-Tuning Drift Stability Analysis",
+        "one_liner": "Structural stability margins before belief-space collapse under fine-tuning, analyzing perturbation sensitivity.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Fine-tuning destabilizes existing capabilities",
+          "V2": "Belief space responds sensitively to perturbations",
+          "V3": "Structural stability margins for fine-tuning scenarios",
+          "V4": "Fine-tuning strategy, perturbation bounds, capability preservation"
+        }
+      },
+      {
+        "id": "ai.42",
+        "title": "Prompt Injection Surface Mapping",
+        "one_liner": "Structural boundary analysis between instruction space and policy space, mapping jailbreak vulnerability surfaces.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Prompt injections bypass policy constraints",
+          "V2": "Structural boundary between instruction and policy space",
+          "V3": "Mapping of jailbreak attack surface",
+          "V4": "Prompt design, policy enforcement, security hardening"
+        }
+      },
+      {
+        "id": "ai.43",
+        "title": "Agentic Goal Projection Instability",
+        "one_liner": "Structural analysis of goal-projection regimes in autonomous agents.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Agent goals project unstably onto actions",
+          "V2": "Goal projection regimes change under different contexts",
+          "V3": "Structural analysis of goal-projection instabilities",
+          "V4": "Agent goal design, projection stabilization, context robustness"
+        }
+      },
+      {
+        "id": "ai.44",
+        "title": "Multimodal Injection Isolation Diagnostics",
+        "one_liner": "Structural separation of semantic content from control signals across modalities, analyzing cross-modal safety boundaries.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Cross-modal inputs can take over control",
+          "V2": "Insufficient separation between semantic content and control signals",
+          "V3": "Structural analysis of cross-modal isolation",
+          "V4": "Multimodal architecture, safety boundaries, input validation"
+        }
+      },
+      {
+        "id": "ai.45",
+        "title": "Fleet Skill Propagation Stability",
+        "one_liner": "Structural stability for skill updates across robotic fleets with cascade detection.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Skill updates propagate unstably through fleets",
+          "V2": "Temporal propagation creates cascade effects",
+          "V3": "Structural stability analysis for fleet updates",
+          "V4": "Update strategy, rollout policy, cascade prevention"
+        }
+      },
+      {
+        "id": "ai.46",
+        "title": "World Model Projection-Execution Gap Diagnostics",
+        "one_liner": "Structural diagnostics of drift between simulated plan space and execution reality, analyzing imagination-execution coherence.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Planned actions lead to unexpected outcomes",
+          "V2": "Gap between world model projection and actual execution",
+          "V3": "Diagnostics of imagination-execution coherence",
+          "V4": "Planning architecture, reality gap mitigation, action verification"
+        }
+      },
+      {
+        "id": "ai.47",
+        "title": "Evaluation Context Projection Instability",
+        "one_liner": "Structural analysis of behavior divergence between evaluation and deployment contexts.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Model performs differently in eval vs deployment",
+          "V2": "Eval context projects onto different behavior than deployment",
+          "V3": "Structural analysis of eval-deployment divergence",
+          "V4": "Eval design, deployment validation, context matching"
+        }
+      },
+      {
+        "id": "ai.48",
+        "title": "Adversarial Strategy Phase Transition Diagnostics",
+        "one_liner": "Structural detection of strategy regime shifts under adversarial or stress triggers.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "System suddenly switches to different strategy regimes",
+          "V2": "Adversarial/stress triggers create phase transitions",
+          "V3": "Structural detection of strategy phase transitions",
+          "V4": "Adversarial robustness, strategy stability, stress testing"
+        }
+      },
+      {
+        "id": "ai.49",
+        "title": "Training Constraint Conflict Detection",
+        "one_liner": "Structural scanning for implicit contradictions in training environments that produce unstable attractors.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Training converges to unstable or undesirable states",
+          "V2": "Implicit contradictions in training constraints",
+          "V3": "Structural scanning for constraint conflicts",
+          "V4": "Training setup design, constraint harmonization, objective alignment"
+        }
+      },
+      {
+        "id": "ai.50",
+        "title": "Persona Coherence Stability Diagnostics",
+        "one_liner": "Structural analysis of identity and character invariance under perturbations.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Persona/character drifts under different contexts",
+          "V2": "Structural instability of identity representation",
+          "V3": "Diagnostics of persona coherence under perturbation",
+          "V4": "Character design, persona steering, identity stabilization"
+        }
+      },
+      {
+        "id": "ai.51",
+        "title": "Internal Mechanism Structural Audit",
+        "one_liner": "Structural audit methodology treating internal computations as operator graphs, providing interpretability meta-framework.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Internal mechanisms are hard to audit",
+          "V2": "Complex coupling between internal compute paths",
+          "V3": "Structural audit methodology with operator graph treatment",
+          "V4": "Interpretability strategy, audit framework, compliance proofs"
+        }
+      },
+      {
+        "id": "ai.52",
+        "title": "Deployment Drift Signal Aggregation",
+        "one_liner": "Structural framework for distributed weak signal aggregation across deployment environments, enabling live monitoring patterns.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Weak drift signals remain undetected in deployment",
+          "V2": "Distributed signals couple to system-wide drift patterns",
+          "V3": "Structural framework for weak signal aggregation",
+          "V4": "Monitoring design, alerting strategy, drift prevention"
+        }
+      }
+    ],
+    "complex-systems": [
+      {
+        "id": "cx.01",
+        "title": "Pipeline Stability Control",
+        "one_liner": "Drift and reproducibility diagnostics for distributed dataflow pipelines.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Dataflow pipelines show reproducibility problems",
+          "V2": "Distributed execution couples to drift and inconsistency",
+          "V3": "Structural stability control for dataflow pipelines",
+          "V4": "Pipeline design, reproducibility assurance, drift prevention"
+        }
+      },
+      {
+        "id": "cx.02",
+        "title": "Emergent Stability under Projection",
+        "one_liner": "Detect stability islands and regime shifts under projection and aggregation.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Aggregation hides or creates stability islands",
+          "V2": "Projection and aggregation change stability landscape",
+          "V3": "Structural detection of emergent stability under projection",
+          "V4": "Aggregation design, stability monitoring, regime detection"
+        }
+      },
+      {
+        "id": "cx.03",
+        "title": "Network Function Graph Stability",
+        "one_liner": "Structural stability metrics for function graphs, cascades and recovery.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Function graphs show cascade instabilities",
+          "V2": "Couplings between network functions create dependencies",
+          "V3": "Structural stability metrics for function graph topologies",
+          "V4": "NFV architecture, service chain design, recovery strategies"
+        }
+      },
+      {
+        "id": "cx.04",
+        "title": "Detection Graph Drift Control",
+        "one_liner": "Drift control for detection graphs, reducing false positives and mode collapse.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Detection graphs drift and create false positives",
+          "V2": "Temporal adaptation leads to mode collapse",
+          "V3": "Structural drift control for detection systems",
+          "V4": "Detection tuning, drift mitigation, mode collapse prevention"
+        }
+      },
+      {
+        "id": "cx.05",
+        "title": "Service Mesh Coupling Stability Assessment",
+        "one_liner": "Structural stability analysis of service mesh, east-west traffic, and dependency graphs.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Service mesh shows unexpected instabilities",
+          "V2": "East-west traffic and policy coupling create dependencies",
+          "V3": "Structural stability assessment for service mesh topologies",
+          "V4": "Mesh architecture, policy design, dependency management"
+        }
+      },
+      {
+        "id": "cx.06",
+        "title": "Autoscaling Oscillation and Phase Transition Diagnostics",
+        "one_liner": "Structural analysis of auto-scaling instabilities including oscillations and regime shifts.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Autoscaling creates oscillations and thundering herd",
+          "V2": "Feedback loops in scaling logic lead to phase transitions",
+          "V3": "Structural diagnostics of autoscaling instabilities",
+          "V4": "Autoscaler tuning, oscillation dampening, phase transition prevention"
+        }
+      },
+      {
+        "id": "cx.07",
+        "title": "Cascading Failure Containment for System of Systems",
+        "one_liner": "Structural assessment of containment capability and propagation paths.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Failures cascade across system boundaries",
+          "V2": "Propagation paths and blast radius in coupled systems",
+          "V3": "Structural assessment of containment capability",
+          "V4": "System partitioning, blast radius limitation, cascade prevention"
+        }
+      },
+      {
+        "id": "cx.08",
+        "title": "Infrastructure Auditability of Complex Control Planes",
+        "one_liner": "Evidence and auditability layer for control regimes in complex platforms, enabling formal justification without implementation details.",
+        "cluster": "E",
+        "dimensions": {
+          "V1": "Complex control planes are not formally auditable",
+          "V2": "Gap between operative function and proof",
+          "V3": "Evidence layer for control regimes without implementation details",
+          "V4": "Compliance documentation, audit-readiness, governance proofs"
+        }
+      },
+      {
+        "id": "cx.09",
+        "title": "Nonlinear Subsystem Coupling Analysis",
+        "one_liner": "Structural analysis of nonlinear couplings between subsystems.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Subsystems interact non-linearly and unpredictably",
+          "V2": "Hidden couplings and amplification paths",
+          "V3": "Structural analysis of non-linear subsystem couplings",
+          "V4": "Architecture decoupling, hidden dependency detection, system design"
+        }
+      },
+      {
+        "id": "cx.10",
+        "title": "Regime Shift Early Warning Diagnostics",
+        "one_liner": "Structural early detection of regime shifts before performance degradation.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Regime shifts manifest first as performance problems",
+          "V2": "Early structural changes before visible degradation",
+          "V3": "Structural early detection of regime shifts",
+          "V4": "Early warning systems, proactive intervention, regime monitoring"
+        }
+      },
+      {
+        "id": "cx.11",
+        "title": "Intervention Window Identification",
+        "one_liner": "Structural identification of effective intervention windows in complex systems.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Interventions only work in certain time windows",
+          "V2": "System dynamics determine intervention effectiveness",
+          "V3": "Structural identification of intervention windows",
+          "V4": "Intervention timing, control strategy, stabilization planning"
+        }
+      },
+      {
+        "id": "cx.12",
+        "title": "Multi-Actor Coordination Failure Dynamics",
+        "one_liner": "Structural analysis of coordination failures in multi-actor systems with misaligned incentives.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Multi-actor systems fail to reach stable coordination states",
+          "V2": "Misaligned incentives couple to coordination failure",
+          "V3": "Structural analysis of race dynamics and equilibrium instabilities",
+          "V4": "Coordination mechanism design, incentive alignment, governance"
+        }
+      },
+      {
+        "id": "cx.13",
+        "title": "Feedback Loop Cascade Diagnostics",
+        "one_liner": "Structural detection of feedback amplification before cascade threshold.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Feedback loops escalate to flash-crash-like cascades",
+          "V2": "Amplification before reaching cascade threshold",
+          "V3": "Structural detection of feedback amplification",
+          "V4": "Loop dampening, threshold monitoring, cascade prevention"
+        }
+      },
+      {
+        "id": "cx.14",
+        "title": "Liquidity Regime Transition Detection",
+        "one_liner": "Structural detection of hidden regime transitions in coupled financial systems.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Liquidity regimes switch suddenly without obvious trigger",
+          "V2": "Hidden phase transitions in coupled financial systems",
+          "V3": "Structural detection of regime transitions before market stress",
+          "V4": "Liquidity monitoring, regime awareness, pre-crisis detection"
+        }
+      },
+      {
+        "id": "cx.15",
+        "title": "Cross-Market Coupling Stress Analysis",
+        "one_liner": "Structural analysis of latent coupling producing non-local amplification.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Stress propagates across seemingly unconnected markets",
+          "V2": "Latent couplings create non-local amplification",
+          "V3": "Structural analysis of cross-market stress transmission",
+          "V4": "Risk management, contagion prevention, systemic risk assessment"
+        }
+      },
+      {
+        "id": "cx.16",
+        "title": "Clearing Infrastructure Stability Diagnostics",
+        "one_liner": "Structural stability analysis of settlement infrastructure as system tipping point.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Clearing infrastructure as critical stability point",
+          "V2": "Settlement processes couple to system-wide stability",
+          "V3": "Structural diagnostics of infrastructure regime risks",
+          "V4": "Infrastructure resilience, settlement design, systemic buffer"
+        }
+      },
+      {
+        "id": "cx.17",
+        "title": "Command Hierarchy Partial Failure Coherence",
+        "one_liner": "Structural analysis of control coherence under partial system failure.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Partial failures destabilize command hierarchies",
+          "V2": "Control coherence breaks under partial degradation",
+          "V3": "Structural analysis of hierarchy robustness",
+          "V4": "Hierarchy design, graceful degradation, control robustness"
+        }
+      },
+      {
+        "id": "cx.18",
+        "title": "Decision Loop Saturation Detection",
+        "one_liner": "Structural detection of decision loop time compression exceeding oversight capacity.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Decision loops run faster than oversight can follow",
+          "V2": "Time compression exceeds human oversight capacity",
+          "V3": "Structural detection of loop saturation",
+          "V4": "Oversight design, decision pacing, time-structural analysis"
+        }
+      },
+      {
+        "id": "cx.19",
+        "title": "Pipeline Phase Regime Drift Detection",
+        "one_liner": "Structural analysis of multi-phase pipeline coupling and late-stage failures.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Pipelines fail in late phases despite early success",
+          "V2": "Phase couplings and drift across pipeline stages",
+          "V3": "Structural drift detection for multi-phase pipelines",
+          "V4": "Pipeline design, phase coupling management, late-stage prevention"
+        }
+      },
+      {
+        "id": "cx.20",
+        "title": "Capacity Phase Transition Monitoring",
+        "one_liner": "Structural detection of emergent capacity collapse versus nominal reserve.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Capacity collapses despite nominal reserves",
+          "V2": "Emergent capacity collapse beyond simple utilization",
+          "V3": "Structural detection of hidden capacity stress",
+          "V4": "Capacity planning, reserve validation, collapse prevention"
+        }
+      },
+      {
+        "id": "cx.21",
+        "title": "Policy-Induced System Fragility Detection",
+        "one_liner": "Structural analysis of governance interventions producing unintended instability.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Governance interventions create unintended instability",
+          "V2": "Policy as structural perturbation with emergent effects",
+          "V3": "Structural analysis of policy-induced fragility",
+          "V4": "Policy impact assessment, intervention design, unintended consequence prevention"
+        }
+      },
+      {
+        "id": "cx.22",
+        "title": "Institutional Drift Monitoring",
+        "one_liner": "Structural drift detection between formal structure and effective function.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Institutional practice drifts from formal structure",
+          "V2": "Gap between de-jure and de-facto governance",
+          "V3": "Structural drift detection for institutional effectiveness",
+          "V4": "Governance review, institutional reform, effectiveness restoration"
+        }
+      },
+      {
+        "id": "cx.23",
+        "title": "Swarm Escalation Dynamics Analysis",
+        "one_liner": "Structural analysis of cascade amplification in autonomous swarm systems.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Autonomous swarms show unexpected escalation dynamics",
+          "V2": "Cascade amplification in swarm systems",
+          "V3": "Structural analysis of swarm escalation",
+          "V4": "Swarm design, escalation containment, emergent behavior control"
+        }
+      },
+      {
+        "id": "cx.24",
+        "title": "AI-Orchestrated Intrusion Chain Patterns",
+        "one_liner": "Structural pattern extraction from multi-stage attack sequences.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Cyber attacks use complex multi-stage chains",
+          "V2": "Attack stages couple to intrusion chains",
+          "V3": "Structural pattern extraction from attack graph couplings",
+          "V4": "Threat modeling, defense design, kill chain interruption"
+        }
+      },
+      {
+        "id": "cx.25",
+        "title": "Human Decision Bottleneck Drift",
+        "one_liner": "Structural analysis of control coherence between formal authority and effective steering.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Formal authority and effective steering diverge",
+          "V2": "Oversight timing mismatch reduces effective control",
+          "V3": "Structural analysis of human decision bottlenecks",
+          "V4": "Oversight restructuring, authority alignment, decision optimization"
+        }
+      },
+      {
+        "id": "cx.26",
+        "title": "Control Plane Monoculture Risk Analysis",
+        "one_liner": "Structural analysis of single-point-of-failure patterns in centralized control planes.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Centralized control planes create monoculture risks",
+          "V2": "Single-point-of-failure couplings via control plane",
+          "V3": "Structural analysis of platform takeover resilience",
+          "V4": "Control plane diversification, resilience architecture, SPOF elimination"
+        }
+      },
+      {
+        "id": "cx.27",
+        "title": "Machine-Time Escalation Early Warning",
+        "one_liner": "Structural detection of escalation dynamics exceeding human intervention time, analyzing OODA loop compression.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Escalation runs faster than humans can intervene",
+          "V2": "OODA loop compression under machine time",
+          "V3": "Structural detection of machine-speed escalation",
+          "V4": "Intervention speed requirements, automated response, escalation prevention"
+        }
+      },
+      {
+        "id": "cx.28",
+        "title": "Control Surface Expansion Tracking",
+        "one_liner": "Structural monitoring of attack surface growth through adversarial adaptation.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Attack surface grows through adversarial adaptation",
+          "V2": "Jailbreak adaptations couple to surface expansion",
+          "V3": "Structural monitoring of attack surface evolution",
+          "V4": "Surface minimization, adaptation tracking, security posture"
+        }
+      }
+    ],
+    "quantum-systems": [
+      {
+        "id": "qs.01",
+        "title": "Noise Filtering and Operator Diagnostics",
+        "one_liner": "Structural noise filtering and diagnostics for operator chains and channels.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Noise propagates uncontrolled through operator chains",
+          "V2": "Structural couplings between noise sources and channels",
+          "V3": "Structural noise filtering and operator diagnostics",
+          "V4": "Noise mitigation, channel design, operator optimization"
+        }
+      },
+      {
+        "id": "qs.02",
+        "title": "Error Correction Diagnostics",
+        "one_liner": "Structural criteria for error correction performance and failure detection.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "QEC shows unexpected failure regimes",
+          "V2": "Structural criteria for QEC performance beyond threshold metrics",
+          "V3": "Structural diagnostics for error correction performance",
+          "V4": "QEC code selection, syndrome decoding strategy, hardware requirements"
+        }
+      },
+      {
+        "id": "qs.03",
+        "title": "Hybrid Quantum Workflow Stability",
+        "one_liner": "Stability diagnostics for hybrid quantum classical workflows and scheduling.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Hybrid workflows show scheduling and handoff problems",
+          "V2": "Incoherence between quantum and classical control paths",
+          "V3": "Stability diagnostics for orchestration and handoff consistency",
+          "V4": "Workflow design, scheduling policy, hybrid architecture"
+        }
+      },
+      {
+        "id": "qs.04",
+        "title": "Calibration Drift and Retuning Stability Assessment",
+        "one_liner": "Structural assessment of drift, recalibration, and retuning loops including risks that local stabilization causes global instability.",
+        "cluster": "B",
+        "dimensions": {
+          "V1": "Calibration drifts and retuning creates new problems",
+          "V2": "Local stabilization can cause global instability",
+          "V3": "Structural assessment of calibration-retuning dynamics",
+          "V4": "Calibration strategy, retuning policy, drift prevention"
+        }
+      },
+      {
+        "id": "qs.05",
+        "title": "Error Burst Emergence and Regime Shift Diagnostics",
+        "one_liner": "Structural detection of error burst regimes and sudden regime shifts in systems showing superficially stable error rates.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Sudden error bursts despite stable error rate metrics",
+          "V2": "Non-linear emergence creates regime shifts",
+          "V3": "Structural detection of burst regimes and phase transitions",
+          "V4": "Monitoring strategy, alert design, system stabilization"
+        }
+      },
+      {
+        "id": "qs.06",
+        "title": "Evidence of Calibration Stability and Control Integrity",
+        "one_liner": "Evidence and assurance layer for calibration stability and control integrity over time, enabling formal justification for quantum system deployments.",
+        "cluster": "E",
+        "dimensions": {
+          "V1": "Quantum deployments are technically functional but not formally defensible",
+          "V2": "Difference between operative function and demonstrable integrity",
+          "V3": "Evidence layer for calibration stability over time",
+          "V4": "Deployment certification, governance documentation, funding justification"
+        }
+      },
+      {
+        "id": "qs.07",
+        "title": "Quantum Control Stability under Classical Coupling",
+        "one_liner": "Structural assessment of quantum control stability under influence of classical coupling mechanisms, analyzing how classical control affects quantum coherence.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Classical control affects quantum coherence",
+          "V2": "Coupling between classical control and quantum state",
+          "V3": "Structural stability assessment under classical coupling",
+          "V4": "Control architecture, classical-quantum interface, coherence preservation"
+        }
+      },
+      {
+        "id": "qs.08",
+        "title": "Structural Error Propagation Analysis",
+        "one_liner": "Structural analysis of error propagation and instability spreading in quantum systems, identifying paths through which local errors escalate system-wide.",
+        "cluster": "D",
+        "dimensions": {
+          "V1": "Local errors propagate to system-wide instabilities",
+          "V2": "Structural coupling paths enable error amplification",
+          "V3": "Projection of error propagation onto stability spaces",
+          "V4": "Error containment design, system partitioning, fault tolerance"
+        }
+      },
+      {
+        "id": "qs.09",
+        "title": "Error Correction Threshold Stability Diagnostics",
+        "one_liner": "Structural analysis of stability boundaries in scaling quantum error correction, identifying threshold regime risks.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Error correction fails at scale",
+          "V2": "Threshold regime couplings at QEC scaling",
+          "V3": "Structural analysis of QEC threshold stability",
+          "V4": "QEC scaling strategy, threshold monitoring, error budget"
+        }
+      },
+      {
+        "id": "qs.10",
+        "title": "Logical Qubit Scaling Regime Certification",
+        "one_liner": "Structural criteria for distinguishing demonstration from platform-ready error correction, providing certification framework.",
+        "cluster": "A",
+        "dimensions": {
+          "V1": "Demo success doesn't translate to platform readiness",
+          "V2": "Structural differences between demo and production",
+          "V3": "Structural certification criteria for logical qubit scaling",
+          "V4": "Platform readiness assessment, scaling certification, investment decisions"
+        }
+      },
+      {
+        "id": "qs.11",
+        "title": "Measurement-Control Interaction Drift Analysis",
+        "one_liner": "Structural analysis of feedback loops between observation and system state in quantum systems, analyzing observer-system coupling.",
+        "cluster": "C",
+        "dimensions": {
+          "V1": "Measurement affects system state unexpectedly",
+          "V2": "Observer-system coupling creates feedback drift",
+          "V3": "Structural analysis of measurement-control interaction",
+          "V4": "Measurement strategy, control feedback design, observer decoupling"
+        }
+      }
+    ],
+    "cosmology": [
+      {
+        "id": "cosmo.01",
+        "title": "Early Galaxies",
+        "one_liner": "Explain high redshift massive galaxy candidates via projection stabilized structure formation."
+      },
+      {
+        "id": "cosmo.02",
+        "title": "Early SMBH Seeds",
+        "one_liner": "Reconcile early supermassive black holes via kernel controlled growth and drift regimes."
+      },
+      {
+        "id": "cosmo.03",
+        "title": "Hubble Drift",
+        "one_liner": "Model scale dependent H0 as a projection drift signature across datasets."
+      },
+      {
+        "id": "cosmo.04",
+        "title": "CMB Anomalies",
+        "one_liner": "Treat large scale anomalies as projection level structural artifacts under kernel regimes."
+      },
+      {
+        "id": "cosmo.05",
+        "title": "Dark Baryon Oscillator",
+        "one_liner": "Coupled sector surrogate model for tension patterns via drift coupled response."
+      },
+      {
+        "id": "cosmo.06",
+        "title": "Intergalactic Bridges",
+        "one_liner": "Filament baryons and bridges as stable projections of operator adjacency under kernel coupling."
+      },
+      {
+        "id": "cosmo.07",
+        "title": "Dark Flow Drift Signature Analysis",
+        "one_liner": "Bulk flow coherence as projection signature, analyzing cosmological drift patterns at large scales."
+      },
+      {
+        "id": "cosmo.08",
+        "title": "CMB Signal Separation Diagnostics",
+        "one_liner": "Foreground separation structural criteria for CMB analysis, providing diagnostic methodology."
+      },
+      {
+        "id": "cosmo.09",
+        "title": "Quantum-Classical Transition Projection",
+        "one_liner": "Projection-based treatment of quantum-to-classical transition mechanism with diagnostic framing."
+      },
+      {
+        "id": "cosmo.10",
+        "title": "Metric Consistency Analysis",
+        "one_liner": "Structural analysis of metric projection dependence under acceleration, diagnostic framework for g_tt behavior."
+      },
+      {
+        "id": "cosmo.11",
+        "title": "Reionization Dynamics Modeling",
+        "one_liner": "Early ionization via projection dynamics, structural diagnostic for reionization history."
+      }
+    ]
+  },
+  "statistics": {
+    "technical_domains": {
+      "ai-systems": { "total": 52, "A": 26, "B": 6, "C": 9, "D": 10, "E": 1 },
+      "complex-systems": { "total": 28, "A": 10, "B": 4, "C": 6, "D": 7, "E": 1 },
+      "quantum-systems": { "total": 11, "A": 4, "B": 1, "C": 3, "D": 2, "E": 1 },
+      "sum": { "total": 91, "A": 40, "B": 11, "C": 18, "D": 19, "E": 3 }
+    },
+    "meta_domain": {
+      "sovereign": { "total": 5, "A": 2, "C": 1, "E": 2 }
+    },
+    "non_ip": {
+      "cosmology": { "total": 11 }
+    }
+  }
+}
