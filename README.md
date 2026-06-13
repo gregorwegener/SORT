@@ -8,6 +8,8 @@
 **Public Analysis Layer:** Structural Assessment Protocol v1  
 **License:** Proprietary (Gregor Wegener)
 
+> **Active audit:** MOCK v3 and the SORT Version 7 Workstation Validation Run are currently under corrective audit. See [`AUDIT_STATUS.md`](AUDIT_STATUS.md) for the authoritative interim status. Historical artefacts remain unchanged until the audit is complete.
+
 ---
 
 ## Purpose
