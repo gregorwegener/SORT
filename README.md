@@ -1,14 +1,15 @@
 # SORT — Level-0 Structural Assessment Framework
 
 **Version:** 0.6.0  
-**Status:** Public structural reference, analysis-layer, evidence-release, and validation-artifact repository  
+**Status:** Public structural reference, analysis-layer, evidence-release, and provenance repository  
 **Architecture Baseline:** MOCK v4, frozen public reference architecture  
 **Current Evidence Release:** SORT-AI Core-3 Kernel-Damping Evidence Release v1  
-**Current Validation Package:** SORT Version 7 Workstation Validation Run  
+**Archived Validation Snapshot:** SORT Version 7 Workstation Validation Run  
+**Current Scientific Program:** SORT Version 7 Foundational Scientific Reconstruction  
 **Public Analysis Layer:** Structural Assessment Protocol v1  
 **License:** Proprietary (Gregor Wegener)
 
-> **Active audit:** MOCK v3 and the SORT Version 7 Workstation Validation Run are currently under corrective audit. See [`AUDIT_STATUS.md`](AUDIT_STATUS.md) for the authoritative interim status. Historical artefacts remain unchanged until the audit is complete.
+> **Scientific status update:** The original SORT Version 7 Workstation Validation Run is preserved as an archived pre-audit computational snapshot. Its recorded gate results apply to the finite surrogate architecture implemented in that release and are superseded for current foundational validation claims. See [`AUDIT_STATUS.md`](AUDIT_STATUS.md) for the controlling status.
 
 ---
 
@@ -24,8 +25,8 @@ The current public repository contains four complementary layers:
 | ----- | ---- | ------ |
 | MOCK v4 | Frozen structural and contractual reference architecture | public / frozen |
 | Public Analysis Layer | Structural Assessment Protocol and V1–V4 diagnostic grammar | public / methodological |
-| Evidence Releases | Reproducible analysis-layer kernel-damping evidence packages | public / reproducible |
-| Validation Runs | Deterministic workstation validation artifacts for SORT Version 7 | public / frozen evidence package |
+| Evidence Releases | Reproducible analysis-layer evidence packages | public / reproducible |
+| Historical Validation Snapshots | Preserved computational artefacts and provenance records | public / archived |
 
 The repository does **not** contain the full execution layer, customer-specific assessment engine, operator-resolved production mapping, SWORD execution logic, telemetry integration, scoring functions, intervention playbooks, or vendor-specific runtime implementation.
 
@@ -35,11 +36,11 @@ The repository does **not** contain the full execution layer, customer-specific 
 
 The public SORT workflow is:
 
-$$\text{SORT}\;\rightarrow\;\text{MOCK v4}\;\rightarrow\;\text{Public Analysis Layer}\;\rightarrow\;\text{Evidence Protocols}\;\rightarrow\;\text{Validation Runs}\;\rightarrow\;\text{Future Execution Layers}$$
+$$\text{SORT}\;\rightarrow\;\text{MOCK v4}\;\rightarrow\;\text{Public Analysis Layer}\;\rightarrow\;\text{Evidence Protocols}\;\rightarrow\;\text{Foundational Reconstruction}\;\rightarrow\;\text{Future Validation and Execution Layers}$$
 
-MOCK v4 defines the stable structural reference architecture. The Public Analysis Layer explains how a system observation becomes a structurally assessable case. Evidence releases provide reproducible analysis-layer calculations on top of the frozen reference architecture. Validation runs document deterministic structural validation artifacts and package-level reproducibility evidence.
+MOCK v4 defines the frozen structural reference architecture. The Public Analysis Layer explains how a system observation becomes a structurally assessable case. Evidence releases provide reproducible analysis-layer calculations. The Foundational Scientific Reconstruction is rederiving and reviewing the mathematical contracts that will control future validation releases and the later SWORD execution architecture.
 
-Future execution work, including operator-resolved workflows and SWORD, is conceptually downstream of these public layers and is not implemented in this repository at the present stage.
+Historical validation snapshots remain available for reproducibility and provenance. They do not override the current audit and reconstruction status.
 
 ---
 
@@ -51,7 +52,7 @@ $$\text{Observation}\;\rightarrow\;V_1\;\rightarrow\;V_2\;\rightarrow\;V_3\;\rig
 
 In compact form:
 
-$$S_D\;\rightarrow\;(V_1, V_2, V_3, V_4)\;\rightarrow\;A_j\;\rightarrow\;C_{j\ell}\;\rightarrow\;M_{j\ell}\;\rightarrow\;\rho_{j\ell}\;\rightarrow\;E_{j\ell}.$$
+$$S_D\;\rightarrow\;(V_1,V_2,V_3,V_4)\;\rightarrow\;A_j\;\rightarrow\;C_{j\ell}\;\rightarrow\;M_{j\ell}\;\rightarrow\;\rho_{j\ell}\;\rightarrow\;E_{j\ell}.$$
 
 where $S_D$ is a structured system state in domain $D$, $A_j$ is an application identity, $C_{j\ell}$ is a scenario class, $M_{j\ell}$ is a metric set, $\rho_{j\ell}$ is a regime classification, and $E_{j\ell}$ is an evidence interface.
 
@@ -71,7 +72,8 @@ This repository publicly documents:
 - the application, scenario, metric, regime, and evidence hierarchy;
 - the kernel-damping evidence protocol for declared risk-transition scenarios;
 - reproducible evidence-release artefacts where explicitly provided;
-- the SORT Version 7 Workstation Validation Run and frozen validation package.
+- the archived SORT Version 7 Workstation Validation Run;
+- the current audit status and scientific provenance of that run.
 
 ---
 
@@ -106,7 +108,8 @@ MOCK v4 is not:
 - a production system;
 - a benchmark harness;
 - an HPC runtime;
-- a customer assessment engine.
+- a customer assessment engine;
+- the controlling scientific authority for the ongoing foundational reconstruction.
 
 The canonical freeze artefact remains:
 
@@ -117,23 +120,25 @@ The canonical freeze artefact remains:
 | Hash algorithm | SHA-256 |
 | SHA-256 | `98E55A6883B16E2BB21D1E0CFC36BC98BD2750F5119FC8F8E46DFB9A77983A85` |
 
-All future validation suites, evidence releases, run suites, and execution layers operate **on top of MOCK v4** and do not constitute new MOCK versions unless the frozen structural contracts are changed.
+MOCK v4 remains preserved as an architecture and contract layer. Its mathematical interpretation will be aligned with the accepted outputs of the Foundational Scientific Reconstruction without silently rewriting the historical archive.
 
 ---
 
-## Relationship Between MOCK v3 and MOCK v4
+## Relationship Between MOCK, Reconstruction, and Execution
 
-| Component | Source |
-| --------- | ------ |
-| Numerical exploration and early evidence | MOCK v3 |
-| Structural, contractual, and architectural consistency | MOCK v4 |
-| Theoretical derivations and interpretation | SORT whitepaper line |
-| Public structural assessment method | Public Analysis Layer |
-| Reproducibility protocols and evidence releases | Evidence layers on top of MOCK v4 |
-| Workstation validation artifacts | Validation runs on top of MOCK v4 |
-| Scalable operator-resolved execution | Future SWORD layer |
+| Component | Role |
+| --------- | ---- |
+| MOCK v1–v3 | Historical development, numerical exploration, and provenance |
+| MOCK v4 | Frozen structural and contractual reference architecture |
+| SORT Version 7 Foundational Scientific Reconstruction | Controlling rederivation, evidence, review, and acceptance program |
+| Public Analysis Layer | Public structural assessment method |
+| Evidence Releases | Reproducible analysis-layer protocols |
+| Archived Workstation Validation Run | Historical finite-surrogate computational snapshot |
+| Future SWORD layer | Operator-resolved execution architecture after foundational closure |
 
-MOCK v3 represents the exploratory numerical phase. MOCK v4 represents the stable architectural reference layer. The Public Analysis Layer now documents how structural assessment cases are formed before evidence protocols, validation runs, or future execution layers are applied.
+The controlling scientific sequence is now:
+
+$$\text{Forensic Baseline}\;\rightarrow\;\text{Formal Contracts}\;\rightarrow\;\text{Canonical Construction}\;\rightarrow\;\text{Independent Validation}\;\rightarrow\;\text{Future SWORD Execution}$$
 
 ---
 
@@ -204,15 +209,15 @@ Evidence releases provide reproducible analysis-layer artefacts that operate on 
 | Release path | `evidence_releases/sort_ai_core3_kernel_damping_v1/` |
 | Applications | `AI.01`, `AI.04`, `AI.13` |
 | Coupling axes | physical/interconnect, logical/runtime-control, semantic/agentic |
-| Kernel parameter | $\sigma_0 = 0.00190643$ |
+| Historical reference parameter used | $\sigma_0=0.00190643$ |
 | Reference architecture | MOCK v4 frozen structural reference |
 | Evidence level | analysis-layer structural reproducibility |
 
 The intended claim is narrow:
 
-> The Core-3 evidence release provides a reproducible analysis-layer kernel-damping protocol for declared SORT-AI risk-transition scenarios under the canonical SORT kernel scale parameter $\sigma_0 = 0.00190643$.
+> The Core-3 evidence release provides a reproducible analysis-layer kernel-damping protocol for declared SORT-AI risk-transition scenarios using the stated historical reference parameter.
 
-The release does **not** claim production deployment, empirical benchmarking, vendor-specific measurement, runtime optimization, or execution by MOCK v4.
+The release does **not** independently calibrate or validate $\sigma_0$ from AI data and does not claim production deployment, empirical benchmarking, vendor-specific measurement, runtime optimization, or execution by MOCK v4.
 
 Reproduction command:
 
@@ -223,50 +228,44 @@ python scripts/run_all.py
 
 ---
 
-## Validation Runs
-
-Validation runs provide deterministic structural validation artifacts for SORT Version 7 on top of the frozen MOCK v4 reference architecture.
+## Archived Validation Snapshot
 
 ### SORT Version 7 Workstation Validation Run
 
+The original workstation package remains publicly available as a reproducible **pre-audit computational snapshot**. The stored scripts, outputs, manifests, hashes, and ZIP file are preserved unchanged.
+
 | Field | Value |
 | ----- | ----- |
-| Validation path | `validation_runs/sort_version_7_workstation_validation/` |
+| Repository path | `validation_runs/sort_version_7_workstation_validation/` |
 | Frozen package | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/SORT_Version_7_Workstation_Validation.zip` |
 | Freeze report | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/freeze_report.json` |
-| Zenodo DOI | `https://doi.org/10.5281/zenodo.20634212` |
-| Validation scope | Level-0 structural validation |
+| Zenodo record | `https://doi.org/10.5281/zenodo.20634212` |
 | Execution context | Lenovo ThinkStation P3 Ultra workstation |
-| Phase sequence | Phase 0 through Phase 7 |
-| Phase 6 status | Included |
-| Package status | Frozen |
+| Package status | Frozen and preserved |
+| Current scientific classification | Archived pre-audit finite-surrogate snapshot |
+| Foundational validation status | Superseded |
 | Package size | 289337 bytes |
 | SHA-256 | `2fc5e68551f70ac25e8970e51204de80c03d593003aab8123091366cac8df505` |
 
-The validation run contains:
+The eight phase gates recorded `passed` for the finite surrogate architecture implemented in the release:
 
-| Phase | Gate | Scope | Status |
-| ----- | ---- | ----- | ------ |
-| Phase 0 — Setup and Reproducibility | Gate 0 | Environment capture, seed policy, run manifest | passed |
-| Phase 1 — Operator Integrity | Gate 1 | 22-operator registry, idempotency, balance, Jacobi checks | passed |
-| Phase 2 — Projection Kernel | Gate 2 | Kernel definition, normalization, projection idempotency | passed |
-| Phase 3 — Global Projector | Gate 3 | Global projector construction, closure, composition checks | passed |
-| Phase 4 — Fixed-Point Structure | Gate 4 | Iterative projection behavior, convergence, norm tracking | passed |
-| Phase 5 — Drift and Stability | Gate 5 | Synthetic drift diagnostics and perturbation response | passed |
-| Phase 6 — Workstation Scaling | Gate 6 | Runtime, memory, safe-gate grid/thread execution | passed / included |
-| Phase 7 — Artifact Freeze | Gate 7 | Audit, inventory, hashes, reproducibility manifest, ZIP freeze | passed |
+| Phase | Gate | Recorded scope | Current interpretation |
+| ----- | ---- | -------------- | ---------------------- |
+| Phase 0 — Setup and Reproducibility | Gate 0 | Environment capture, seed policy, run manifest | valid provenance record |
+| Phase 1 — Operator Integrity | Gate 1 | Coordinate-surrogate registry and algebra checks | surrogate-specific result |
+| Phase 2 — Projection Kernel | Gate 2 | Rank-one projection construction and idempotency | surrogate-specific result |
+| Phase 3 — Global Projector | Gate 3 | Finite global-projector construction | surrogate-specific result |
+| Phase 4 — Fixed-Point Structure | Gate 4 | Iteration under the surrogate projection rule | surrogate-specific result |
+| Phase 5 — Drift and Stability | Gate 5 | Synthetic drift and perturbation response | surrogate-specific result |
+| Phase 6 — Workstation Scaling | Gate 6 | Runtime, memory, safe-gate execution | valid execution record |
+| Phase 7 — Artifact Freeze | Gate 7 | Audit, inventory, hashes, reproducibility manifest, ZIP freeze | valid archive-integrity record |
 
-The validation package is a reproducibility and artifact-freeze package. It does **not** constitute empirical validation, production validation, benchmark superiority, SWORD execution, ASDV execution, a new MOCK version, a minimality proof, or a structural necessity proof.
+The package should not be cited as the current foundational validation of SORT Version 7. It may be cited as a historical, reproducible computational snapshot and provenance record.
 
-Main reproducibility artifacts:
+For the controlling interpretation, see:
 
-| Artifact | Path |
-| -------- | ---- |
-| Phase 7 freeze report | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/freeze_report.json` |
-| Reproducibility manifest | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/repro_manifest.json` |
-| Artifact inventory | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/artifact_inventory.csv` |
-| Hash manifest | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/hashes.txt` |
-| Frozen ZIP package | `validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs/SORT_Version_7_Workstation_Validation.zip` |
+- [`AUDIT_STATUS.md`](AUDIT_STATUS.md)
+- [`SORT_Version_7_Workstation_Validation_Explainer.md`](SORT_Version_7_Workstation_Validation_Explainer.md)
 
 ---
 
@@ -279,49 +278,16 @@ mock_v4/
 ├── evidence/
 ├── demos/
 ├── src/sort/
-│   ├── application/
-│   ├── capabilities/
-│   ├── catalog/
-│   ├── control/
-│   ├── core/
-│   ├── domains/
-│   ├── engine/
-│   └── evidence/
 └── tests/
 
 docs/
 └── public_analysis_layer/
-    ├── README.md
-    ├── structural_assessment_protocol.md
-    ├── v1_v4_diagnostic_grammar.md
-    ├── assessment_case_tuple.md
-    ├── scenario_metric_regime_hierarchy.md
-    └── public_private_boundary.md
 
 evidence_releases/
 └── sort_ai_core3_kernel_damping_v1/
-    ├── README.md
-    ├── manifest.json
-    ├── data/
-    ├── docs/
-    ├── scripts/
-    ├── outputs_expected/
-    ├── outputs_generated/
-    └── source_material/
 
 validation_runs/
 └── sort_version_7_workstation_validation/
-    ├── phase_0_setup/
-    ├── phase_1_operator_integrity/
-    ├── phase_2_projection_kernel/
-    ├── phase_3_global_projector/
-    ├── phase_4_fixed_point/
-    ├── phase_5_drift_stability/
-    ├── phase_6_workstation_scaling/
-    ├── phase_7_artifact_freeze/
-    ├── manifests/
-    ├── artifacts/
-    └── README.md
 ```
 
 ---
@@ -337,7 +303,7 @@ python -m pip install -U pytest
 python -m pytest -q
 ```
 
-These tests validate structure and contracts, not numerical correctness or production performance.
+These tests validate the archived MOCK v4 structure and contracts. They do not constitute current foundational mathematical validation.
 
 ### Evidence-release reproduction
 
@@ -346,7 +312,7 @@ cd evidence_releases/sort_ai_core3_kernel_damping_v1
 python scripts/run_all.py
 ```
 
-### Workstation validation artifact review
+### Archived workstation snapshot inspection
 
 ```bash
 cd validation_runs/sort_version_7_workstation_validation/phase_7_artifact_freeze/outputs
@@ -367,47 +333,48 @@ Expected SHA-256:
 
 ---
 
-## Citation
+## Citation of the Archived Snapshot
 
-If you use or reference the SORT Version 7 workstation validation artifact package, please cite:
+Use the Zenodo citation only when referring to the archived pre-audit computational snapshot or its provenance:
 
-Wegener, G. H. (2026). *gregorwegener/SORT: SORT Version 7 Workstation Validation Run — Frozen Artifact Package (sort-v7-workstation-validation-v1.0.0).* Zenodo. https://doi.org/10.5281/zenodo.20634212
+Wegener, G. H. (2026). *gregorwegener/SORT: SORT Version 7 Workstation Validation Run — Archived Pre-Audit Computational Snapshot (sort-v7-workstation-validation-v1.0.0).* Zenodo. https://doi.org/10.5281/zenodo.20634212
 
 ```bibtex
-@software{wegener_2026_sort_v7_workstation_validation,
+@software{wegener_2026_sort_v7_workstation_snapshot,
   author       = {Wegener, Gregor H.},
-  title        = {{gregorwegener/SORT: SORT Version 7 Workstation Validation Run — Frozen Artifact Package}},
+  title        = {{gregorwegener/SORT: SORT Version 7 Workstation Validation Run — Archived Pre-Audit Computational Snapshot}},
   year         = {2026},
   publisher    = {Zenodo},
   version      = {sort-v7-workstation-validation-v1.0.0},
   doi          = {10.5281/zenodo.20634212},
-  url          = {https://doi.org/10.5281/zenodo.20634212}
+  url          = {https://doi.org/10.5281/zenodo.20634212},
+  note         = {Archived pre-audit computational snapshot; superseded for current foundational validation claims}
 }
 ```
 
 ---
 
-## Core Invariants
+## Reference Values and Identifiers
 
-| Constant | Value | Description |
-| -------- | ----- | ----------- |
-| `N_OPERATORS` | 22 | Total operator count |
+| Item | Value | Status |
+| ---- | ----- | ------ |
+| `N_OPERATORS` | 22 | historical and reconstruction object count |
 | `SCHEMA_VERSION` | `0.5.1` | MOCK v4 API contract version |
-| $\sigma_0$ | 0.00190643 | Canonical kernel base width |
-| $\kappa(0)$ | 1.0 | Kernel normalization |
-| `SORT_VERSION_7_GLOBAL_SEED` | 117666 | Workstation validation seed |
+| $\sigma_0$ | 0.00190643 | historical reference value used by archived artefacts; universality not established |
+| $\kappa(0)$ | 1.0 | Gaussian profile normalization convention |
+| `SORT_VERSION_7_GLOBAL_SEED` | 117666 | archived workstation-run reproducibility seed |
 
 ---
 
 ## Future Development Path
 
-The public development path is:
+The controlling development path is:
 
-$$\text{MOCK v4}\;\rightarrow\;\text{Public Analysis Layer}\;\rightarrow\;\text{Evidence Releases}\;\rightarrow\;\text{Validation Suites}\;\rightarrow\;\text{Future SWORD Execution Layer}$$
+$$\text{Forensic Baseline}\;\rightarrow\;\text{Foundational Scientific Reconstruction}\;\rightarrow\;\text{Audited Validation Releases}\;\rightarrow\;\text{Future SWORD Execution Layer}$$
 
-A new MOCK architecture version is required only if the frozen structural contracts of MOCK are changed. Numerical runtime pipelines, validation suites, evidence protocols, and future execution layers do not by themselves define a new MOCK version.
+The Foundational Scientific Reconstruction separates mathematical definition, construction, validation, interpretation, and publication claims. Future validation releases will be issued only from accepted reconstructed objects and independently reviewed evidence chains.
 
-The future SWORD layer is expected to address operator-resolved execution, drift analysis, and application-discovery workflows. It is not implemented in this public repository at the current stage.
+The future SWORD layer is expected to address operator-resolved execution, drift analysis, and application-discovery workflows after foundational closure. It is not implemented in this public repository at the current stage.
 
 ---
 
@@ -415,4 +382,4 @@ The future SWORD layer is expected to address operator-resolved execution, drift
 
 Copyright © 2025–2026 Gregor Wegener. All rights reserved.
 
-This repository is released for review, reference, and structural assessment purposes only. Proprietary computational implementations, customer-specific assessment logic, and execution-layer systems remain confidential.
+This repository is released for review, reference, provenance, and structural assessment purposes only. Proprietary computational implementations, customer-specific assessment logic, and execution-layer systems remain confidential.
